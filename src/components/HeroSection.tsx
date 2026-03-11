@@ -31,11 +31,13 @@ const HeroSection = () => {
           </p>
 
           {/* Product mockup placeholder */}
-          <div className="border-2 border-dashed border-primary/30 rounded-xl max-w-sm sm:max-w-md mx-auto aspect-[4/3] flex items-center justify-center bg-card/50 mb-10">
-            <span className="text-primary font-display font-semibold text-sm tracking-wide">
-              [ Mockup: notebook + caixa do produto ]
-            </span>
-          </div>
+          <img
+            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/Untitled-3_qatd2n.png"
+            alt="Mockup do produto +4.500 Blocos AutoCAD"
+            loading="lazy"
+            width="900"
+            className="mx-auto mb-10 w-full max-w-[900px]"
+          />
 
           {/* Price anchor */}
           <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
