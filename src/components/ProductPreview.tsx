@@ -12,14 +12,11 @@ import blocksAutomoveis from "@/assets/blocks-automoveis.png";
 import blocksPastas from "@/assets/blocks-pastas.png";
 
 const folderNames = [
-  "2D", "Academia", "Acessibilidade", "Animais", "Anotações", "Aquífero",
-  "Ar Condicionado", "Área de Serviço", "Área Externa", "Armários", "Auditório",
-  "Banheiros", "Bicicletário", "Bloco Concreto", "Bombas", "Brinquedos",
-  "Câmeras", "Canhões", "Churrasqueiras", "Cladique", "Cobertura", "Cobogó",
-  "Colunas", "Cozinhas", "Decoração", "Elétrica", "Elevadores", "Escadas",
-  "Escritório", "Estacionamento", "Ferramentas", "Hidráulica", "Hospital",
-  "Iluminação", "Mobiliário", "Pessoas", "Vegetação", "Veículos", "Urbanização",
-  "Piscinas",
+  "Portas e Janelas", "Mobiliário Completo", "Camas / Dormitórios", "Cozinhas + Gourmet",
+  "Banheiros / Sanitários", "Área de Lazer / Churrasqueira", "Home Office", "Escritório / Corporativo",
+  "Academia / Fitness", "Pessoas / Humanização", "Vegetação / Paisagismo", "Automóveis / Veículos",
+  "Escadas / Rampas", "Acessibilidade / PNE", "Elétrica / Símbolos", "Hidráulica",
+  "Iluminação / Luminárias", "Cobertura / Telhados", "Sinalização / Rota de Fuga", "Área Médica / Hospitalar",
 ];
 
 const categoryCards = [
