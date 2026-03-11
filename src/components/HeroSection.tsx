@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-hero overflow-hidden pt-16 pb-12">
+    <section className="relative min-h-[85vh] flex items-center justify-center bg-gradient-hero overflow-hidden pt-16 pb-12">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container relative z-10 text-center max-w-3xl mx-auto px-4">
@@ -11,38 +11,39 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-block bg-primary/10 border border-primary/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-primary font-display text-xs font-bold tracking-widest uppercase">
-              ✦ Lara Render — Pack AutoCAD Pro
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-3 uppercase tracking-tight">
+            <span className="text-gradient-gold">+3.700 Blocos</span>
+            <br />
+            <span className="text-foreground">Prontos</span>{" "}
+            <span className="bg-danger text-white px-3 py-1 rounded inline-block text-4xl sm:text-5xl md:text-6xl -rotate-1">AutoCAD</span>
+          </h1>
+
+          <p className="text-muted-foreground text-lg sm:text-xl max-w-lg mx-auto mb-10 leading-relaxed mt-5">
+            Pare de desenhar cada bloco do zero. Tenha um acervo completo e use a hora que quiser.
+          </p>
+
+          {/* Product mockup placeholder */}
+          <div className="border-2 border-dashed border-primary/30 rounded-xl max-w-md mx-auto aspect-[4/3] flex items-center justify-center bg-card/50 mb-10">
+            <span className="text-primary font-display font-semibold text-sm tracking-wide">
+              [ Mockup: notebook + caixa do produto ]
             </span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] mb-5">
-            Pare de perder horas<br />
-            desenhando do zero.{" "}
-            <span className="text-gradient-gold">Use blocos prontos.</span>
-          </h1>
-
-          <p className="text-muted-foreground text-lg sm:text-xl max-w-xl mx-auto mb-8 leading-relaxed">
-            +18.000 blocos DWG organizados, testados e prontos para arrastar no seu projeto. <strong className="text-foreground">Por menos que um café.</strong>
-          </p>
-
           {/* Price anchor */}
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <span className="text-muted-foreground line-through text-lg">R$ 59,90</span>
-            <span className="bg-danger/20 text-danger text-xs font-bold px-2 py-0.5 rounded">-87% OFF</span>
-          </div>
+          <p className="text-muted-foreground text-base mb-1 uppercase tracking-wide font-display">
+            De <span className="line-through">R$ 59,90</span> por apenas
+          </p>
           <div className="flex items-center justify-center gap-2 mb-2">
-            <span className="font-display text-6xl sm:text-7xl font-extrabold text-gradient-gold">R$7,90</span>
+            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$5,99</span>
           </div>
-          <p className="text-muted-foreground text-sm mb-8">Pagamento único · Acesso vitalício · Sem mensalidade</p>
+          <p className="text-muted-foreground text-sm mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
           <motion.a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-lg px-12 py-4 rounded-lg shadow-gold animate-pulse-gold transition-transform hover:scale-105"
+            className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-lg px-12 py-4 rounded-lg shadow-lg transition-transform hover:scale-105 uppercase"
             whileTap={{ scale: 0.97 }}
           >
-            → QUERO ACESSO AGORA
+            Quero ter acesso!
           </motion.a>
 
           <p className="text-muted-foreground/60 text-xs mt-4">🔒 Compra 100% segura · Acesso imediato após pagamento</p>
@@ -56,9 +57,9 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           {[
-            { value: "18k+", label: "Blocos DWG" },
-            { value: "100%", label: "Compatível" },
-            { value: "14 dias", label: "Garantia" },
+            { value: "3.700+", label: "Blocos DWG" },
+            { value: "100%", label: "Organizados" },
+            { value: "R$5,99", label: "Acesso total" },
           ].map((s) => (
             <div key={s.label} className="text-center bg-card/50 border border-border rounded-lg py-3 px-2">
               <p className="font-display text-2xl font-bold text-primary">{s.value}</p>
