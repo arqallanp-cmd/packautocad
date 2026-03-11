@@ -1,24 +1,32 @@
 import { motion } from "framer-motion";
 
 const categories = [
-  { icon: "🛋️", title: "Mobiliário", desc: "Sala, quarto, escritório" },
-  { icon: "🍳", title: "Cozinha", desc: "Eletrodomésticos e bancadas" },
-  { icon: "🛁", title: "Banheiro", desc: "Louças e metais" },
-  { icon: "🌿", title: "Vegetação", desc: "Árvores, arbustos, jardins" },
-  { icon: "🚗", title: "Veículos", desc: "Carros, motos, bicicletas" },
-  { icon: "👤", title: "Pessoas", desc: "Plantas e elevações" },
-  { icon: "⚡", title: "Elétrica", desc: "Símbolos e diagramas" },
-  { icon: "💧", title: "Hidráulica", desc: "Tubulações e conexões" },
-  { icon: "♿", title: "Acessibilidade", desc: "NBR 9050 atualizada" },
-  { icon: "🏋️", title: "Academia", desc: "Equipamentos fitness" },
-  { icon: "🏥", title: "Hospitalar", desc: "Leitos e equipamentos" },
-  { icon: "🏙️", title: "Urbanização", desc: "Praças, calçadas, mobiliário" },
+  { icon: "🚪", title: "Portas e Janelas", desc: "O bloco mais inserido em qualquer planta — todos os modelos e ângulos de abertura" },
+  { icon: "🛋️", title: "Mobiliário Completo", desc: "Sofás, poltronas, estantes, mesas e cadeiras para todos os ambientes" },
+  { icon: "🛏️", title: "Camas / Dormitórios", desc: "Camas de solteiro, casal, beliche, criados-mudos e guarda-roupas" },
+  { icon: "🍳", title: "Cozinhas + Gourmet", desc: "Bancadas, ilhas, eletrodomésticos, mesas integradas e áreas gourmet" },
+  { icon: "🛁", title: "Banheiros / Sanitários", desc: "Louças, metais, box, banheiras e acessórios sanitários completos" },
+  { icon: "🏊", title: "Área de Lazer / Churrasqueira", desc: "Piscinas, churrasqueiras, pergolados e espaços de lazer em condomínios" },
+  { icon: "💻", title: "Home Office", desc: "Mesas, cadeiras ergonômicas, estantes e layouts de escritório residencial" },
+  { icon: "🏢", title: "Escritório / Corporativo", desc: "Baias, salas de reunião, recepção e ambientes corporativos completos" },
+  { icon: "🏋️", title: "Academia / Fitness", desc: "Equipamentos de musculação, cardio e áreas de lazer em condomínios" },
+  { icon: "👤", title: "Pessoas / Humanização", desc: "Figuras humanas em planta e elevação para humanizar pranchetas" },
+  { icon: "🌿", title: "Vegetação / Paisagismo", desc: "Árvores, arbustos, jardins e elementos de paisagismo em planta" },
+  { icon: "🚗", title: "Automóveis / Veículos", desc: "Carros, motos, caminhões e ônibus para estacionamentos e implantações" },
+  { icon: "🪜", title: "Escadas / Rampas", desc: "Retas, em L, caracol, com detalhamento técnico e corrimão" },
+  { icon: "♿", title: "Acessibilidade / PNE", desc: "Blocos NBR 9050 atualizados — banheiros, rampas, vagas e sinalização" },
+  { icon: "⚡", title: "Elétrica / Símbolos", desc: "Diagramas, quadros, tomadas, interruptores e instalações elétricas" },
+  { icon: "💧", title: "Hidráulica", desc: "Tubulações, conexões, reservatórios e instalações hidrossanitárias" },
+  { icon: "💡", title: "Iluminação / Luminárias", desc: "Spots, pendentes, arandelas e luminárias para projetos de interiores" },
+  { icon: "🏠", title: "Cobertura / Telhados", desc: "Tipos de telha, calhas, rufos, estruturas e cortes de cobertura" },
+  { icon: "🚨", title: "Sinalização / Rota de Fuga", desc: "Extintores, hidrantes, placas de emergência e rotas de evacuação" },
+  { icon: "🏥", title: "Área Médica / Hospitalar", desc: "Consultórios, leitos, equipamentos hospitalares e plantas de clínicas" },
 ];
 
 const BlocksSection = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container max-w-4xl mx-auto px-4">
+      <div className="container max-w-5xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -35,19 +43,19 @@ const BlocksSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
           {categories.map((c, i) => (
             <motion.div
               key={c.title}
-              className="bg-background border border-border rounded-lg p-4 text-center hover:border-primary/40 transition-colors group"
-              initial={{ opacity: 0, y: 15 }}
+              className="bg-background border-l-[3px] border-l-primary border border-border rounded-xl p-5 hover:border-primary/40 transition-colors group"
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.04 }}
+              transition={{ delay: i * 0.08 }}
             >
-              <span className="text-2xl block mb-2 group-hover:scale-110 transition-transform">{c.icon}</span>
-              <p className="font-display font-semibold text-sm">{c.title}</p>
-              <p className="text-muted-foreground text-xs mt-1">{c.desc}</p>
+              <span className="text-3xl block mb-3 group-hover:scale-110 transition-transform">{c.icon}</span>
+              <p className="font-display font-bold text-sm text-foreground mb-1">{c.title}</p>
+              <p className="text-muted-foreground text-xs leading-relaxed">{c.desc}</p>
             </motion.div>
           ))}
         </div>
