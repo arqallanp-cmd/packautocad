@@ -25,13 +25,13 @@ const BlocksSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">O que você recebe</p>
+          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">O que vem no pack</p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
             +3.700 blocos organizados,<br />
-            <span className="text-gradient-gold">prontos para usar hoje</span>
+            <span className="text-gradient-gold">prontos para usar agora</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Todos os arquivos organizados em pastas categorizadas, nomeados e testados em AutoCAD 2018 ao 2025.
+            Arquivos .DWG leves, categorizados e testados do AutoCAD 2018 ao 2025. É só arrastar.
           </p>
         </motion.div>
 
@@ -39,18 +39,32 @@ const BlocksSection = () => {
           {categories.map((c, i) => (
             <motion.div
               key={c.title}
-              className="bg-background border border-border rounded-lg p-4 text-center hover:border-primary/40 transition-colors"
+              className="bg-background border border-border rounded-lg p-4 text-center hover:border-primary/40 transition-colors group"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.05 }}
+              transition={{ delay: i * 0.04 }}
             >
-              <span className="text-2xl block mb-2">{c.icon}</span>
+              <span className="text-2xl block mb-2 group-hover:scale-110 transition-transform">{c.icon}</span>
               <p className="font-display font-semibold text-sm">{c.title}</p>
               <p className="text-muted-foreground text-xs mt-1">{c.desc}</p>
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          className="text-center mt-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="#pricing"
+            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold px-8 py-3 rounded-lg shadow-gold hover:scale-105 transition-transform"
+          >
+            → Quero todos os blocos
+          </a>
+        </motion.div>
       </div>
     </section>
   );
