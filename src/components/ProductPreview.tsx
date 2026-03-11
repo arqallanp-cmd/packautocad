@@ -86,15 +86,15 @@ const ProductPreview = () => {
 
           {/* Folder overview image */}
           <img
-            src={blocksPastas}
-            alt="+3.700 blocos organizados por pastas"
+            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/freepik__atualize-para-4500-blocos__66968_gg9nbh.jpg"
+            alt="+4.500 blocos organizados por pastas"
             loading="lazy"
             className="w-full rounded-lg mb-5"
           />
 
           <div className="flex justify-center">
-            <span className="inline-block bg-primary text-primary-foreground font-display font-extrabold text-xs sm:text-sm uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl">
-              +3.700 BLOCOS ORGANIZADOS POR PASTAS
+            <span className="inline-block bg-primary text-primary-foreground font-display font-extrabold text-xs sm:text-sm uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-center">
+              +4.500 BLOCOS ORGANIZADOS POR PASTAS
             </span>
           </div>
         </motion.div>
