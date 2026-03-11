@@ -55,7 +55,7 @@ const PricingSection = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full">
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
               🔥 Mais vendido
             </div>
 
@@ -87,6 +87,18 @@ const PricingSection = () => {
             </a>
           </motion.div>
         </div>
+
+        {/* Value stack */}
+        <motion.div
+          className="text-center mt-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <p className="text-muted-foreground text-sm">
+            Valor total dos bônus: <span className="line-through">R$ 268,00</span> — <span className="text-primary font-display font-bold">Você paga apenas R$ 24,90.</span>
+          </p>
+        </motion.div>
       </div>
     </section>
   );

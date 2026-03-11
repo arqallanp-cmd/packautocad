@@ -33,8 +33,12 @@ const BonusSection = () => {
               transition={{ delay: i * 0.1 }}
             >
               <span className="font-display text-3xl font-bold text-primary/30 shrink-0">{b.num}</span>
-              <div>
+              <div className="flex-1">
                 <h3 className="font-display font-bold text-lg mb-1">{b.title}</h3>
+                {/* Image placeholder */}
+                <div className="border border-dashed border-primary/20 rounded-lg h-24 flex items-center justify-center bg-card/50 my-3">
+                  <span className="text-primary/40 font-display text-xs">[ Preview do bônus ]</span>
+                </div>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-2">{b.desc}</p>
                 <span className="text-primary font-semibold text-sm">{b.price}</span>
               </div>
