@@ -12,11 +12,11 @@ import blocksAutomoveis from "@/assets/blocks-automoveis.png";
 import blocksPastas from "@/assets/blocks-pastas.png";
 
 const folderNames = [
-  "Portas e Janelas", "Mobiliário Completo", "Camas / Dormitórios", "Cozinhas + Gourmet",
-  "Banheiros / Sanitários", "Área de Lazer / Churrasqueira", "Home Office", "Escritório / Corporativo",
-  "Academia / Fitness", "Pessoas / Humanização", "Vegetação / Paisagismo", "Automóveis / Veículos",
-  "Escadas / Rampas", "Acessibilidade / PNE", "Elétrica / Símbolos", "Hidráulica",
-  "Iluminação / Luminárias", "Cobertura / Telhados", "Sinalização / Rota de Fuga", "Área Médica / Hospitalar",
+  "Portas e Janelas", "Mobiliário Completo", "Camas", "Cozinhas Gourmet",
+  "Banheiros", "Área de Lazer", "Home Office", "Escritório",
+  "Academia", "Pessoas", "Vegetação", "Automóveis",
+  "Escadas", "Acessibilidade", "Elétrica", "Hidráulica",
+  "Iluminação", "Cobertura", "Sinalização", "Área Médica",
 ];
 
 const categoryCards = [
