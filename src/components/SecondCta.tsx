@@ -2,18 +2,21 @@ import { motion } from "framer-motion";
 
 const SecondCta = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container max-w-3xl mx-auto px-4 text-center">
+    <section className="py-20 bg-card relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
+      <div className="container max-w-3xl mx-auto px-4 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
+          <p className="text-primary font-display text-sm font-bold tracking-widest uppercase mb-4">Decisão fácil</p>
           <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">
             Tudo isso por menos que um café.
           </h2>
-          <div className="my-8">
-            <span className="font-display text-6xl sm:text-8xl font-extrabold text-gradient-gold">R$7,90</span>
+          <p className="text-muted-foreground mb-6">Sério. Enquanto você pensa, alguém já baixou e está usando.</p>
+          <div className="my-6">
+            <span className="font-display text-7xl sm:text-8xl font-extrabold text-gradient-gold">R$7,90</span>
           </div>
           <a
             href="#pricing"
