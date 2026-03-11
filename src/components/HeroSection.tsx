@@ -57,7 +57,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           {[
-            { value: "3.700+", label: "Blocos DWG" },
+            { value: "4.500+", label: "Blocos DWG" },
             { value: "100%", label: "Organizados" },
             { value: "R$5,99", label: "Acesso total" },
           ].map((s) => (
