@@ -71,7 +71,7 @@ const PricingSection = () => {
             <p className="text-muted-foreground text-xs mb-8">Pagamento único · Acesso imediato</p>
 
             <ul className="space-y-3 mb-8 flex-1 text-sm">
-              <li className="flex gap-2"><span className="text-success">✓</span> +3.700 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos extras</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Pack de Hachuras Profissionais</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem .ctb</li>

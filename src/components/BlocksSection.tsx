@@ -35,7 +35,7 @@ const BlocksSection = () => {
         >
           <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">O que vem no pack</p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            +3.700 blocos organizados,<br />
+            +4.500 blocos organizados,<br />
             <span className="text-gradient-gold">prontos para usar agora</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
