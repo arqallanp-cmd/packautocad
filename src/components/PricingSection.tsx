@@ -33,7 +33,7 @@ const PricingSection = () => {
             <p className="text-muted-foreground text-xs mb-8">Pagamento único</p>
 
             <ul className="space-y-3 mb-8 flex-1 text-sm">
-              <li className="flex gap-2"><span className="text-success">✓</span> +3.700 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
               <li className="flex gap-2 text-muted-foreground"><span>✗</span> Bônus não incluídos</li>
               <li className="flex gap-2 text-muted-foreground"><span>✗</span> Prompts de IA</li>
