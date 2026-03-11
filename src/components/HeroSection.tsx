@@ -11,36 +11,47 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-3 uppercase tracking-tight">
-            <span className="text-gradient-gold">+4.500 Blocos</span>
-            <br />
-            <span className="text-foreground">Prontos</span>{" "}
-            <span className="bg-danger text-white px-3 py-1 rounded inline-block text-4xl sm:text-5xl md:text-6xl -rotate-1">AutoCAD</span>
+          {/* Headline — mobile: tudo na mesma linha, fonte grande */}
+          <h1 className="font-display font-extrabold uppercase tracking-tight leading-none mb-1">
+            <span className="text-gradient-gold text-[11vw] sm:text-6xl md:text-7xl lg:text-8xl whitespace-nowrap">
+              +4.500 BLOCOS
+            </span>
           </h1>
+          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
+            <span className="font-display font-extrabold uppercase tracking-tight text-foreground text-[7vw] sm:text-4xl md:text-5xl">
+              PRONTOS
+            </span>
+            <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[6vw] sm:text-3xl md:text-4xl -rotate-1 inline-block">
+              AutoCAD
+            </span>
+          </div>
 
-          <p className="text-muted-foreground text-lg sm:text-xl max-w-lg mx-auto mb-10 leading-relaxed mt-5">
-            Pare de desenhar cada bloco do zero. Tenha um acervo completo e use a hora que quiser.
+          <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-8 leading-relaxed">
+            Pare de desenhar cada bloco do <strong className="text-foreground">ZERO!</strong> Tenha um acervo completo e use a hora que quiser!
           </p>
 
           {/* Product mockup placeholder */}
-          <div className="border-2 border-dashed border-primary/30 rounded-xl max-w-md mx-auto aspect-[4/3] flex items-center justify-center bg-card/50 mb-10">
+          <div className="border-2 border-dashed border-primary/30 rounded-xl max-w-sm sm:max-w-md mx-auto aspect-[4/3] flex items-center justify-center bg-card/50 mb-10">
             <span className="text-primary font-display font-semibold text-sm tracking-wide">
               [ Mockup: notebook + caixa do produto ]
             </span>
           </div>
 
           {/* Price anchor */}
-          <p className="text-muted-foreground text-base mb-1 uppercase tracking-wide font-display">
+          <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
             De <span className="line-through">R$ 59,90</span> por apenas
           </p>
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex items-center justify-center gap-1 mb-1">
+            <span className="font-display text-lg sm:text-xl font-bold text-muted-foreground uppercase">por apenas</span>
+          </div>
+          <div className="flex items-center justify-center mb-2">
             <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$5,99</span>
           </div>
-          <p className="text-muted-foreground text-sm mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
+          <p className="text-muted-foreground text-xs sm:text-sm mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
           <motion.a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-lg px-12 py-4 rounded-lg shadow-lg transition-transform hover:scale-105 uppercase"
+            className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-base sm:text-lg px-10 sm:px-12 py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto"
             whileTap={{ scale: 0.97 }}
           >
             Quero ter acesso!
@@ -51,7 +62,7 @@ const HeroSection = () => {
 
         {/* Stats */}
         <motion.div
-          className="grid grid-cols-3 gap-4 mt-14 max-w-md mx-auto"
+          className="grid grid-cols-3 gap-3 sm:gap-4 mt-12 max-w-sm sm:max-w-md mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
@@ -62,8 +73,8 @@ const HeroSection = () => {
             { value: "R$5,99", label: "Acesso total" },
           ].map((s) => (
             <div key={s.label} className="text-center bg-card/50 border border-border rounded-lg py-3 px-2">
-              <p className="font-display text-2xl font-bold text-primary">{s.value}</p>
-              <p className="text-muted-foreground text-xs mt-1">{s.label}</p>
+              <p className="font-display text-xl sm:text-2xl font-bold text-primary">{s.value}</p>
+              <p className="text-muted-foreground text-[10px] sm:text-xs mt-1">{s.label}</p>
             </div>
           ))}
         </motion.div>
