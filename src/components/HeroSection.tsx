@@ -32,7 +32,7 @@ const HeroSection = () => {
 
           {/* Product mockup placeholder */}
           <img
-            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_02_bhf2ri.png"
+            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_03_rh5nww.png"
             alt="Mockup do produto +4.500 Blocos AutoCAD"
             loading="lazy"
             width="900"
