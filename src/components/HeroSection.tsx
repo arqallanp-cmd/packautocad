@@ -12,7 +12,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7 }}
         >
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[1.05] mb-3 uppercase tracking-tight">
-            <span className="text-gradient-gold">+3.700 Blocos</span>
+            <span className="text-gradient-gold">+4.500 Blocos</span>
             <br />
             <span className="text-foreground">Prontos</span>{" "}
             <span className="bg-danger text-white px-3 py-1 rounded inline-block text-4xl sm:text-5xl md:text-6xl -rotate-1">AutoCAD</span>
