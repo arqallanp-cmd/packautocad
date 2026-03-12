@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const AuthorSection = () => {
   return (
     <section className="py-16 bg-background">
-      <div className="container max-w-2xl mx-auto px-4">
+      <div className="container max-w-2xl lg:max-w-3xl mx-auto px-4">
         <motion.div
           className="flex flex-col items-center text-center"
           initial={{ opacity: 0, y: 20 }}
