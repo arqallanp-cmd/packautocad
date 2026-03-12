@@ -19,7 +19,7 @@ const CtaFooter = () => {
               +18.000 blocos, hachuras, templates e prompts de IA. Tudo por <strong className="text-primary">R$ 24,90</strong>.
             </p>
             <motion.a
-              href="#pricing"
+              href="https://pay.wiapy.com/5xnUmUDYB"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-4 rounded-xl shadow-gold animate-pulse-gold"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
