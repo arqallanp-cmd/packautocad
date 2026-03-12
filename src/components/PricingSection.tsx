@@ -28,14 +28,14 @@ const PricingSection = () => {
             <h3 className="font-display text-2xl sm:text-3xl font-bold mb-6 text-center">Pack AutoCAD</h3>
 
             <ul className="space-y-3 mb-6 text-base">
-              <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> 1 ano de acesso</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Acesso vitalício</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Agentes de IA</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Certificado AutoDESK 20H</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Instalador AutoCAD</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Bônus incríveis</li>
+              <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span>✅</span> 7 dias de garantia</li>
+              <li className="flex gap-2"><span>✅</span> 1 ano de acesso</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Acesso vitalício</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Agentes de IA</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Certificado AutoDESK 20H</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Instalador AutoCAD</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Bônus incríveis</li>
             </ul>
 
             <div className="border-t border-border my-4" />
