@@ -28,14 +28,14 @@ const PricingSection = () => {
             <h3 className="font-display text-2xl sm:text-3xl font-bold mb-6 text-center">Pack AutoCAD</h3>
 
             <ul className="space-y-3 mb-6 text-base">
-              <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> 1 ano de acesso</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Acesso vitalício</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Agentes de IA</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Certificado AutoDESK 20H</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Instalador AutoCAD</li>
-              <li className="flex gap-2 text-muted-foreground"><span className="text-danger">❌</span> Bônus incríveis</li>
+              <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span>✅</span> 7 dias de garantia</li>
+              <li className="flex gap-2"><span>✅</span> 1 ano de acesso</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Acesso vitalício</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Agentes de IA</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Certificado AutoDESK 20H</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Instalador AutoCAD</li>
+              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Bônus incríveis</li>
             </ul>
 
             <div className="border-t border-border my-4" />
@@ -79,17 +79,17 @@ const PricingSection = () => {
             </div>
 
             <ul className="space-y-3 mb-6 text-base">
-              <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos DWG extras</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +300 Hachuras Profissionais</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Sistema de Plotagem Automático</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Kit de Pranchas ABNT</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +200 Blocos Dinâmicos</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Guia AutoCAD 2026</li>
+              <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span>✅</span> +15.000 Blocos DWG extras</li>
+              <li className="flex gap-2"><span>✅</span> +300 Hachuras Profissionais</li>
+              <li className="flex gap-2"><span>✅</span> Sistema de Plotagem Automático</li>
+              <li className="flex gap-2"><span>✅</span> Kit de Pranchas ABNT</li>
+              <li className="flex gap-2"><span>✅</span> +200 Blocos Dinâmicos</li>
+              <li className="flex gap-2"><span>✅</span> Guia AutoCAD 2026</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network Exclusivo (vitalício)</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação (4h)</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
+              <li className="flex gap-2"><span>✅</span> Grupo Network Exclusivo (vitalício)</li>
+              <li className="flex gap-2"><span>✅</span> Certificado de Capacitação (4h)</li>
+              <li className="flex gap-2"><span>✅</span> 14 dias de garantia</li>
             </ul>
 
             <div className="border-t border-border my-4" />
