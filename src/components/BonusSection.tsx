@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const bonuses = [
-  { num: "01", title: "+15.000 Blocos Extras", desc: "Acervo gigante com blocos extras organizados por categorias.", price: "R$ 97", free: true },
-  { num: "02", title: "Hachuras Profissionais", desc: "Madeira, pedra, concreto, cerâmica — hachuras que elevam qualquer prancheta.", price: "R$ 47", free: true },
-  { num: "03", title: "Template de Plotagem .ctb", desc: "Configure uma vez e plote com qualidade e consistência para sempre.", price: "R$ 57", free: true },
-  { num: "04", title: "Anotações e Legendas Pro", desc: "Carimbos, legendas e símbolos com padrão de escritório profissional.", price: "R$ 67", free: true },
+  { num: "01", title: "+15.000 Blocos Extras", desc: "Acervo gigante com blocos extras organizados por categorias.", price: "R$ 97", free: true, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/BONUS_01_kaqiqo.jpg" },
+  { num: "02", title: "Hachuras Profissionais", desc: "Madeira, pedra, concreto, cerâmica — hachuras que elevam qualquer prancheta.", price: "R$ 47", free: true, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/BONUS_02_mpl4k2.jpg" },
+  { num: "03", title: "Template de Plotagem .ctb", desc: "Configure uma vez e plote com qualidade e consistência para sempre.", price: "R$ 57", free: true, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/BONUS_03_tdeyli.jpg" },
+  { num: "04", title: "Anotações e Legendas Pro", desc: "Carimbos, legendas e símbolos com padrão de escritório profissional.", price: "R$ 67", free: true, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/BONUS_04_oizxph.jpg" },
 ];
 
 const BonusSection = () => {
