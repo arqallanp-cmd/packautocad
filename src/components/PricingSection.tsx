@@ -82,6 +82,8 @@ const PricingSection = () => {
               <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem .ctb</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Anotações e Legendas Pro</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação Profissional (20h)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network Exclusivo (acesso vitalício)</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
             </ul>
 
