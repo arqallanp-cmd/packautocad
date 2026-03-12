@@ -25,10 +25,14 @@ const AuthorSection = () => {
             }}
           />
           <p className="text-primary font-display text-xs font-bold tracking-widest uppercase mb-2">Quem criou esse pack</p>
-          <h3 className="font-display text-xl font-bold">Lara Render</h3>
-          <p className="text-muted-foreground text-sm mb-4">Arquiteta · Especialista em Produtividade com AutoCAD e IA</p>
+          <h3 className="font-display text-xl font-bold">Lara Rembrandt</h3>
+          <p className="text-muted-foreground text-sm mb-4">Arquiteta e Urbanista · Especialista em AutoCAD e IA aplicada a projetos</p>
           <p className="text-muted-foreground leading-relaxed max-w-lg">
-            Cansei de perder tempo com materiais mal organizados. Montei esse pack com tudo que uso no dia a dia — e agora coloco na sua mão por um preço que cabe no bolso de qualquer estudante.
+            "Durante anos na faculdade e no mercado, perdi horas incontáveis desenhando os mesmos blocos do zero, procurando arquivos em sites duvidosos e recebendo DWGs que travavam tudo.
+            <br /><br />
+            Cansei. Organizei tudo que uso nos meus projetos reais — mobiliário, elétrica, hidráulica, humanização, acessibilidade — em um único pack limpo, leve e pronto para usar.
+            <br /><br />
+            Hoje entrego isso por menos do que você gasta num almoço. Porque eu sei exatamente quanto tempo vale uma tarde de projeto perdida."
           </p>
         </motion.div>
       </div>
