@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Infinity, ShieldCheck, Award } from "lucide-react";
 import AutodeskBadge from "./AutodeskBadge";
 
 const PricingSection = () => {
@@ -97,7 +98,7 @@ const PricingSection = () => {
             <div className="text-center mb-1">
               <span className="font-display text-6xl sm:text-7xl font-bold text-gradient-gold">R$24,90</span>
             </div>
-            <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato</p>
+            <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único</p>
 
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
@@ -109,9 +110,13 @@ const PricingSection = () => {
               → QUERO O PACK PRO
             </motion.a>
 
-            <p className="text-center mt-3 text-xs text-muted-foreground">
-              ✓ Acesso imediato &nbsp;·&nbsp; ✓ 14 dias garantia &nbsp;·&nbsp; ✓ Pag. único
-            </p>
+            <div className="flex items-center justify-center gap-2 mt-3 text-xs text-muted-foreground flex-nowrap">
+              <Infinity size={14} className="shrink-0" /><span>Acesso vitalício</span>
+              <span>&nbsp;·&nbsp;</span>
+              <ShieldCheck size={14} className="shrink-0" /><span>14 dias de garantia</span>
+              <span>&nbsp;·&nbsp;</span>
+              <Award size={14} className="shrink-0" /><span className="whitespace-nowrap">Certificado Incluso</span>
+            </div>
 
             <div className="flex items-center justify-center gap-3 mt-3 text-xs text-muted-foreground font-medium">
               <span>VISA</span>
