@@ -92,42 +92,6 @@ const BonusSection = () => {
           })}
         </div>
 
-        {/* Value Breakdown */}
-        <motion.div
-          className="text-center mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-muted-foreground text-sm mb-2">Se você fosse comprar cada recurso separadamente:</p>
-          <p className="font-display text-5xl sm:text-6xl font-bold text-foreground/20 line-through">R$716</p>
-
-          <div className="w-16 h-px bg-border mx-auto my-6" />
-
-          <p className="text-muted-foreground text-sm max-w-md mx-auto">
-            Hoje você recebe tudo incluso no <span className="text-foreground font-semibold">Pack AutoCAD Pro.</span>
-          </p>
-        </motion.div>
-
-        {/* Final Price */}
-        <motion.div
-          className="text-center border-2 border-primary/30 bg-gradient-card rounded-2xl p-8 sm:p-10 max-w-lg mx-auto"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-muted-foreground text-sm mb-1">Hoje você garante acesso completo por apenas</p>
-          <p className="font-display text-5xl sm:text-6xl font-bold text-gradient-gold my-3">R$24,90</p>
-          <span className="inline-block bg-danger/15 text-danger text-xs font-bold px-3 py-1 rounded-full mb-6">95% de desconto</span>
-
-          {/* Guarantee */}
-          <div className="border-t border-border pt-5 mt-2">
-            <p className="text-foreground font-display font-semibold text-sm mb-2">🔒 Garantia incondicional de 14 dias</p>
-            <p className="text-muted-foreground text-xs leading-relaxed max-w-sm mx-auto">
-              Teste todos os arquivos. Se não achar que valeu a pena, devolvemos 100% do seu dinheiro. Sem perguntas.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
