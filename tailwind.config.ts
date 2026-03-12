@@ -79,9 +79,9 @@ export default {
           "50%": { boxShadow: "0 0 0 12px hsl(45 100% 55% / 0)" },
         },
         "pulse-btn": {
-          "0%": { boxShadow: "0 0 0 0 rgba(200,169,110,0.5)" },
-          "70%": { boxShadow: "0 0 0 14px rgba(200,169,110,0)" },
-          "100%": { boxShadow: "0 0 0 0 rgba(200,169,110,0)" },
+          "0%": { boxShadow: "0 0 0 0 rgba(34,197,94,0.45)" },
+          "70%": { boxShadow: "0 0 0 14px rgba(34,197,94,0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(34,197,94,0)" },
         },
       },
       animation: {
