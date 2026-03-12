@@ -45,6 +45,7 @@ const PricingSection = () => {
             >
               Comprar básico
             </a>
+            
             <p className="text-center mt-3 text-xs text-muted-foreground">
               🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você! 👇
             </p>
