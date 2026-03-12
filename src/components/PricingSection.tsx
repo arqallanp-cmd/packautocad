@@ -56,7 +56,7 @@ const PricingSection = () => {
 
           {/* Pro */}
           <motion.div
-            className="relative bg-card border-2 border-primary rounded-xl p-10 flex flex-col w-full shadow-gold scale-[1.02]"
+            className="relative bg-card border-2 border-primary rounded-xl p-4 sm:p-10 flex flex-col w-full shadow-gold scale-[1.02]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
