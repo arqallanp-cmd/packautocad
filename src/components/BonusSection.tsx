@@ -29,6 +29,7 @@ const BonusSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display text-xs font-bold tracking-[0.2em] uppercase mb-3">🎁 BÔNUS INCLUSOS HOJE</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-tight mb-3">
@@ -50,25 +51,26 @@ const BonusSection = () => {
         </motion.div>
 
         {/* Bonus Wall */}
-        <div className="grid sm:grid-cols-2 gap-4 mb-12 items-stretch">
-          {bonuses.map((b, i) => {
+        <motion.div
+          className="grid sm:grid-cols-2 gap-4 mb-12 items-stretch"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          {bonuses.map((b) => {
             const Icon = b.icon;
             return (
-              <motion.div
+              <div
                 key={b.num}
-                className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(45_100%_55%/0.15)] flex flex-col h-full"
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                whileHover={{ y: -3 }}
+                className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-colors duration-300 hover:border-primary/50 flex flex-col h-full"
               >
                 {/* Mockup image */}
                 <div className="w-full aspect-[4/5] overflow-hidden rounded-lg">
                   <img src={b.img} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
                 </div>
 
-                <div className="p-5 flex gap-4 items-start">
+                <div className="p-5 flex gap-4 items-start flex-1">
                   {/* Icon */}
                   <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-primary" />
@@ -94,10 +96,10 @@ const BonusSection = () => {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
-        </div>
+        </motion.div>
 
       </div>
     </section>
