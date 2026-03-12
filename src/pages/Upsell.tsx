@@ -114,12 +114,12 @@ const Upsell = () => {
           </p>
         </motion.div>
 
-        {/* Decline button */}
+        {/* Decline button - styled like reference */}
         <a
           href="#"
-          className="text-center block font-body text-xs text-muted-foreground border border-border rounded-full py-3 hover:border-muted-foreground/40 transition-colors"
+          className="text-center block font-body text-sm text-muted-foreground/70 border border-border/60 rounded-lg py-3.5 bg-card/50 hover:border-muted-foreground/30 transition-colors"
         >
-          Continuar com o Básico — R$7,90
+          Continuar com o Básico — R$9,90
         </a>
       </div>
     </div>
