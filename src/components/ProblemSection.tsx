@@ -17,8 +17,8 @@ const ProblemSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-danger font-display text-sm font-semibold tracking-widest uppercase mb-3">Isso te parece familiar?</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-10 leading-tight">
+          <p className="text-danger font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Isso te parece familiar?</p>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 leading-tight">
             Você está <span className="text-danger">perdendo tempo</span> (e dinheiro) com isso:
           </h2>
 
