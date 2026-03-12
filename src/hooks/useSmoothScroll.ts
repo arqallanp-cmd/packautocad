@@ -4,9 +4,8 @@ function easeInOutCubic(t: number): number {
   return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
 
-function smoothScrollTo(targetEl: Element, duration = 1000) {
-  const offset = 20; // small breathing room above the section
-  const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+function smoothScrollTo(targetEl: Element, duration = 1200) {
+  const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime: number | null = null;
