@@ -12,7 +12,7 @@ const AuthorSection = () => {
         >
           <img
             src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_300/FOUNDER_wzplel.jpg"
-            alt="Lara Render"
+            alt="Lara Rembrandt, criadora do Pack AutoCAD Pro"
             loading="lazy"
             className="mb-4"
             style={{
@@ -30,7 +30,7 @@ const AuthorSection = () => {
           <p className="text-muted-foreground leading-relaxed max-w-lg">
             "Durante anos na faculdade e no mercado, perdi horas incontáveis desenhando os mesmos blocos do zero, procurando arquivos em sites duvidosos e recebendo DWGs que travavam tudo.
             <br /><br />
-            Cansei. Organizei tudo que uso nos meus projetos reais — mobiliário, elétrica, hidráulica, humanização, acessibilidade — em um único pack limpo, leve e pronto para usar.
+            Cansei. Organizei tudo que uso nos meus projetos reais (mobiliário, elétrica, hidráulica, humanização, acessibilidade) em um único pack limpo, leve e pronto para usar.
             <br /><br />
             Hoje entrego isso por menos do que você gasta num almoço. Porque eu sei exatamente quanto tempo vale uma tarde de projeto perdida."
           </p>

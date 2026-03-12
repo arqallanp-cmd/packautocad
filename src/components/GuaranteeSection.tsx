@@ -13,7 +13,7 @@ const GuaranteeSection = () => {
           <span className="text-5xl mb-4 block">🛡️</span>
           <h3 className="font-display text-2xl font-bold mb-2">Risco zero. Garantia de 14 dias.</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Teste cada bloco, cada hachura, cada template. Se não gostar, manda uma mensagem e devolvemos <strong className="text-foreground">100% do seu dinheiro</strong> — sem perguntas.
+            Teste cada bloco, cada hachura, cada template. Se não gostar, manda uma mensagem e devolvemos <strong className="text-foreground">100% do seu dinheiro</strong>, sem perguntas.
           </p>
           <p className="text-primary font-display font-semibold text-sm">
             Quem garante sou eu, Lara. Pessoalmente.

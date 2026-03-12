@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const problems = [
-  { text: "Horas jogadas fora desenhando mobiliário, pessoas e vegetação do zero — em todo projeto", emphasis: "Horas jogadas fora" },
-  { text: "Blocos gratuitos da internet que são pesados, mal feitos e travam o AutoCAD", emphasis: "travam o AutoCAD" },
-  { text: "Pranchetas com cara de amador porque faltam hachuras e legendas profissionais", emphasis: "cara de amador" },
-  { text: "Plotar manualmente toda vez, sem padrão, sem consistência, sem profissionalismo", emphasis: "sem profissionalismo" },
+  { text: "Horas jogadas fora desenhando mobiliário, pessoas e vegetação do zero em todo projeto" },
+  { text: "Blocos gratuitos da internet que são pesados, mal feitos e travam o AutoCAD" },
+  { text: "Pranchetas com cara de amador porque faltam hachuras e legendas profissionais" },
+  { text: "Plotar manualmente toda vez, sem padrão, sem consistência, sem profissionalismo" },
 ];
 
 const ProblemSection = () => {

@@ -16,7 +16,7 @@ const CtaFooter = () => {
               <span className="text-gradient-gold">Não deixa pra depois.</span>
             </h2>
             <p className="text-muted-foreground mb-8">
-              +18.000 blocos, hachuras, templates e prompts de IA. Tudo por <strong className="text-primary">R$ 24,90</strong>.
+              +19500 blocos, hachuras, templates e prompts de IA. Tudo por <strong className="text-primary">R$ 24,90</strong>.
             </p>
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
@@ -36,7 +36,7 @@ const CtaFooter = () => {
         <div className="container max-w-3xl mx-auto px-4 text-center">
           <p className="text-muted-foreground text-sm mb-2">© 2026 Lara Rembrandt. Todos os direitos reservados.</p>
           <p className="text-muted-foreground text-xs mb-4">
-            <a href="#" className="hover:text-foreground transition-colors">Política de Privacidade</a> · <a href="#" className="hover:text-foreground transition-colors">Termos de Uso</a>
+            <a href="/politica-de-privacidade" className="hover:text-foreground transition-colors">Política de Privacidade</a> · <a href="/termos-de-uso" className="hover:text-foreground transition-colors">Termos de Uso</a>
           </p>
           <p className="text-muted-foreground/60 text-xs max-w-lg mx-auto leading-relaxed">
             Produto digital. A garantia é válida para casos em que o material não tenha sido acessado/baixado.
