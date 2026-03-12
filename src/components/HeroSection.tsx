@@ -43,7 +43,7 @@ const HeroSection = () => {
           </p>
 
           {/* 3. Mockup image with floating icons */}
-          <div className="relative mx-auto mb-3 sm:mb-10 w-full max-w-[900px]">
+          <div className="relative mx-auto mb-3 sm:mb-4 w-full max-w-[900px] lg:max-w-[700px]">
             {/* Floating icons — simple fade in, gentle CSS float */}
             {floatingIcons.map(({ Icon, mob, desk, delay }, i) => (
               <motion.div
