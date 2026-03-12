@@ -116,16 +116,6 @@ const PricingSection = () => {
               <span>·</span>
               <span className="inline-flex items-center gap-1"><Award className="w-3 h-3" /> Certificado Incluso</span>
             </div>
-
-            <div className="flex items-center justify-center gap-3 mt-4 text-muted-foreground text-[10px] font-display font-semibold tracking-wider uppercase">
-              <span>VISA</span>
-              <span>·</span>
-              <span>Mastercard</span>
-              <span>·</span>
-              <span>PIX</span>
-              <span>·</span>
-              <span>Boleto</span>
-            </div>
           </motion.div>
         </div>
 
