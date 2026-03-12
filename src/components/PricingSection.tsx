@@ -67,7 +67,7 @@ const PricingSection = () => {
             <p className="font-display font-semibold text-primary text-sm mb-1">Completo</p>
             <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD Pro</h3>
             <div className="mb-1">
-              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 168,00</span>
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 432,00</span>
             </div>
             <div className="flex items-baseline gap-1 mb-1">
               <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
@@ -82,6 +82,8 @@ const PricingSection = () => {
               <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem .ctb</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Anotações e Legendas Pro</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação Profissional (20h)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network Exclusivo (acesso vitalício)</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
             </ul>
 
@@ -105,7 +107,7 @@ const PricingSection = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground text-sm">
-            Valor real dos bônus: <span className="line-through">R$ 168,00</span>
+            Valor real dos bônus: <span className="line-through">R$ 432,00</span>
           </p>
           <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
           <p className="text-success text-xs font-bold mt-1">Economia de 85%</p>
