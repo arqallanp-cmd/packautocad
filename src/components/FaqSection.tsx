@@ -20,8 +20,8 @@ const FaqSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">Ainda tem dúvida?</p>
-          <h2 className="font-display text-3xl font-bold">Perguntas frequentes</h2>
+          <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Ainda tem dúvida?</p>
+          <h2 className="font-display text-3xl lg:text-4xl font-bold">Perguntas frequentes</h2>
         </motion.div>
 
         <Accordion type="single" collapsible className="space-y-2">
