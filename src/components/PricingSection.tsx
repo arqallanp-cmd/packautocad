@@ -88,7 +88,7 @@ const PricingSection = () => {
               <li className="flex gap-2"><span>✅</span> Guia AutoCAD 2026</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
               <li className="flex gap-2"><span>✅</span> Grupo Network Exclusivo (vitalício)</li>
-              <li className="flex gap-2"><span>✅</span> Certificado de Capacitação (4h)</li>
+              <li className="flex gap-2"><span>✅</span> Certificado de Capacitação (20h)</li>
               <li className="flex gap-2"><span>✅</span> 14 dias de garantia</li>
             </ul>
 
