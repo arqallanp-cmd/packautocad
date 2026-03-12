@@ -22,6 +22,7 @@ const Index = () => {
       <SolutionSection />
       <SocialProofWall />
       <BonusSection />
+      <PricingSection />
       <OfferSection />
       <FaqSection />
       <CtaFooter />
