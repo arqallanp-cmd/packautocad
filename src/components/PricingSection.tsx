@@ -46,7 +46,6 @@ const PricingSection = () => {
             <div className="text-center mb-1">
               <span className="font-display text-5xl font-bold">R$9,90</span>
             </div>
-            <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
             <a
               href="/upgrade"
@@ -56,7 +55,7 @@ const PricingSection = () => {
             </a>
 
             <p className="text-center mt-3 text-xs text-muted-foreground">
-              🔒 Compra 100% segura · Acesso imediato após pagamento
+              🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você!👇
             </p>
           </motion.div>
 
