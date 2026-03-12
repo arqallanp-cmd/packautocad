@@ -94,7 +94,7 @@ const Upsell = () => {
             <div className="flex items-baseline justify-center gap-2">
               <span className="font-body text-sm text-muted-foreground line-through">R$49,90</span>
               <span className="font-display text-primary font-extrabold text-[42px] leading-none">
-                R$24,90
+                R$17,90
               </span>
               <span className="font-body text-xs text-muted-foreground">hoje</span>
             </div>
