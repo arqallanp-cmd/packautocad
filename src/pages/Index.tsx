@@ -11,7 +11,7 @@ import GuaranteeSection from "@/components/GuaranteeSection";
 import AuthorSection from "@/components/AuthorSection";
 import FaqSection from "@/components/FaqSection";
 import CtaFooter from "@/components/CtaFooter";
-import FloatingCta from "@/components/FloatingCta";
+
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 const Index = () => {
@@ -31,7 +31,7 @@ const Index = () => {
       <AuthorSection />
       <FaqSection />
       <CtaFooter />
-      <FloatingCta />
+      
     </main>
   );
 };
