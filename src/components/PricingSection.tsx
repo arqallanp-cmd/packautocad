@@ -97,7 +97,7 @@ const PricingSection = () => {
             <div className="text-center mt-2 mb-1">
               <span className="font-display text-7xl sm:text-6xl font-bold text-gradient-gold">R$24,90</span>
             </div>
-            <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato</p>
+            <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único</p>
 
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
