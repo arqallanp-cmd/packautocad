@@ -3,15 +3,11 @@ import HeroSection from "@/components/HeroSection";
 import ProductPreview from "@/components/ProductPreview";
 import SocialProofWall from "@/components/SocialProofWall";
 import ProblemSection from "@/components/ProblemSection";
-import BlocksSection from "@/components/BlocksSection";
+import SolutionSection from "@/components/SolutionSection";
 import BonusSection from "@/components/BonusSection";
-
-import PricingSection from "@/components/PricingSection";
-import GuaranteeSection from "@/components/GuaranteeSection";
-import AuthorSection from "@/components/AuthorSection";
+import OfferSection from "@/components/OfferSection";
 import FaqSection from "@/components/FaqSection";
 import CtaFooter from "@/components/CtaFooter";
-import FloatingCta from "@/components/FloatingCta";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 const Index = () => {
@@ -21,17 +17,13 @@ const Index = () => {
       <MarqueeTicker />
       <HeroSection />
       <ProductPreview />
-      <SocialProofWall />
       <ProblemSection />
-      <BlocksSection />
+      <SolutionSection />
+      <SocialProofWall />
       <BonusSection />
-      
-      <PricingSection />
-      <GuaranteeSection />
-      <AuthorSection />
+      <OfferSection />
       <FaqSection />
       <CtaFooter />
-      {/* FloatingCta removed */}
     </main>
   );
 };
