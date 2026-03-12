@@ -10,7 +10,7 @@ const problems = [
 const ProblemSection = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container max-w-3xl mx-auto px-4">
+      <div className="container max-w-3xl lg:max-w-5xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
