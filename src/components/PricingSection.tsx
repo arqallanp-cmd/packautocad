@@ -62,7 +62,7 @@ const PricingSection = () => {
             <p className="font-display font-semibold text-primary text-sm mb-1">Completo</p>
             <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD Pro</h3>
             <div className="mb-1">
-              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 327,00</span>
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 168,00</span>
             </div>
             <div className="flex items-baseline gap-1 mb-1">
               <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
