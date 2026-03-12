@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PrimaryCta from "@/components/PrimaryCta";
 
 const breakdown = [
   { item: "Biblioteca principal (+4.500 blocos)", value: "R$297" },
@@ -45,19 +46,7 @@ const OfferSection = () => {
             <p className="text-success text-sm font-bold mb-6">Mais de 95% de desconto</p>
 
             {/* CTA */}
-            <motion.a
-              href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block w-full text-center bg-success text-white font-display font-bold text-base sm:text-lg py-4 rounded-xl shadow-lg animate-pulse-btn uppercase"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              🚀 BAIXAR PACK AGORA
-            </motion.a>
-
-            <p className="text-muted-foreground/60 text-xs mt-3">
-              Pagamento único · Acesso imediato · Sem mensalidade
-            </p>
+            <PrimaryCta href="https://pay.wiapy.com/5xnUmUDYB" />
           </div>
         </motion.div>
 
