@@ -38,13 +38,13 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">R$49,90</span>
             </div>
             <div className="text-center mt-2 mb-1">
-              <span className="font-display text-5xl font-bold">R$9,90</span>
+              <span className="font-display text-6xl sm:text-5xl font-bold">R$9,90</span>
             </div>
             <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
             <a
               href="/upgrade"
-              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors w-full"
+              className="block text-center border border-border text-foreground font-display font-semibold py-4 sm:py-3 text-base sm:text-sm rounded-lg hover:bg-secondary transition-colors w-full"
             >
               Comprar Básico
             </a>
