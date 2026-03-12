@@ -45,6 +45,7 @@ const PricingSection = () => {
             >
               Comprar básico
             </a>
+            
             <p className="text-center mt-3 text-xs text-muted-foreground">
               🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você! 👇
             </p>
@@ -83,12 +84,15 @@ const PricingSection = () => {
               <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
             </ul>
 
-            <a
+            <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold"
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold animate-pulse-gold"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.96 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               → QUERO O PACK PRO
-            </a>
+            </motion.a>
           </motion.div>
         </div>
 

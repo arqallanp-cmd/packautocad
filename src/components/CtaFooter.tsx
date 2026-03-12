@@ -18,12 +18,15 @@ const CtaFooter = () => {
             <p className="text-muted-foreground mb-8">
               +18.000 blocos, hachuras, templates e prompts de IA. Tudo por <strong className="text-primary">R$ 24,90</strong>.
             </p>
-            <a
+            <motion.a
               href="#pricing"
-              className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-lg px-10 py-4 rounded-lg shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
+              className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-lg px-10 py-4 rounded-lg shadow-gold animate-pulse-gold"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               → QUERO O PACK AUTOCAD PRO
-            </a>
+            </motion.a>
             <p className="text-muted-foreground/60 text-xs mt-4">🔒 Pagamento seguro · Acesso imediato · Garantia de 14 dias</p>
           </motion.div>
         </div>
