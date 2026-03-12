@@ -6,7 +6,149 @@ import depo3 from "@/assets/depoimentos-3.png";
 import depo4 from "@/assets/depoimentos-4.png";
 import depo5 from "@/assets/depoimentos-5.png";
 
+/* ── WhatsApp-style chat cards ── */
+const whatsappChats = [
+  {
+    name: "Arq. Camila S.",
+    time: "14:32",
+    messages: [
+      { from: "them", text: "Oii! Acabei de baixar o pack e já tô usando 😍" },
+      { from: "them", text: "Economizei 4 horas no meu primeiro projeto!" },
+      { from: "me", text: "Showww! Fico feliz demais!! 🙌" },
+      { from: "them", text: "Melhor R$9,90 que já gastei na vida kkkk" },
+    ],
+  },
+  {
+    name: "Felipe R.",
+    time: "09:15",
+    messages: [
+      { from: "them", text: "Bom dia! Os blocos são incríveis" },
+      { from: "them", text: "Nunca mais desenhei bloco do zero. Abro a pasta, arrasto e pronto 🔥" },
+      { from: "me", text: "Que bom! Obrigado pela confiança ❤️" },
+    ],
+  },
+  {
+    name: "Eng. Lucas P.",
+    time: "21:47",
+    messages: [
+      { from: "them", text: "Cara, já recuperei o valor no primeiro projeto. Sem exagero." },
+      { from: "them", text: "O acesso é vitalício mesmo né?" },
+      { from: "me", text: "Sim! Acesso vitalício, pode usar sem preocupação 😊" },
+      { from: "them", text: "Perfeito! 👏" },
+    ],
+  },
+];
+
+/* ── Instagram comment cards ── */
+const instaComments = [
+  { user: "arq.camila", text: "Material top demais! Vale muito a pena 🔥", time: "1 min" },
+  { user: "tamia.bringel", text: "Material bom, facilita bastante o trabalho e a um preço acessível!", time: "4 d" },
+  { user: "erika.teixeira", text: "amei os blocos!! vai me ajudar bastante", time: "5 d" },
+  { user: "junior_arqui", text: "Blocos são muito tooop! Ansioso para ter acesso aos blocos dinâmicos!!!", time: "5 d" },
+  { user: "estevam_eng", text: "Material muito bom que vai facilitar muito o serviço", time: "1 sem" },
+  { user: "mateus.marques", text: "Blocos excelentes, ajuda demais na rotina", time: "12 min" },
+];
+
+/* ── Real screenshot images ── */
 const screenshots = [depo1, depo2, depo3, depo4, depo5];
+
+/* ── Sub-components ── */
+
+const WhatsAppCard = ({ chat, index }: { chat: typeof whatsappChats[0]; index: number }) => (
+  <motion.div
+    className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#111b21] shadow-card"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.06 }}
+  >
+    {/* Header */}
+    <div className="flex items-center gap-3 px-4 py-3 bg-[#1f2c34] border-b border-white/5">
+      <div className="w-9 h-9 rounded-full bg-[#2a3942] flex items-center justify-center text-sm text-white/70">
+        {chat.name.charAt(0)}
+      </div>
+      <div>
+        <p className="text-white text-sm font-medium">{chat.name}</p>
+        <p className="text-white/40 text-[10px]">online</p>
+      </div>
+    </div>
+    {/* Messages */}
+    <div className="px-3 py-3 space-y-1.5">
+      {chat.messages.map((msg, j) => (
+        <div key={j} className={`flex ${msg.from === "me" ? "justify-end" : "justify-start"}`}>
+          <div
+            className={`max-w-[85%] px-3 py-1.5 rounded-lg text-[13px] leading-relaxed ${
+              msg.from === "me"
+                ? "bg-[#005c4b] text-white rounded-tr-none"
+                : "bg-[#202c33] text-white/90 rounded-tl-none"
+            }`}
+          >
+            {msg.text}
+            <span className="text-[9px] text-white/30 ml-2 float-right mt-1">
+              {chat.time} {msg.from === "me" && "✓✓"}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </motion.div>
+);
+
+const InstaCommentsCard = ({ index }: { index: number }) => (
+  <motion.div
+    className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#000] shadow-card"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.06 }}
+  >
+    {/* Header */}
+    <div className="px-4 py-3 border-b border-white/10">
+      <p className="text-white text-sm font-semibold">Comentários</p>
+      <div className="flex gap-2 mt-2">
+        <span className="text-lg">❤️❤️🥰</span>
+      </div>
+    </div>
+    {/* Comments */}
+    <div className="px-4 py-2 space-y-3">
+      {instaComments.map((c, j) => (
+        <div key={j} className="flex gap-2.5">
+          <div className="w-7 h-7 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex-shrink-0 mt-0.5" />
+          <div className="min-w-0">
+            <p className="text-white text-[13px] leading-snug">
+              <span className="font-semibold">{c.user}</span>{" "}
+              <span className="text-white/80">{c.text}</span>
+            </p>
+            <div className="flex items-center gap-3 mt-0.5">
+              <span className="text-white/30 text-[10px]">{c.time}</span>
+              <span className="text-white/30 text-[10px]">Responder</span>
+              <span className="text-red-400 text-[10px]">❤️</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div className="flex gap-2 px-4 py-2 border-t border-white/10">
+      {["❤️", "👍", "👏", "🔥", "😍", "🤩"].map((e) => (
+        <span key={e} className="text-lg cursor-pointer">{e}</span>
+      ))}
+    </div>
+  </motion.div>
+);
+
+const ScreenshotCard = ({ src, index }: { src: string; index: number }) => (
+  <motion.div
+    className="break-inside-avoid rounded-2xl overflow-hidden border border-border shadow-card"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.06 }}
+  >
+    <img src={src} alt={`Depoimento de cliente`} loading="lazy" className="w-full h-auto" />
+  </motion.div>
+);
+
+/* ── Main Component ── */
 
 const SocialProofWall = () => {
   return (
@@ -26,25 +168,18 @@ const SocialProofWall = () => {
           </h2>
         </motion.div>
 
-        {/* Screenshot grid — masonry-like with columns */}
+        {/* Masonry grid mixing real screenshots + styled cards */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-          {screenshots.map((src, i) => (
-            <motion.div
-              key={i}
-              className="break-inside-avoid rounded-2xl overflow-hidden border border-border shadow-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-            >
-              <img
-                src={src}
-                alt={`Depoimento de cliente ${i + 1}`}
-                loading="lazy"
-                className="w-full h-auto"
-              />
-            </motion.div>
-          ))}
+          {/* Row pattern: screenshot, whatsapp, screenshot, insta, screenshot, whatsapp... */}
+          <ScreenshotCard src={screenshots[0]} index={0} />
+          <WhatsAppCard chat={whatsappChats[0]} index={1} />
+          <ScreenshotCard src={screenshots[1]} index={2} />
+          <InstaCommentsCard index={3} />
+          <ScreenshotCard src={screenshots[2]} index={4} />
+          <WhatsAppCard chat={whatsappChats[1]} index={5} />
+          <ScreenshotCard src={screenshots[3]} index={6} />
+          <WhatsAppCard chat={whatsappChats[2]} index={7} />
+          <ScreenshotCard src={screenshots[4]} index={8} />
         </div>
 
         <motion.div
