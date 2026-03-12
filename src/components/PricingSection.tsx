@@ -79,17 +79,17 @@ const PricingSection = () => {
             </div>
 
             <ul className="space-y-3 mb-6 text-base">
-              <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos DWG extras</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +300 Hachuras Profissionais</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Sistema de Plotagem Automático</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Kit de Pranchas ABNT</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +200 Blocos Dinâmicos</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Guia AutoCAD 2026</li>
+              <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span>✅</span> +15.000 Blocos DWG extras</li>
+              <li className="flex gap-2"><span>✅</span> +300 Hachuras Profissionais</li>
+              <li className="flex gap-2"><span>✅</span> Sistema de Plotagem Automático</li>
+              <li className="flex gap-2"><span>✅</span> Kit de Pranchas ABNT</li>
+              <li className="flex gap-2"><span>✅</span> +200 Blocos Dinâmicos</li>
+              <li className="flex gap-2"><span>✅</span> Guia AutoCAD 2026</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network Exclusivo (vitalício)</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação (4h)</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
+              <li className="flex gap-2"><span>✅</span> Grupo Network Exclusivo (vitalício)</li>
+              <li className="flex gap-2"><span>✅</span> Certificado de Capacitação (4h)</li>
+              <li className="flex gap-2"><span>✅</span> 14 dias de garantia</li>
             </ul>
 
             <div className="border-t border-border my-4" />
