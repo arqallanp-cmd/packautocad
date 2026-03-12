@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Armchair, TreePine, Car, PersonStanding, Lightbulb, ShieldCheck, Download, Award } from "lucide-react";
 
 const floatingIcons = [
-  { Icon: Armchair, mob: "top-[5%] left-[-4px]", desk: "sm:top-[10%] sm:left-[5%]", delay: 0.4 },
-  { Icon: TreePine, mob: "top-[0%] right-[-4px]", desk: "sm:top-[5%] sm:right-[5%]", delay: 0.6 },
-  { Icon: Car, mob: "bottom-[25%] left-[-6px]", desk: "sm:bottom-[20%] sm:left-[2%]", delay: 0.8 },
-  { Icon: PersonStanding, mob: "bottom-[20%] right-[-6px]", desk: "sm:bottom-[15%] sm:right-[2%]", delay: 1.0 },
-  { Icon: Lightbulb, mob: "top-[45%] left-[-8px]", desk: "sm:top-[45%] sm:left-[0%]", delay: 1.2 },
+  { Icon: Armchair, mob: "top-[10%] left-[8%]", desk: "sm:top-[10%] sm:left-[12%]", delay: 0.4 },
+  { Icon: TreePine, mob: "top-[5%] right-[8%]", desk: "sm:top-[5%] sm:right-[12%]", delay: 0.6 },
+  { Icon: Car, mob: "bottom-[25%] left-[6%]", desk: "sm:bottom-[20%] sm:left-[10%]", delay: 0.8 },
+  { Icon: PersonStanding, mob: "bottom-[20%] right-[6%]", desk: "sm:bottom-[15%] sm:right-[10%]", delay: 1.0 },
+  { Icon: Lightbulb, mob: "top-[45%] left-[3%]", desk: "sm:top-[45%] sm:left-[8%]", delay: 1.2 },
 ];
 
 const HeroSection = () => {
