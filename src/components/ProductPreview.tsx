@@ -87,6 +87,8 @@ const ProductPreview = () => {
             src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/freepik__atualize-para-4500-blocos__66968_gg9nbh.jpg"
             alt="+4.500 blocos organizados por pastas"
             loading="lazy"
+            width="900"
+            height="500"
             className="w-full rounded-lg mb-5"
           />
 
@@ -117,6 +119,8 @@ const ProductPreview = () => {
                   src={card.src}
                   alt={`Blocos AutoCAD - ${card.label}`}
                   loading="lazy"
+                  width="800"
+                  height="200"
                   className="w-full h-[200px] object-cover group-hover:scale-[1.03] transition-transform duration-300"
                 />
                 <span className="absolute bottom-3 left-3 bg-primary text-primary-foreground font-display font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg group-hover:scale-[1.03] transition-transform">

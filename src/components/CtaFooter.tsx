@@ -31,7 +31,7 @@ const CtaFooter = () => {
 
       <footer className="py-8 bg-card border-t border-border">
         <div className="container max-w-3xl mx-auto px-4 text-center">
-          <p className="text-muted-foreground text-sm mb-2">© 2026 Lara Render. Todos os direitos reservados.</p>
+          <p className="text-muted-foreground text-sm mb-2">© 2026 Lara Rembrandt. Todos os direitos reservados.</p>
           <p className="text-muted-foreground text-xs mb-4">
             <a href="#" className="hover:text-foreground transition-colors">Política de Privacidade</a> · <a href="#" className="hover:text-foreground transition-colors">Termos de Uso</a>
           </p>
