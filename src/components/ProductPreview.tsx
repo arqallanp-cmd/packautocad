@@ -1,16 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-import blocksEletrica from "@/assets/blocks-eletrica.png";
-import blocksArCondicionado from "@/assets/blocks-ar-condicionado.png";
-import blocksMoveis from "@/assets/blocks-moveis.png";
-import blocksCubas from "@/assets/blocks-cubas.png";
-import blocksHumanizacao from "@/assets/blocks-humanizacao.png";
-import blocksBanheiros from "@/assets/blocks-banheiros.png";
-import blocksSaloes from "@/assets/blocks-saloes.png";
-import blocksAutomoveis from "@/assets/blocks-automoveis.png";
-import blocksPastas from "@/assets/blocks-pastas.png";
-
 const folderNames = [
   "2D", "Academia", "Acessibilidade", "Animais",
   "Anotações", "Aquífero", "Ar Condicionado", "Área de Serviço",
@@ -25,14 +15,17 @@ const folderNames = [
 ];
 
 const categoryCards = [
-  { src: blocksEletrica, label: "PARTE ELÉTRICA", desc: "Diagramas, instalações e símbolos elétricos completos" },
-  { src: blocksArCondicionado, label: "AR CONDICIONADO", desc: "Equipamentos, splits, centrais e unidades externas" },
-  { src: blocksMoveis, label: "MÓVEIS + MOBÍLIAS", desc: "Sofás, camas, mesas, cadeiras e muito mais" },
-  { src: blocksCubas, label: "CUBAS / PIAS", desc: "Todos os modelos em planta e elevação" },
-  { src: blocksHumanizacao, label: "HUMANIZAÇÃO", desc: "Pessoas, vegetação, postes e elementos urbanos" },
-  { src: blocksBanheiros, label: "BANHEIROS", desc: "Louças, metais e acessórios sanitários" },
-  { src: blocksSaloes, label: "SALÕES DE FESTA", desc: "Plantas de eventos, mesas e layouts completos" },
-  { src: blocksAutomoveis, label: "AUTOMÓVEIS", desc: "Carros, caminhões, motos e transporte em planta" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/ELETRICA_bmfexo.png", label: "PARTE ELÉTRICA", desc: "Diagramas, instalações e símbolos elétricos completos" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/AR_vulwz0.png", label: "AR CONDICIONADO", desc: "Equipamentos, splits, centrais e unidades externas" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/MOVEIS_jnszy3.png", label: "MÓVEIS + MOBÍLIAS", desc: "Sofás, camas, mesas, cadeiras e muito mais" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/Captura_de_tela_2026-03-11_225040_mnaata.png", label: "CUBAS / PIAS", desc: "Todos os modelos em planta e elevação" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/HUMANIZACAO_ww1aas.png", label: "HUMANIZAÇÃO", desc: "Pessoas, vegetação, postes e elementos urbanos" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/BANHEIROS_ngpmuc.png", label: "BANHEIROS", desc: "Louças, metais e acessórios sanitários" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/MEDICA_fdtbru.png", label: "ÁREA MÉDICA", desc: "Consultórios, leitos, equipamentos hospitalares e plantas de clínicas" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/AUTOMOVEIS_vyzmxw.png", label: "AUTOMÓVEIS", desc: "Carros, caminhões, motos e transporte em planta" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/SALOES_icbpkh.png", label: "SALÕES DE FESTA", desc: "Plantas de eventos, mesas e layouts completos" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/CADEIRAS_qvs1ej.png", label: "CADEIRAS", desc: "Modelos variados para escritório, sala e área externa" },
+  { src: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_800/ORIENTACOES_ghvyi0.png", label: "ORIENTAÇÕES", desc: "Guias e referências para uso correto dos blocos" },
 ];
 
 const ProductPreview = () => {
