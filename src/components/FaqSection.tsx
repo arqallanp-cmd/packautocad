@@ -2,12 +2,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { motion } from "framer-motion";
 
 const faqs = [
-  { q: "Em quanto tempo recebo os arquivos?", a: "Imediato. Pagou, recebeu o link por e-mail e já pode baixar tudo na hora." },
-  { q: "Funciona em qualquer versão do AutoCAD?", a: "Sim! Testado e compatível do AutoCAD 2018 ao 2025, incluindo versões LT." },
-  { q: "Preciso instalar algo?", a: "Não. São arquivos .DWG padrão. Abre, arrasta e usa." },
-  { q: "Posso usar em projetos comerciais?", a: "Pode! Sem restrição nenhuma. Use em quantos projetos quiser." },
-  { q: "Os blocos travam o AutoCAD?", a: "Não. Todos foram otimizados pra serem leves. Zero travamento." },
-  { q: "Como funcionam os prompts de IA?", a: "Você recebe 5 prompts prontos com instruções passo a passo pra gerar renders realistas e humanizar plantas usando IA. Sem software caro." },
+  { q: "Quando recebo o acesso após a compra?", a: "Na hora. Assim que o pagamento é confirmado, você recebe o link de download direto no e-mail cadastrado. Sem espera, sem fila." },
+  { q: "Funciona em qual versão do AutoCAD?", a: "Qualquer uma. Os arquivos foram testados do AutoCAD 2014 até as versões mais recentes de 2025. Também abre normalmente em BricsCAD e outros softwares compatíveis com .DWG." },
+  { q: "Preciso configurar alguma coisa antes de usar?", a: "Nenhuma. Descompacta a pasta, abre o AutoCAD e arrasta o bloco direto para o seu desenho. Simples assim." },
+  { q: "Posso usar em trabalhos da faculdade e projetos pagos?", a: "Sim, sem restrição. Pessoal, acadêmico ou comercial — o pack é seu para usar como quiser, quantas vezes precisar." },
+  { q: "E se eu não gostar ou tiver algum problema?", a: "Você tem 14 dias para testar tudo. Se não ficar satisfeito por qualquer motivo, manda uma mensagem e devolvemos 100% do valor. Sem questionamento, sem burocracia." },
+  { q: "Os arquivos são pesados? Vão travar meu projeto?", a: "Não. Cada bloco foi otimizado para ser leve e eficiente. Você pode inserir dezenas deles no mesmo arquivo sem comprometer a performance do seu computador." },
 ];
 
 const FaqSection = () => {
