@@ -102,7 +102,7 @@ const Upsell = () => {
 
           {/* CTA button */}
           <a
-            href="#"
+            href="https://pay.wiapy.com/Anzl2Aiwf7"
             className="flex items-center justify-center w-full bg-gradient-gold text-primary-foreground font-display font-bold text-sm uppercase rounded-full py-3.5 px-6 shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold"
           >
             SIM, QUERO O PACK PRO 🚀
