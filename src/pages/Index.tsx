@@ -25,7 +25,7 @@ const Index = () => {
       <ProblemSection />
       <BlocksSection />
       <BonusSection />
-      <SecondCta />
+      
       <PricingSection />
       <GuaranteeSection />
       <AuthorSection />
