@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Armchair, TreePine, Car, PersonStanding, Lightbulb } from "lucide-react";
+import { Armchair, TreePine, Car, PersonStanding, Lightbulb, ShieldCheck, Download, Award } from "lucide-react";
 
 const floatingIcons = [
   { Icon: Armchair, mob: "top-[5%] left-[-4px]", desk: "sm:top-[10%] sm:left-[5%]", delay: 0.4 },
@@ -98,7 +98,11 @@ const HeroSection = () => {
           </motion.a>
 
           {/* 6. Security text */}
-          <p className="text-muted-foreground/60 text-xs mt-3 sm:mt-4">🔒 Compra 100% segura · Acesso imediato após pagamento</p>
+          <div className="flex items-center justify-center gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
+            <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
+            <span className="flex items-center gap-1"><Download className="w-3.5 h-3.5 text-primary" /> Download imediato</span>
+            <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-primary" /> Certificado AutoDESK</span>
+          </div>
         </motion.div>
 
         {/* 7. Stats */}
