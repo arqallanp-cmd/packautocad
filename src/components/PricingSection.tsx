@@ -19,7 +19,7 @@ const PricingSection = () => {
         <div className="flex flex-col lg:flex-row items-stretch gap-6 max-w-lg lg:max-w-none mx-auto">
           {/* Basic */}
           <motion.div
-            className="bg-card border border-border rounded-xl p-8 flex flex-col w-full"
+            className="bg-card border border-border rounded-xl p-8 flex flex-col w-full lg:flex-1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
