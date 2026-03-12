@@ -5,7 +5,7 @@ import AutodeskBadge from "./AutodeskBadge";
 const PricingSection = () => {
   return (
     <section id="pricing" className="py-20 bg-background">
-      <div className="container max-w-4xl mx-auto px-4">
+      <div className="container max-w-5xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
