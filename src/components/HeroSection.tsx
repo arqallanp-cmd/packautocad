@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Armchair, TreePine, Car, PersonStanding, Lightbulb } from "lucide-react";
+import { Armchair, TreePine, Car, PersonStanding, Lightbulb, ShieldCheck, Download, Award } from "lucide-react";
 
 const floatingIcons = [
   { Icon: Armchair, mob: "top-[5%] left-[-4px]", desk: "sm:top-[10%] sm:left-[5%]", delay: 0.4 },
