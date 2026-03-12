@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import AutodeskBadge from "./AutodeskBadge";
 
 const folderNames = [
   "2D", "Academia", "Acessibilidade", "Animais",
