@@ -24,8 +24,8 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="font-display font-semibold text-muted-foreground text-sm mb-1">Básico</p>
-            <h3 className="font-display text-xl font-bold mb-6">Pack AutoCAD</h3>
+            <p className="font-display font-semibold text-muted-foreground text-sm mb-1 text-center">Básico</p>
+            <h3 className="font-display text-2xl sm:text-3xl font-bold mb-6 text-center">Pack AutoCAD</h3>
 
             <ul className="space-y-3 mb-6 text-sm">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
@@ -43,8 +43,8 @@ const PricingSection = () => {
             <div className="text-center mb-1">
               <span className="text-muted-foreground line-through text-sm">R$49,90</span>
             </div>
-            <div className="text-center mb-1">
-              <span className="font-display text-5xl font-bold">R$9,90</span>
+            <div className="text-center mb-2">
+              <span className="font-display text-6xl sm:text-7xl font-bold">R$9,90</span>
             </div>
 
             <a
