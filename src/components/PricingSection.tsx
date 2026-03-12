@@ -14,16 +14,12 @@ const PricingSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold">Acesso imediato ao material</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto items-center">
-          {/* Basic — subdued */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {/* Basic */}
           <motion.div
-            className="rounded-xl p-8 flex flex-col opacity-80"
-            style={{
-              background: "hsl(var(--card))",
-              border: "1px solid rgba(255,255,255,0.08)",
-            }}
+            className="bg-card border border-border rounded-xl p-8 flex flex-col"
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 0.8, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <p className="font-display font-semibold text-muted-foreground text-sm mb-1">Básico</p>
@@ -45,8 +41,7 @@ const PricingSection = () => {
 
             <a
               href="/upgrade"
-              className="block text-center border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors"
-              style={{ borderColor: "rgba(255,255,255,0.08)" }}
+              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors"
             >
               Comprar básico
             </a>
@@ -56,14 +51,9 @@ const PricingSection = () => {
             </p>
           </motion.div>
 
-          {/* Pro — dominant */}
+          {/* Pro */}
           <motion.div
-            className="relative rounded-xl p-8 flex flex-col md:scale-[1.03]"
-            style={{
-              background: "rgba(200,169,110,0.08)",
-              border: "2px solid #c8a96e",
-              boxShadow: "0 0 40px -10px rgba(200,169,110,0.3)",
-            }}
+            className="relative bg-card border-2 border-primary rounded-xl p-8 flex flex-col shadow-gold"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -96,13 +86,7 @@ const PricingSection = () => {
 
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block text-center font-display py-3.5 rounded-lg animate-pulse-gold"
-              style={{
-                background: "#c8a96e",
-                color: "#000",
-                fontWeight: 800,
-                boxShadow: "0 0 24px rgba(200,169,110,0.4)",
-              }}
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold animate-pulse-gold"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}

@@ -20,26 +20,14 @@ const CtaFooter = () => {
             </p>
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="w-full inline-flex items-center justify-center gap-2 font-display uppercase tracking-wide animate-pulse-gold"
-              style={{
-                background: "#c8a96e",
-                color: "#000",
-                fontWeight: 800,
-                fontSize: "16px",
-                padding: "20px 24px",
-                borderRadius: "999px",
-                letterSpacing: "0.5px",
-                boxShadow: "0 0 32px rgba(200,169,110,0.4)",
-              }}
-              whileHover={{ scale: 1.03 }}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-4 rounded-xl shadow-gold animate-pulse-gold"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              🚀 GARANTIR MEU PACK PRO AGORA
+              🚀 GARANTIR MEU ACESSO POR R$24,90
             </motion.a>
-            <p className="text-muted-foreground/60 text-xs mt-4 leading-relaxed">
-              ✓ Acesso imediato &nbsp; ✓ 14 dias de garantia &nbsp; ✓ Pagamento único
-            </p>
+            <p className="text-muted-foreground/60 text-xs mt-4">🔒 Pagamento seguro · Acesso imediato · Garantia de 14 dias</p>
           </motion.div>
         </div>
       </section>
