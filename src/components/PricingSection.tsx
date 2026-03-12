@@ -98,16 +98,30 @@ const PricingSection = () => {
 
         {/* Value stack */}
         <motion.div
-          className="text-center mt-8 bg-card border border-border rounded-lg p-4 max-w-md mx-auto"
+          className="mt-8 bg-card border border-border rounded-lg p-6 max-w-md mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-muted-foreground text-sm">
-            Valor real dos bônus: <span className="line-through">R$ 168,00</span>
-          </p>
-          <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
-          <p className="text-success text-xs font-bold mt-1">Economia de 85%</p>
+          <p className="text-center text-foreground font-display font-bold text-sm mb-4">Valor total de tudo que você recebe:</p>
+          <ul className="space-y-1 text-sm text-muted-foreground mb-4">
+            <li className="flex justify-between"><span>Blocos</span><span className="line-through">R$ 97</span></li>
+            <li className="flex justify-between"><span>Hachuras</span><span className="line-through">R$ 47</span></li>
+            <li className="flex justify-between"><span>Templates</span><span className="line-through">R$ 57</span></li>
+            <li className="flex justify-between"><span>Legendas</span><span className="line-through">R$ 67</span></li>
+            <li className="flex justify-between"><span>Blocos Dinâmicos</span><span className="line-through">R$ 87</span></li>
+            <li className="flex justify-between"><span>Kit Pranchas</span><span className="line-through">R$ 97</span></li>
+            <li className="flex justify-between"><span>Atalhos</span><span className="line-through">R$ 37</span></li>
+            <li className="flex justify-between"><span>Guia AutoCAD 2026</span><span className="line-through">R$ 27</span></li>
+            <li className="flex justify-between"><span>Prompts IA</span><span className="line-through">R$ 47</span></li>
+            <li className="flex justify-between"><span>Certificado</span><span className="line-through">R$ 27</span></li>
+            <li className="flex justify-between"><span>Grupo Network</span><span className="text-primary font-semibold">EXCLUSIVO</span></li>
+          </ul>
+          <div className="border-t border-border pt-4 text-center">
+            <p className="text-muted-foreground text-sm">Valor total: <span className="line-through">R$ 590,00</span></p>
+            <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
+            <p className="text-success text-xs font-bold mt-1">Economia de 95%</p>
+          </div>
         </motion.div>
       </div>
     </section>
