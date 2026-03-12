@@ -41,7 +41,7 @@ const PricingSection = () => {
 
             <a
               href="/upgrade"
-              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors"
+              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors animate-pulse-gold"
             >
               Comprar básico
             </a>
@@ -85,7 +85,7 @@ const PricingSection = () => {
 
             <a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold hover:scale-[1.02] transition-transform"
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold"
             >
               → QUERO O PACK PRO
             </a>
