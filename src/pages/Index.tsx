@@ -31,7 +31,7 @@ const Index = () => {
       <AuthorSection />
       <FaqSection />
       <CtaFooter />
-      <FloatingCta />
+      
     </main>
   );
 };
