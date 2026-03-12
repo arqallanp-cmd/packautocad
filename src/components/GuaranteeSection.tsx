@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AutodeskBadge from "./AutodeskBadge";
 
 const GuaranteeSection = () => {
   return (
@@ -19,6 +20,7 @@ const GuaranteeSection = () => {
             Quem garante sou eu, Lara. Pessoalmente.
           </p>
         </motion.div>
+        <AutodeskBadge variant="default" className="mt-6" />
       </div>
     </section>
   );

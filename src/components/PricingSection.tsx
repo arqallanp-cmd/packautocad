@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AutodeskBadge from "./AutodeskBadge";
 
 const PricingSection = () => {
   return (
@@ -108,6 +109,7 @@ const PricingSection = () => {
           </p>
           <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
           <p className="text-success text-xs font-bold mt-1">Economia de 85%</p>
+          <AutodeskBadge variant="inline" className="mt-2 justify-center" />
         </motion.div>
       </div>
     </section>
