@@ -14,7 +14,7 @@ const HeroSection = () => {
           {/* Headline — mobile: tudo na mesma linha, fonte grande */}
           <h1 className="font-display font-extrabold uppercase tracking-tight leading-none mb-1">
             <span className="text-gradient-gold text-[11vw] sm:text-6xl md:text-7xl lg:text-8xl whitespace-nowrap">
-              +4.500 BLOCOS
+              +4500 BLOCOS
             </span>
           </h1>
           <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
@@ -22,12 +22,13 @@ const HeroSection = () => {
               PRONTOS
             </span>
             <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[6vw] sm:text-3xl md:text-4xl -rotate-1 inline-block">
-              AutoCAD
+              AUTOCAD
             </span>
           </div>
 
           <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-8 leading-relaxed">
-            Pare de desenhar cada bloco do <strong className="text-foreground">ZERO!</strong> Tenha um acervo completo e use a hora que quiser!
+            Chega de perder horas desenhando do zero.<br />
+            Tenha acesso ao maior pack profissional de blocos DWG do mercado.
           </p>
 
           {/* Product mockup placeholder */}
