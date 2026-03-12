@@ -64,7 +64,7 @@ const BonusSection = () => {
                 whileHover={{ y: -3 }}
               >
                 {/* Mockup image */}
-                <div className="w-full h-36 sm:h-40 bg-secondary/50 flex items-center justify-center">
+                <div className="w-full aspect-[4/5] bg-secondary/50 flex items-center justify-center">
                   <Icon className="w-10 h-10 text-primary/30" />
                 </div>
 
