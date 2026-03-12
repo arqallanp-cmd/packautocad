@@ -59,14 +59,14 @@ const PricingSection = () => {
 
           {/* Pro */}
           <motion.div
-            className="relative bg-card border-2 border-primary rounded-xl p-8 flex flex-col shadow-gold"
+            className="relative bg-card border-2 border-primary rounded-xl p-8 flex flex-col shadow-gold scale-[1.05] origin-top"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
-              🔥 Mais vendido
+              ⭐ MAIS ESCOLHIDO
             </div>
 
             <p className="font-display font-semibold text-primary text-sm mb-1">Completo</p>
