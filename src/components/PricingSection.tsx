@@ -27,7 +27,7 @@ const PricingSection = () => {
             <p className="font-display font-semibold text-muted-foreground text-sm mb-1 text-center">Básico</p>
             <h3 className="font-display text-2xl sm:text-3xl font-bold mb-6 text-center">Pack AutoCAD</h3>
 
-            <ul className="space-y-3 mb-6 text-sm">
+            <ul className="space-y-3 mb-6 text-base">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 1 ano de acesso</li>
@@ -78,7 +78,7 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">Valor total: R$762,00</span>
             </div>
 
-            <ul className="space-y-3 mb-6 text-sm">
+            <ul className="space-y-3 mb-6 text-base">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos DWG extras</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +300 Hachuras Profissionais</li>
