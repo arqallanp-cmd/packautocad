@@ -37,7 +37,7 @@ const HeroSection = () => {
           </div>
 
           {/* 2. Subheadline */}
-          <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto mb-2 sm:mb-8 leading-relaxed">
+          <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto mb-2 sm:mb-4 leading-relaxed">
             <span className="hidden sm:inline">Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.</span>
             <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
           </p>
