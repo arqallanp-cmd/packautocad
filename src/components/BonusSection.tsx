@@ -50,13 +50,13 @@ const BonusSection = () => {
         </motion.div>
 
         {/* Bonus Wall */}
-        <div className="grid sm:grid-cols-2 gap-4 mb-12">
+        <div className="grid sm:grid-cols-2 gap-4 mb-12 items-stretch">
           {bonuses.map((b, i) => {
             const Icon = b.icon;
             return (
               <motion.div
                 key={b.num}
-                className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(45_100%_55%/0.15)]"
+                className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(45_100%_55%/0.15)] flex flex-col h-full"
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
