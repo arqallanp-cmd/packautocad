@@ -76,7 +76,7 @@ const PricingSection = () => {
             <p className="font-display text-lg font-semibold text-center mb-2">Vitalício</p>
 
             <div className="text-center mb-4">
-              <span className="text-muted-foreground line-through text-sm">Valor total: R$762,00</span>
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$297,00</span>
             </div>
 
             <ul className="space-y-3 mb-6 text-base">
@@ -96,8 +96,8 @@ const PricingSection = () => {
             <div className="border-t border-border my-4" />
 
             <div className="flex items-center justify-center gap-2 mb-1">
-              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded">-97% OFF</span>
-              <span className="text-muted-foreground line-through text-sm">R$197,00</span>
+              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded">-92% OFF</span>
+              <span className="text-muted-foreground line-through text-sm">R$297,00</span>
             </div>
             <div className="flex items-baseline justify-center mb-4" style={{ textShadow: '0 0 30px hsl(var(--primary) / 0.5), 0 0 60px hsl(var(--primary) / 0.3)' }}>
               <span className="font-display text-4xl sm:text-5xl font-bold text-gradient-gold">R$</span>
@@ -133,10 +133,10 @@ const PricingSection = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground text-sm">
-            Valor real dos bônus: <span className="line-through">R$ 762,00</span>
+            Valor real dos bônus: <span className="line-through">R$ 297,00</span>
           </p>
           <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
-          <p className="text-success text-xs font-bold mt-1">Economia de 97%</p>
+          <p className="text-success text-xs font-bold mt-1">Economia de 92%</p>
           <AutodeskBadge variant="inline" className="mt-2 justify-center" />
         </motion.div>
       </div>
