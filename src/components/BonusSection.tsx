@@ -44,6 +44,8 @@ const BonusSection = () => {
                   src={b.img}
                   alt={b.title}
                   loading="lazy"
+                  width="800"
+                  height="200"
                   className="w-full h-[160px] sm:h-[200px] object-cover rounded-lg my-3"
                 />
                 <p className="text-muted-foreground text-sm leading-relaxed mb-1">{b.desc}</p>
