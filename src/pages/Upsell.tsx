@@ -29,7 +29,7 @@ const Upsell = () => {
             ⚠️ ESPERA! VOCÊ ESTÁ PRESTES A PEGAR A VERSÃO BÁSICA
           </p>
           <p className="font-display text-base font-bold text-foreground">
-            Upgrade pro Pack Pro por apenas <span className="text-primary">R$15 a mais</span>
+            Upgrade pro Pack Pro por apenas <span className="text-primary">R$8 a mais</span>
           </p>
         </motion.div>
 
@@ -94,7 +94,7 @@ const Upsell = () => {
             <div className="flex items-baseline justify-center gap-2">
               <span className="font-body text-sm text-muted-foreground line-through">R$49,90</span>
               <span className="font-display text-primary font-extrabold text-[42px] leading-none">
-                R$24,90
+                R$17,90
               </span>
               <span className="font-body text-xs text-muted-foreground">hoje</span>
             </div>
@@ -114,10 +114,10 @@ const Upsell = () => {
           </p>
         </motion.div>
 
-        {/* Decline button - styled like reference */}
+        {/* Decline button */}
         <a
           href="#"
-          className="text-center block font-body text-sm text-muted-foreground/70 border border-border/60 rounded-lg py-3.5 bg-card/50 hover:border-muted-foreground/30 transition-colors"
+          className="text-center block font-body text-sm text-foreground/80 font-medium border border-border rounded-lg py-3.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all"
         >
           Continuar com o Básico — R$9,90
         </a>
