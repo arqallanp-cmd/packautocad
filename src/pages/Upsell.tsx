@@ -89,12 +89,12 @@ const Upsell = () => {
           {/* Value stack */}
           <div className="text-center mb-3">
             <p className="font-body text-xs text-muted-foreground">
-              Valor total: <span className="line-through">R$268,00</span>
+              Valor total: <span className="line-through">R$327,00</span>
             </p>
             <div className="flex items-baseline justify-center gap-2">
-              <span className="font-body text-sm text-muted-foreground line-through">R$49</span>
+              <span className="font-body text-sm text-muted-foreground line-through">R$49,90</span>
               <span className="font-display text-primary font-extrabold text-[42px] leading-none">
-                R$17,90
+                R$24,90
               </span>
               <span className="font-body text-xs text-muted-foreground">hoje</span>
             </div>
