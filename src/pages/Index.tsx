@@ -5,7 +5,6 @@ import SocialProofWall from "@/components/SocialProofWall";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import BonusSection from "@/components/BonusSection";
-import BlockPreviewSection from "@/components/BlockPreviewSection";
 import PricingSection from "@/components/PricingSection";
 import OfferSection from "@/components/OfferSection";
 import FaqSection from "@/components/FaqSection";
@@ -23,7 +22,6 @@ const Index = () => {
       <SolutionSection />
       <SocialProofWall />
       <BonusSection />
-      <BlockPreviewSection />
       <PricingSection />
       <OfferSection />
       <FaqSection />
