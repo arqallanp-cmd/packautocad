@@ -5,7 +5,7 @@ import SocialProofWall from "@/components/SocialProofWall";
 import ProblemSection from "@/components/ProblemSection";
 import BlocksSection from "@/components/BlocksSection";
 import BonusSection from "@/components/BonusSection";
-import SecondCta from "@/components/SecondCta";
+
 import PricingSection from "@/components/PricingSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import AuthorSection from "@/components/AuthorSection";
