@@ -27,7 +27,7 @@ const categories = [
 const BlocksSection = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-5xl lg:max-w-7xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
