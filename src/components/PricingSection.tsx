@@ -110,12 +110,12 @@ const PricingSection = () => {
               → QUERO O PACK PRO
             </motion.a>
 
-            <div className="flex items-center justify-center gap-2 mt-3 text-xs text-muted-foreground flex-nowrap">
-              <Infinity size={14} className="shrink-0" /><span>Acesso vitalício</span>
-              <span>&nbsp;·&nbsp;</span>
-              <ShieldCheck size={14} className="shrink-0" /><span>14 dias de garantia</span>
-              <span>&nbsp;·&nbsp;</span>
-              <Award size={14} className="shrink-0" /><span className="whitespace-nowrap">Certificado Incluso</span>
+            <div className="flex items-center justify-center gap-1 mt-3 text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap">
+              <Infinity size={12} className="shrink-0" /><span>Acesso vitalício</span>
+              <span>·</span>
+              <ShieldCheck size={12} className="shrink-0" /><span>14 dias de garantia</span>
+              <span>·</span>
+              <Award size={12} className="shrink-0" /><span>Certificado Incluso</span>
             </div>
 
           </motion.div>
