@@ -15,7 +15,7 @@ const PricingSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold">Acesso imediato ao material</h2>
         </motion.div>
 
-        <div className="flex flex-col items-center gap-6 max-w-lg mx-auto">
+        <div className="flex flex-col items-center gap-6 max-w-lg mx-auto px-0 sm:px-0">
           {/* Basic */}
           <motion.div
             className="bg-card border border-border rounded-xl p-8 flex flex-col w-full"
