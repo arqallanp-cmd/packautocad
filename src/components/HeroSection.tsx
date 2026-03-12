@@ -62,6 +62,16 @@ const HeroSection = () => {
             O maior pack profissional de blocos DWG do mercado.
           </p>
 
+          {/* Animated Counter */}
+          <div ref={counterRef} className="flex flex-col items-center mb-4 sm:mb-6">
+            <span className="font-display font-extrabold text-5xl sm:text-6xl md:text-7xl text-gold">
+              {count.toLocaleString("pt-BR")}+
+            </span>
+            <span className="text-muted-foreground text-sm sm:text-base mt-1 font-display">
+              blocos prontos na biblioteca
+            </span>
+          </div>
+
           {/* Mockup */}
           <img
             src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_04_jgsp83.png"
