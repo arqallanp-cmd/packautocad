@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Armchair, TreePine, Car, PersonStanding, Lightbulb } from "lucide-react";
 
 const HeroSection = () => {
   return (
