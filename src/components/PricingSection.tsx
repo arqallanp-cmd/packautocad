@@ -41,7 +41,7 @@ const PricingSection = () => {
 
             <a
               href="/upgrade"
-              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors"
+              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors animate-pulse-gold"
             >
               Comprar básico
             </a>
