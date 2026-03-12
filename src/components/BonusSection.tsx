@@ -13,9 +13,10 @@ const BonusSection = () => {
       <div className="container max-w-3xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">🎁 Bônus exclusivos</p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-3">
@@ -24,15 +25,18 @@ const BonusSection = () => {
           <p className="text-muted-foreground">Incluídos apenas no Pacote Pro. Valor total: <span className="text-foreground font-bold line-through">R$ 168,00</span></p>
         </motion.div>
 
-        <div className="space-y-4 mb-10">
-          {bonuses.map((b, i) => (
-            <motion.div
+        {/* Single container fade — no individual x-slide */}
+        <motion.div
+          className="space-y-4 mb-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          {bonuses.map((b) => (
+            <div
               key={b.num}
               className="bg-gradient-card border border-border rounded-lg p-5 flex gap-4 items-start"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
             >
               <span className="font-display text-2xl font-bold text-primary/30 shrink-0">{b.num}</span>
               <div className="flex-1 min-w-0">
@@ -51,16 +55,17 @@ const BonusSection = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-1">{b.desc}</p>
                 <span className="text-muted-foreground text-xs line-through">{b.price}</span>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Super Bonus */}
+        {/* Super Bonus — simple fade, no scale */}
         <motion.div
           className="border-2 border-primary/40 bg-gradient-card rounded-xl p-6 text-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display font-bold text-sm mb-2">★ SUPER BÔNUS EXCLUSIVO</p>
           <h3 className="font-display text-xl font-bold mb-3">5 Prompts de IA para Arquitetos</h3>
