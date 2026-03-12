@@ -36,22 +36,22 @@ const HeroSection = () => {
 
           {/* 3. Mockup image with floating icons */}
           <div className="relative mx-auto mb-3 sm:mb-10 w-full max-w-[900px]">
-            {/* Floating icons - desktop only */}
+            {/* Floating icons */}
             {[
-              { Icon: Armchair, pos: "top-[10%] left-[5%]", delay: 0.4 },
-              { Icon: TreePine, pos: "top-[5%] right-[5%]", delay: 0.6 },
-              { Icon: Car, pos: "bottom-[20%] left-[2%]", delay: 0.8 },
-              { Icon: PersonStanding, pos: "bottom-[15%] right-[2%]", delay: 1.0 },
-              { Icon: Lightbulb, pos: "top-[45%] left-[0%]", delay: 1.2 },
-            ].map(({ Icon, pos, delay }, i) => (
+              { Icon: Armchair, mob: "top-[5%] left-[-4px]", desk: "sm:top-[10%] sm:left-[5%]", delay: 0.4 },
+              { Icon: TreePine, mob: "top-[0%] right-[-4px]", desk: "sm:top-[5%] sm:right-[5%]", delay: 0.6 },
+              { Icon: Car, mob: "bottom-[25%] left-[-6px]", desk: "sm:bottom-[20%] sm:left-[2%]", delay: 0.8 },
+              { Icon: PersonStanding, mob: "bottom-[20%] right-[-6px]", desk: "sm:bottom-[15%] sm:right-[2%]", delay: 1.0 },
+              { Icon: Lightbulb, mob: "top-[45%] left-[-8px]", desk: "sm:top-[45%] sm:left-[0%]", delay: 1.2 },
+            ].map(({ Icon, mob, desk, delay }, i) => (
               <motion.div
                 key={i}
-                className={`absolute z-20 ${pos} hidden sm:flex items-center justify-center w-10 h-10 rounded-lg bg-card/80 border border-border backdrop-blur-sm shadow-card`}
+                className={`absolute z-20 ${mob} ${desk} flex items-center justify-center w-7 h-7 sm:w-10 sm:h-10 rounded-md sm:rounded-lg bg-card/80 border border-border backdrop-blur-sm shadow-card`}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay }}
               >
-                <Icon className="w-5 h-5 text-primary" />
+                <Icon className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-primary" />
               </motion.div>
             ))}
 
