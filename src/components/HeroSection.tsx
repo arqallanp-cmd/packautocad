@@ -14,7 +14,7 @@ const HeroSection = () => {
           {/* Headline — mobile: tudo na mesma linha, fonte grande */}
           <h1 className="font-display font-extrabold uppercase tracking-tight leading-none mb-1">
             <span className="text-gradient-gold text-[11vw] sm:text-6xl md:text-7xl lg:text-8xl whitespace-nowrap">
-              +4.500 BLOCOS
+              +4500 BLOCOS
             </span>
           </h1>
           <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
@@ -22,12 +22,13 @@ const HeroSection = () => {
               PRONTOS
             </span>
             <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[6vw] sm:text-3xl md:text-4xl -rotate-1 inline-block">
-              AutoCAD
+              AUTOCAD
             </span>
           </div>
 
           <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-8 leading-relaxed">
-            Pare de desenhar cada bloco do <strong className="text-foreground">ZERO!</strong> Tenha um acervo completo e use a hora que quiser!
+            Chega de perder horas desenhando do zero.<br />
+            Tenha acesso ao maior pack profissional de blocos DWG do mercado.
           </p>
 
           {/* Product mockup placeholder */}
@@ -41,19 +42,16 @@ const HeroSection = () => {
 
           {/* Price anchor */}
           <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
-            De <span className="line-through">R$ 59,90</span> por apenas
+            DE <span className="line-through">R$49,90</span> POR APENAS
           </p>
-          <div className="flex items-center justify-center gap-1 mb-1">
-            <span className="font-display text-lg sm:text-xl font-bold text-muted-foreground uppercase">por apenas</span>
-          </div>
           <div className="flex items-center justify-center mb-2">
-            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$5,99</span>
+            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$9,90</span>
           </div>
           <p className="text-muted-foreground text-xs sm:text-sm mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
           <motion.a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-base sm:text-lg px-10 sm:px-12 py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto"
+            className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-base sm:text-lg px-10 sm:px-12 py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto animate-pulse-btn"
             whileTap={{ scale: 0.97 }}
           >
             Quero ter acesso!

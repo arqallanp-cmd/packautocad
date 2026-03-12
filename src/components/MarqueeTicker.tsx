@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const tickerText = "🔥 OFERTA POR TEMPO LIMITADO ✦ 18.000+ BLOCOS ✦ ACESSO IMEDIATO ✦ GARANTIA TOTAL ✦ COMPATÍVEL COM TODAS AS VERSÕES ✦ ";
+const tickerText = "✦ OFERTA POR TEMPO LIMITADO ✦ +4.500 BLOCOS ✦ ACESSO VITALÍCIO ";
 
 const MarqueeTicker = () => {
   return (

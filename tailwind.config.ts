@@ -78,11 +78,17 @@ export default {
           "0%, 100%": { boxShadow: "0 0 0 0 hsl(45 100% 55% / 0.4)" },
           "50%": { boxShadow: "0 0 0 12px hsl(45 100% 55% / 0)" },
         },
+        "pulse-btn": {
+          "0%": { boxShadow: "0 0 0 0 rgba(200,169,110,0.5)" },
+          "70%": { boxShadow: "0 0 0 14px rgba(200,169,110,0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(200,169,110,0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-gold": "pulse-gold 2s ease-in-out infinite",
+        "pulse-btn": "pulse-btn 2s infinite",
       },
     },
   },
