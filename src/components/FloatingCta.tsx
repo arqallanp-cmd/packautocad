@@ -35,23 +35,11 @@ const FloatingCta = () => {
             boxShadow: "0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(200,169,110,0.1)",
           }}
         >
-          <span style={{ fontSize: 16 }}>⚡</span>
+          <span style={{ fontSize: 16 }}>🚀</span>
           <span style={{ color: "#fff", fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 700, fontSize: 14, whiteSpace: "nowrap" }}>
             Quero Acesso Imediato
           </span>
-          <span
-            className="bg-gradient-gold"
-            style={{
-              color: "#0a0a0a",
-              borderRadius: 100,
-              padding: "4px 14px",
-              fontSize: 13,
-              fontWeight: 700,
-              whiteSpace: "nowrap",
-            }}
-          >
-            +4500
-          </span>
+          <span style={{ fontSize: 16 }}>🚀</span>
         </motion.a>
       )}
     </AnimatePresence>
