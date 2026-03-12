@@ -22,29 +22,31 @@ const FloatingCta = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
-          className="fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3 animate-pulse"
+          className="fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3"
           style={{
             background: "#1a1a1a",
-            border: "1px solid rgba(200,169,110,0.4)",
+            border: "1px solid rgba(255,255,255,0.08)",
             borderRadius: 100,
-            padding: "14px 24px",
+            padding: "14px 28px",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
           }}
         >
-          <span className="text-lg">🚀</span>
-          <span style={{ color: "#fff", fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 14 }}>
+          <span style={{ fontSize: 16 }}>⚡</span>
+          <span style={{ color: "#fff", fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 14, whiteSpace: "nowrap" }}>
             Quero Acesso Imediato
           </span>
           <span
             style={{
-              background: "#c8a96e",
-              color: "#000",
+              background: "#e53e3e",
+              color: "#fff",
               borderRadius: 100,
-              padding: "5px 12px",
-              fontSize: 12,
+              padding: "4px 14px",
+              fontSize: 13,
               fontWeight: 700,
+              whiteSpace: "nowrap",
             }}
           >
-            GARANTIDO
+            R$24,90
           </span>
         </motion.a>
       )}
