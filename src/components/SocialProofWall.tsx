@@ -135,7 +135,7 @@ const ScreenshotCard = ({ src }: { src: string }) => (
 const SocialProofWall = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-5xl lg:max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
