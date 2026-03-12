@@ -1,24 +1,15 @@
 import { motion } from "framer-motion";
 import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles } from "lucide-react";
 
-import bonus01 from "@/assets/bonus-01-blocos-dwg.png";
-import bonus02 from "@/assets/bonus-02-hachuras.png";
-import bonus03 from "@/assets/bonus-03-plotagem.png";
-import bonus04 from "@/assets/bonus-04-escritorio.png";
-import bonus05 from "@/assets/bonus-05-blocos-dinamicos.png";
-import bonus06 from "@/assets/bonus-06-atalhos.png";
-import bonus07 from "@/assets/bonus-07-guia-instalacao.png";
-import bonus08 from "@/assets/bonus-08-prompts-ia.png";
-
 const bonuses = [
-  { num: "01", title: "+15.000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$197", icon: Layers, img: bonus01 },
-  { num: "02", title: "+300 Hachuras Profissionais", desc: "Materiais realistas para pranchas arquitetônicas.", oldPrice: "R$97", icon: PenTool, img: bonus02 },
-  { num: "03", title: "Sistema de Plotagem Automática", desc: "Templates A0 A1 A2 A3 A4 com CTB configurado.", oldPrice: "R$97", icon: Printer, img: bonus03 },
-  { num: "04", title: "Kit Escritório Profissional", desc: "Carimbos, símbolos e legendas padrão escritório.", oldPrice: "R$127", icon: Stamp, img: bonus04 },
-  { num: "05", title: "+200 Blocos Dinâmicos", desc: "Portas, janelas e mobiliário com parâmetros editáveis.", oldPrice: "R$87", icon: DoorOpen, img: bonus05 },
-  { num: "06", title: "+100 Atalhos AutoCAD", desc: "Atalhos usados por arquitetos profissionais.", oldPrice: "R$37", icon: Keyboard, img: bonus06 },
-  { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$27", icon: BookOpen, img: bonus07 },
-  { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$47", icon: Sparkles, img: bonus08 },
+  { num: "01", title: "+15.000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$197", icon: Layers, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_01_hmuolw.jpg" },
+  { num: "02", title: "+300 Hachuras Profissionais", desc: "Materiais realistas para pranchas arquitetônicas.", oldPrice: "R$97", icon: PenTool, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_02_whodb0.png" },
+  { num: "03", title: "Sistema de Plotagem Automática", desc: "Templates A0 A1 A2 A3 A4 com CTB configurado.", oldPrice: "R$97", icon: Printer, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_03_dow3f4.jpg" },
+  { num: "04", title: "Kit Escritório Profissional", desc: "Carimbos, símbolos e legendas padrão escritório.", oldPrice: "R$127", icon: Stamp, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_04_ohkidi.jpg" },
+  { num: "05", title: "+200 Blocos Dinâmicos", desc: "Portas, janelas e mobiliário com parâmetros editáveis.", oldPrice: "R$87", icon: DoorOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_05_nlc4lj.png" },
+  { num: "06", title: "Grupo Network", desc: "Atalhos usados por arquitetos profissionais.", oldPrice: "R$37", icon: Keyboard, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_06_ayc045.jpg" },
+  { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$27", icon: BookOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_07_esoqzr.jpg" },
+  { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$47", icon: Sparkles, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_08_k4nrqs.jpg" },
 ];
 
 const stats = [
