@@ -5,7 +5,7 @@ import AutodeskBadge from "./AutodeskBadge";
 const PricingSection = () => {
   return (
     <section id="pricing" className="py-20 bg-background">
-      <div className="container max-w-4xl mx-auto px-4">
+      <div className="container max-w-5xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -16,10 +16,10 @@ const PricingSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold">Acesso imediato ao material</h2>
         </motion.div>
 
-        <div className="flex flex-col items-center gap-6 max-w-lg mx-auto px-0 sm:px-0">
+        <div className="flex flex-col lg:flex-row items-stretch gap-6 max-w-lg lg:max-w-none mx-auto">
           {/* Basic */}
           <motion.div
-            className="bg-card border border-border rounded-xl p-8 flex flex-col w-full"
+            className="bg-card border border-border rounded-xl p-8 flex flex-col w-full lg:flex-1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -61,7 +61,7 @@ const PricingSection = () => {
 
           {/* Pro */}
           <motion.div
-            className="relative bg-card border-2 border-primary rounded-xl p-10 flex flex-col w-full shadow-gold"
+            className="relative bg-card border-2 border-primary rounded-xl p-10 flex flex-col w-full lg:flex-1 shadow-gold"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

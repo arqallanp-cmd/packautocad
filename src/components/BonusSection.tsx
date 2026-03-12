@@ -26,7 +26,7 @@ const stats = [
 const BonusSection = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
           className="text-center mb-10"
@@ -56,7 +56,7 @@ const BonusSection = () => {
 
         {/* Bonus Wall */}
         <motion.div
-          className="grid sm:grid-cols-2 gap-4 mb-12 items-stretch"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 items-stretch"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

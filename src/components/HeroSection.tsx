@@ -11,7 +11,7 @@ const floatingIcons = [
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center bg-gradient-hero overflow-hidden pt-3 sm:pt-16 pb-6 sm:pb-12">
+    <section className="relative flex items-center justify-center bg-gradient-hero overflow-hidden pt-3 sm:pt-8 pb-6 sm:pb-6 lg:min-h-screen lg:max-h-screen">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container relative z-10 text-center max-w-3xl mx-auto px-4">
@@ -37,13 +37,13 @@ const HeroSection = () => {
           </div>
 
           {/* 2. Subheadline */}
-          <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto mb-2 sm:mb-8 leading-relaxed">
+          <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto mb-2 sm:mb-4 leading-relaxed">
             <span className="hidden sm:inline">Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.</span>
             <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
           </p>
 
           {/* 3. Mockup image with floating icons */}
-          <div className="relative mx-auto mb-3 sm:mb-10 w-full max-w-[900px]">
+          <div className="relative mx-auto mb-3 sm:mb-4 w-full max-w-[900px] lg:max-w-[700px]">
             {/* Floating icons — simple fade in, gentle CSS float */}
             {floatingIcons.map(({ Icon, mob, desk, delay }, i) => (
               <motion.div
@@ -75,7 +75,7 @@ const HeroSection = () => {
               loading="eager"
               width="900"
               height="600"
-              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-none sm:w-full object-contain relative z-10"
+              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-[300px] sm:w-full object-contain relative z-10"
             />
           </div>
 
@@ -107,7 +107,7 @@ const HeroSection = () => {
 
         {/* 7. Stats */}
         <motion.div
-          className="grid grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-12 max-w-sm sm:max-w-md mx-auto"
+          className="grid grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-6 max-w-sm sm:max-w-md mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
