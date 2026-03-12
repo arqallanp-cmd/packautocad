@@ -22,7 +22,10 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="font-display font-semibold text-muted-foreground text-sm mb-1">Básico</p>
+            <div className="flex items-center gap-2 mb-1">
+              <p className="font-display font-semibold text-muted-foreground text-sm">Básico</p>
+              <span className="text-[10px] text-muted-foreground/60 bg-muted px-2 py-0.5 rounded">Apenas os blocos</span>
+            </div>
             <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD</h3>
             <div className="mb-1">
               <span className="text-muted-foreground line-through text-sm">De R$ 49,90</span>
@@ -35,8 +38,11 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-8 flex-1 text-sm">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
-              <li className="flex gap-2 text-muted-foreground"><span>✗</span> Bônus não incluídos</li>
-              <li className="flex gap-2 text-muted-foreground"><span>✗</span> Prompts de IA</li>
+              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> +15.000 blocos extras</li>
+              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Pack de Hachuras Profissionais</li>
+              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Template de Plotagem (.ctb)</li>
+              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Anotações e Legendas Pro</li>
+              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Prompts de IA para Arquitetos</li>
             </ul>
 
             <a
@@ -45,9 +51,9 @@ const PricingSection = () => {
             >
               Comprar básico
             </a>
-            
+
             <p className="text-center mt-3 text-xs text-muted-foreground">
-              🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você! 👇
+              Temos um pacote mais completo disponível 👇
             </p>
           </motion.div>
 
@@ -72,13 +78,15 @@ const PricingSection = () => {
               <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
               <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-85% OFF</span>
             </div>
+            <p className="text-muted-foreground text-[11px] mb-0.5">Inclui todos os bônus (valor R$168)</p>
+            <p className="text-primary/70 text-[11px] font-medium mb-1">Menos de R$0,01 por bloco</p>
             <p className="text-muted-foreground text-xs mb-8">Pagamento único · Acesso imediato</p>
 
             <ul className="space-y-3 mb-8 flex-1 text-sm">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos extras</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Pack de Hachuras Profissionais</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem .ctb</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem (.ctb)</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Anotações e Legendas Pro</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
@@ -93,6 +101,10 @@ const PricingSection = () => {
             >
               → QUERO O PACK PRO
             </motion.a>
+
+            <p className="text-center mt-3 text-xs text-muted-foreground">
+              A escolha de quem quer a biblioteca completa.
+            </p>
           </motion.div>
         </div>
 
