@@ -83,12 +83,17 @@ export default {
           "70%": { boxShadow: "0 0 0 14px rgba(200,169,110,0)" },
           "100%": { boxShadow: "0 0 0 0 rgba(200,169,110,0)" },
         },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-gold": "pulse-gold 3s ease-in-out infinite",
         "pulse-btn": "pulse-btn 2s infinite",
+        "float": "float 3s ease-in-out infinite",
       },
     },
   },

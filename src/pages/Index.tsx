@@ -11,7 +11,7 @@ import GuaranteeSection from "@/components/GuaranteeSection";
 import AuthorSection from "@/components/AuthorSection";
 import FaqSection from "@/components/FaqSection";
 import CtaFooter from "@/components/CtaFooter";
-import FloatingCta from "@/components/FloatingCta";
+
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 const Index = () => {
@@ -20,18 +20,16 @@ const Index = () => {
     <main className="min-h-screen">
       <MarqueeTicker />
       <HeroSection />
-      <ProductPreview />
-      <SocialProofWall />
       <ProblemSection />
+      <ProductPreview />
       <BlocksSection />
+      <SocialProofWall />
       <BonusSection />
-      
       <PricingSection />
       <GuaranteeSection />
       <AuthorSection />
       <FaqSection />
       <CtaFooter />
-      <FloatingCta />
     </main>
   );
 };

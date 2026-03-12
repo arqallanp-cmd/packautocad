@@ -54,14 +54,8 @@ const screenshots = [depo1, depo2, depo3, depo4, depo5];
 
 /* ── Sub-components ── */
 
-const WhatsAppCard = ({ chat, index }: { chat: typeof whatsappChats[0]; index: number }) => (
-  <motion.div
-    className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#111b21] shadow-card"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ delay: index * 0.06 }}
-  >
+const WhatsAppCard = ({ chat }: { chat: typeof whatsappChats[0] }) => (
+  <div className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#111b21] shadow-card">
     {/* Header */}
     <div className="flex items-center gap-3 px-4 py-3 bg-[#1f2c34] border-b border-white/5">
       <div className="w-9 h-9 rounded-full bg-[#2a3942] flex items-center justify-center text-sm text-white/70">
@@ -91,17 +85,11 @@ const WhatsAppCard = ({ chat, index }: { chat: typeof whatsappChats[0]; index: n
         </div>
       ))}
     </div>
-  </motion.div>
+  </div>
 );
 
-const InstaCommentsCard = ({ index }: { index: number }) => (
-  <motion.div
-    className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#000] shadow-card"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ delay: index * 0.06 }}
-  >
+const InstaCommentsCard = () => (
+  <div className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#000] shadow-card">
     {/* Header */}
     <div className="px-4 py-3 border-b border-white/10">
       <p className="text-white text-sm font-semibold">Comentários</p>
@@ -133,19 +121,13 @@ const InstaCommentsCard = ({ index }: { index: number }) => (
         <span key={e} className="text-lg cursor-pointer">{e}</span>
       ))}
     </div>
-  </motion.div>
+  </div>
 );
 
-const ScreenshotCard = ({ src, index }: { src: string; index: number }) => (
-  <motion.div
-    className="break-inside-avoid rounded-2xl overflow-hidden border border-border shadow-card"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ delay: index * 0.06 }}
-  >
-    <img src={src} alt={`Depoimento de cliente`} loading="lazy" className="w-full h-auto" />
-  </motion.div>
+const ScreenshotCard = ({ src }: { src: string }) => (
+  <div className="break-inside-avoid rounded-2xl overflow-hidden border border-border shadow-card">
+    <img src={src} alt="Depoimento de cliente" loading="lazy" className="w-full h-auto" />
+  </div>
 );
 
 /* ── Main Component ── */
@@ -159,6 +141,7 @@ const SocialProofWall = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">
             Prova social
@@ -168,31 +151,37 @@ const SocialProofWall = () => {
           </h2>
         </motion.div>
 
-        {/* Masonry grid mixing real screenshots + styled cards */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-          {/* Row pattern: screenshot, whatsapp, screenshot, insta, screenshot, whatsapp... */}
-          <ScreenshotCard src={screenshots[0]} index={0} />
-          <WhatsAppCard chat={whatsappChats[0]} index={1} />
-          <ScreenshotCard src={screenshots[1]} index={2} />
-          <InstaCommentsCard index={3} />
-          <ScreenshotCard src={screenshots[2]} index={4} />
-          <WhatsAppCard chat={whatsappChats[1]} index={5} />
-          <ScreenshotCard src={screenshots[3]} index={6} />
-          <WhatsAppCard chat={whatsappChats[2]} index={7} />
-          <ScreenshotCard src={screenshots[4]} index={8} />
-        </div>
+        {/* Masonry grid */}
+        <motion.div
+          className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <ScreenshotCard src={screenshots[0]} />
+          <WhatsAppCard chat={whatsappChats[0]} />
+          <ScreenshotCard src={screenshots[1]} />
+          <InstaCommentsCard />
+          <ScreenshotCard src={screenshots[2]} />
+          <WhatsAppCard chat={whatsappChats[1]} />
+          <ScreenshotCard src={screenshots[3]} />
+          <WhatsAppCard chat={whatsappChats[2]} />
+          <ScreenshotCard src={screenshots[4]} />
+        </motion.div>
 
         <motion.div
           className="text-center mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
         >
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold px-8 py-3 rounded-lg shadow-gold hover:scale-105 transition-transform"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
           >
-            → Quero ter o mesmo resultado
+            ⚡ EU TAMBÉM QUERO
           </a>
         </motion.div>
       </div>

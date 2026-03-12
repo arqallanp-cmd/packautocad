@@ -5,7 +5,7 @@ const faqs = [
   { q: "Quando recebo o acesso após a compra?", a: "Na hora. Assim que o pagamento é confirmado, você recebe o link de download direto no e-mail cadastrado. Sem espera, sem fila." },
   { q: "Funciona em qual versão do AutoCAD?", a: "Qualquer uma. Os arquivos foram testados do AutoCAD 2014 até as versões mais recentes de 2025. Também abre normalmente em BricsCAD e outros softwares compatíveis com .DWG." },
   { q: "Preciso configurar alguma coisa antes de usar?", a: "Nenhuma. Descompacta a pasta, abre o AutoCAD e arrasta o bloco direto para o seu desenho. Simples assim." },
-  { q: "Posso usar em trabalhos da faculdade e projetos pagos?", a: "Sim, sem restrição. Pessoal, acadêmico ou comercial — o pack é seu para usar como quiser, quantas vezes precisar." },
+  { q: "Posso usar em trabalhos da faculdade e projetos pagos?", a: "Sim, sem restrição. Pessoal, acadêmico ou comercial. O pack é seu para usar como quiser, quantas vezes precisar." },
   { q: "E se eu não gostar ou tiver algum problema?", a: "Você tem 14 dias para testar tudo. Se não ficar satisfeito por qualquer motivo, manda uma mensagem e devolvemos 100% do valor. Sem questionamento, sem burocracia." },
   { q: "Os arquivos são pesados? Vão travar meu projeto?", a: "Não. Cada bloco foi otimizado para ser leve e eficiente. Você pode inserir dezenas deles no mesmo arquivo sem comprometer a performance do seu computador." },
 ];
@@ -45,9 +45,9 @@ const FaqSection = () => {
         >
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold px-8 py-3 rounded-lg shadow-gold hover:scale-105 transition-transform"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
           >
-            → Quero o Pack agora
+            ✅ QUERO MEU PACK AGORA
           </a>
         </motion.div>
       </div>

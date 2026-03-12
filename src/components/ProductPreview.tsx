@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import AutodeskBadge from "./AutodeskBadge";
 
 const folderNames = [
   "2D", "Academia", "Acessibilidade", "Animais",
@@ -53,6 +54,7 @@ const ProductPreview = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           Blocos que você vai ter acesso no Pacote 👇
         </motion.p>
@@ -60,25 +62,22 @@ const ProductPreview = () => {
         {/* Folder grid card */}
         <motion.div
           className="rounded-2xl border border-primary/15 bg-card p-4 sm:p-6 mb-6"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 sm:gap-3 mb-6">
-            {folderNames.map((name, i) => (
-              <motion.div
+            {folderNames.map((name) => (
+              <div
                 key={name}
                 className="flex flex-col items-center gap-1 min-w-0"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.02 }}
               >
                 <span className="text-xl sm:text-2xl">📁</span>
                 <span className="text-[8px] sm:text-[9px] text-muted-foreground text-center leading-tight truncate w-full">
                   {name}
                 </span>
-              </motion.div>
+              </div>
             ))}
           </div>
 
@@ -92,10 +91,11 @@ const ProductPreview = () => {
             className="w-full rounded-lg mb-5"
           />
 
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <span className="inline-block bg-primary text-primary-foreground font-display font-extrabold text-xs sm:text-sm uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-center">
               +4.500 BLOCOS ORGANIZADOS POR PASTAS
             </span>
+            <AutodeskBadge variant="compact" />
           </div>
         </motion.div>
 
@@ -105,14 +105,10 @@ const ProductPreview = () => {
           className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 md:grid md:grid-cols-3 md:overflow-visible scrollbar-hide"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {categoryCards.map((card, i) => (
-            <motion.div
+          {categoryCards.map((card) => (
+            <div
               key={card.label}
               className="group flex-shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-start rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-colors"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
             >
               <div className="relative">
                 <img
@@ -132,7 +128,7 @@ const ProductPreview = () => {
                   {card.desc}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
@@ -153,12 +149,13 @@ const ProductPreview = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
         >
           <a
             href="#pricing"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-4 rounded-xl shadow-gold hover:scale-105 transition-transform"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-4 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
           >
-            → Quero acesso agora
+            🚀 QUERO ESSES BLOCOS AGORA
           </a>
         </motion.div>
       </div>
