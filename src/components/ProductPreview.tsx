@@ -50,39 +50,33 @@ const ProductPreview = () => {
         {/* Section label */}
         <motion.p
           className="text-center text-primary/80 font-display text-sm font-semibold tracking-widest uppercase mb-10"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           Blocos que você vai ter acesso no Pacote 👇
         </motion.p>
 
-        {/* Folder grid card */}
+        {/* Folder grid card — single container animation, no individual folder animations */}
         <motion.div
           className="rounded-2xl border border-primary/15 bg-card p-4 sm:p-6 mb-6"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 sm:gap-3 mb-6">
-            {folderNames.map((name, i) => (
-              <motion.div
-                key={name}
-                className="flex flex-col items-center gap-1 min-w-0"
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.02 }}
-              >
+            {folderNames.map((name) => (
+              <div key={name} className="flex flex-col items-center gap-1 min-w-0">
                 <span className="text-xl sm:text-2xl">📁</span>
                 <span className="text-[8px] sm:text-[9px] text-muted-foreground text-center leading-tight truncate w-full">
                   {name}
                 </span>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          {/* Folder overview image */}
           <img
             src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/freepik__atualize-para-4500-blocos__66968_gg9nbh.jpg"
             alt="+4.500 blocos organizados por pastas"
@@ -99,20 +93,16 @@ const ProductPreview = () => {
           </div>
         </motion.div>
 
-        {/* Category cards — horizontal scroll on mobile, grid on desktop */}
+        {/* Category cards — no individual stagger */}
         <div
           ref={scrollRef}
           className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 md:grid md:grid-cols-3 md:overflow-visible scrollbar-hide"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {categoryCards.map((card, i) => (
-            <motion.div
+          {categoryCards.map((card) => (
+            <div
               key={card.label}
               className="group flex-shrink-0 w-[85vw] sm:w-[60vw] md:w-auto snap-start rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-colors"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
             >
               <div className="relative">
                 <img
@@ -121,9 +111,9 @@ const ProductPreview = () => {
                   loading="lazy"
                   width="800"
                   height="200"
-                  className="w-full h-[200px] object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                  className="w-full h-[200px] object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-primary text-primary-foreground font-display font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg group-hover:scale-[1.03] transition-transform">
+                <span className="absolute bottom-3 left-3 bg-primary text-primary-foreground font-display font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg">
                   {card.label}
                 </span>
               </div>
@@ -132,7 +122,7 @@ const ProductPreview = () => {
                   {card.desc}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
@@ -153,6 +143,7 @@ const ProductPreview = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
         >
           <a
             href="#pricing"
