@@ -1,15 +1,24 @@
 import { motion } from "framer-motion";
 import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles } from "lucide-react";
 
+import bonus01 from "@/assets/bonus-01-blocos-dwg.png";
+import bonus02 from "@/assets/bonus-02-hachuras.png";
+import bonus03 from "@/assets/bonus-03-plotagem.png";
+import bonus04 from "@/assets/bonus-04-escritorio.png";
+import bonus05 from "@/assets/bonus-05-blocos-dinamicos.png";
+import bonus06 from "@/assets/bonus-06-atalhos.png";
+import bonus07 from "@/assets/bonus-07-guia-instalacao.png";
+import bonus08 from "@/assets/bonus-08-prompts-ia.png";
+
 const bonuses = [
-  { num: "01", title: "+15.000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$197", icon: Layers },
-  { num: "02", title: "+300 Hachuras Profissionais", desc: "Materiais realistas para pranchas arquitetônicas.", oldPrice: "R$97", icon: PenTool },
-  { num: "03", title: "Sistema de Plotagem Automática", desc: "Templates A0 A1 A2 A3 A4 com CTB configurado.", oldPrice: "R$97", icon: Printer },
-  { num: "04", title: "Kit Escritório Profissional", desc: "Carimbos, símbolos e legendas padrão escritório.", oldPrice: "R$127", icon: Stamp },
-  { num: "05", title: "+200 Blocos Dinâmicos", desc: "Portas, janelas e mobiliário com parâmetros editáveis.", oldPrice: "R$87", icon: DoorOpen },
-  { num: "06", title: "+100 Atalhos AutoCAD", desc: "Atalhos usados por arquitetos profissionais.", oldPrice: "R$37", icon: Keyboard },
-  { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$27", icon: BookOpen },
-  { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$47", icon: Sparkles },
+  { num: "01", title: "+15.000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$197", icon: Layers, img: bonus01 },
+  { num: "02", title: "+300 Hachuras Profissionais", desc: "Materiais realistas para pranchas arquitetônicas.", oldPrice: "R$97", icon: PenTool, img: bonus02 },
+  { num: "03", title: "Sistema de Plotagem Automática", desc: "Templates A0 A1 A2 A3 A4 com CTB configurado.", oldPrice: "R$97", icon: Printer, img: bonus03 },
+  { num: "04", title: "Kit Escritório Profissional", desc: "Carimbos, símbolos e legendas padrão escritório.", oldPrice: "R$127", icon: Stamp, img: bonus04 },
+  { num: "05", title: "+200 Blocos Dinâmicos", desc: "Portas, janelas e mobiliário com parâmetros editáveis.", oldPrice: "R$87", icon: DoorOpen, img: bonus05 },
+  { num: "06", title: "+100 Atalhos AutoCAD", desc: "Atalhos usados por arquitetos profissionais.", oldPrice: "R$37", icon: Keyboard, img: bonus06 },
+  { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$27", icon: BookOpen, img: bonus07 },
+  { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$47", icon: Sparkles, img: bonus08 },
 ];
 
 const stats = [
@@ -64,8 +73,8 @@ const BonusSection = () => {
                 whileHover={{ y: -3 }}
               >
                 {/* Mockup image */}
-                <div className="w-full aspect-[4/5] bg-secondary/50 flex items-center justify-center">
-                  <Icon className="w-10 h-10 text-primary/30" />
+                <div className="w-full aspect-[4/5] bg-secondary/50 overflow-hidden">
+                  <img src={b.img} alt={b.title} className="w-full h-full object-cover" loading="lazy" />
                 </div>
 
                 <div className="p-5 flex gap-4 items-start">
