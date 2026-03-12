@@ -29,7 +29,7 @@ const Upsell = () => {
             ⚠️ ESPERA! VOCÊ ESTÁ PRESTES A PEGAR A VERSÃO BÁSICA
           </p>
           <p className="font-display text-base font-bold text-foreground">
-            Upgrade pro Pack Pro por apenas <span className="text-primary">R$15 a mais</span>
+            Upgrade pro Pack Pro por apenas <span className="text-primary">R$8 a mais</span>
           </p>
         </motion.div>
 
