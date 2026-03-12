@@ -28,21 +28,21 @@ const FloatingCta = () => {
           exit={{ y: 100, opacity: 0 }}
           className="fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3"
           style={{
-            background: "#1a1a1a",
-            border: "1px solid rgba(255,255,255,0.08)",
+            background: "#0a0a0a",
+            border: "1px solid rgba(200,169,110,0.3)",
             borderRadius: 100,
             padding: "14px 28px",
-            boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(200,169,110,0.1)",
           }}
         >
           <span style={{ fontSize: 16 }}>⚡</span>
-          <span style={{ color: "#fff", fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 14, whiteSpace: "nowrap" }}>
+          <span style={{ color: "#fff", fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 700, fontSize: 14, whiteSpace: "nowrap" }}>
             Quero Acesso Imediato
           </span>
           <span
             style={{
-              background: "#e53e3e",
-              color: "#fff",
+              background: "#c8a96e",
+              color: "#0a0a0a",
               borderRadius: 100,
               padding: "4px 14px",
               fontSize: 13,
