@@ -14,7 +14,7 @@ const PricingSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold">Acesso imediato ao material</h2>
         </motion.div>
 
-        <div className="flex flex-col items-center gap-6 max-w-lg mx-auto">
+        <div className="flex flex-col items-center gap-6 max-w-lg mx-auto px-0 sm:px-0">
           {/* Basic */}
           <motion.div
             className="bg-card border border-border rounded-xl p-8 flex flex-col w-full"
@@ -38,13 +38,13 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">R$49,90</span>
             </div>
             <div className="text-center mt-2 mb-1">
-              <span className="font-display text-5xl font-bold">R$9,90</span>
+              <span className="font-display text-6xl sm:text-5xl font-bold">R$9,90</span>
             </div>
             <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
             <a
               href="/upgrade"
-              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors w-full"
+              className="block text-center border border-border text-foreground font-display font-semibold py-4 sm:py-3 text-base sm:text-sm rounded-lg hover:bg-secondary transition-colors w-full"
             >
               Comprar Básico
             </a>
@@ -56,7 +56,7 @@ const PricingSection = () => {
 
           {/* Pro */}
           <motion.div
-            className="relative bg-card border-2 border-primary rounded-xl p-10 flex flex-col w-full shadow-gold scale-[1.02]"
+            className="relative bg-card border-2 border-primary rounded-xl p-4 sm:p-10 flex flex-col w-full shadow-gold scale-[1.02]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -94,13 +94,13 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">R$197,00</span>
             </div>
             <div className="text-center mt-2 mb-1">
-              <span className="font-display text-5xl sm:text-6xl font-bold text-gradient-gold">R$24,90</span>
+              <span className="font-display text-7xl sm:text-6xl font-bold text-gradient-gold">R$24,90</span>
             </div>
             <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato</p>
 
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold animate-pulse-gold w-full"
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-5 sm:py-3 text-lg sm:text-base rounded-lg shadow-gold animate-pulse-gold w-full"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
