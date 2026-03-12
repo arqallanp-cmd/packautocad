@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Armchair, TreePine, Car, PersonStanding, Lightbulb } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -33,15 +34,47 @@ const HeroSection = () => {
             <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
           </p>
 
-          {/* 3. Mockup image — ABOVE price on all sizes */}
-          <img
-            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_03_rh5nww.png"
-            alt="Mockup do produto +4.500 Blocos AutoCAD"
-            loading="eager"
-            width="900"
-            height="600"
-            className="mx-auto mb-3 sm:mb-10 w-auto max-w-full max-h-[240px] sm:max-h-none sm:w-full sm:max-w-[900px] object-contain"
-          />
+          {/* 3. Mockup image with floating icons */}
+          <div className="relative mx-auto mb-3 sm:mb-10 w-full max-w-[900px]">
+            {/* Floating icons - desktop only */}
+            {[
+              { Icon: Armchair, pos: "top-[10%] left-[5%]", delay: 0.4 },
+              { Icon: TreePine, pos: "top-[5%] right-[5%]", delay: 0.6 },
+              { Icon: Car, pos: "bottom-[20%] left-[2%]", delay: 0.8 },
+              { Icon: PersonStanding, pos: "bottom-[15%] right-[2%]", delay: 1.0 },
+              { Icon: Lightbulb, pos: "top-[45%] left-[0%]", delay: 1.2 },
+            ].map(({ Icon, pos, delay }, i) => (
+              <motion.div
+                key={i}
+                className={`absolute z-20 ${pos} hidden sm:flex items-center justify-center w-10 h-10 rounded-lg bg-card/80 border border-border backdrop-blur-sm shadow-card`}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay }}
+              >
+                <Icon className="w-5 h-5 text-primary" />
+              </motion.div>
+            ))}
+
+            {/* Product label */}
+            <motion.div
+              className="absolute z-20 bottom-[8%] right-[5%] sm:bottom-[12%] sm:right-[10%] bg-card/90 border border-primary/30 backdrop-blur-sm rounded-lg px-3 py-2 shadow-gold"
+              initial={{ opacity: 0, x: 10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <p className="font-display font-bold text-[10px] sm:text-xs text-primary leading-tight">+4.500 BLOCOS DWG</p>
+              <p className="font-display font-semibold text-[8px] sm:text-[10px] text-muted-foreground leading-tight">PRONTOS PARA AUTOCAD</p>
+            </motion.div>
+
+            <img
+              src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_03_rh5nww.png"
+              alt="Mockup do produto +4.500 Blocos AutoCAD"
+              loading="eager"
+              width="900"
+              height="600"
+              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-none sm:w-full object-contain relative z-10"
+            />
+          </div>
 
           {/* 4. Price anchor */}
           <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
