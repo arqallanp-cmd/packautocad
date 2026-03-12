@@ -26,7 +26,7 @@ const stats = [
 const BonusSection = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
           className="text-center mb-10"
