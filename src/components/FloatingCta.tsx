@@ -22,9 +22,30 @@ const FloatingCta = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
-          className="fixed bottom-4 left-4 right-4 z-50 bg-gradient-gold text-primary-foreground font-display font-bold text-center py-3.5 rounded-lg shadow-gold"
+          className="fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3 animate-pulse"
+          style={{
+            background: "#1a1a1a",
+            border: "1px solid rgba(200,169,110,0.4)",
+            borderRadius: 100,
+            padding: "14px 24px",
+          }}
         >
-          → Comprar agora — R$24,90
+          <span className="text-lg">🚀</span>
+          <span style={{ color: "#fff", fontFamily: "Syne, sans-serif", fontWeight: 700, fontSize: 14 }}>
+            Quero Acesso Imediato
+          </span>
+          <span
+            style={{
+              background: "#c8a96e",
+              color: "#000",
+              borderRadius: 100,
+              padding: "5px 12px",
+              fontSize: 12,
+              fontWeight: 700,
+            }}
+          >
+            GARANTIDO
+          </span>
         </motion.a>
       )}
     </AnimatePresence>
