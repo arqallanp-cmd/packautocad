@@ -29,10 +29,9 @@ const BlocksSection = () => {
       <div className="container max-w-5xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">O que vem no pack</p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
@@ -44,32 +43,28 @@ const BlocksSection = () => {
           </p>
         </motion.div>
 
-        {/* Single container fade — no individual card stagger */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          {categories.map((c) => (
-            <div
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+          {categories.map((c, i) => (
+            <motion.div
               key={c.title}
-              className="bg-background border-l-[3px] border-l-primary border border-border rounded-xl p-5 hover:border-primary/40 transition-colors"
+              className="bg-background border-l-[3px] border-l-primary border border-border rounded-xl p-5 hover:border-primary/40 transition-colors group"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
             >
-              <span className="text-3xl block mb-3">{c.icon}</span>
+              <span className="text-3xl block mb-3 group-hover:scale-110 transition-transform">{c.icon}</span>
               <p className="font-display font-bold text-sm text-foreground mb-1">{c.title}</p>
               <p className="text-muted-foreground text-xs leading-relaxed">{c.desc}</p>
-            </div>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         <motion.div
           className="text-center mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
         >
           <a
             href="#pricing"

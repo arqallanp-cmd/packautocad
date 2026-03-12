@@ -6,6 +6,7 @@ import depo3 from "@/assets/depoimentos-3.png";
 import depo4 from "@/assets/depoimentos-4.png";
 import depo5 from "@/assets/depoimentos-5.png";
 
+/* ── WhatsApp-style chat cards ── */
 const whatsappChats = [
   {
     name: "Arq. Camila S.",
@@ -38,6 +39,7 @@ const whatsappChats = [
   },
 ];
 
+/* ── Instagram comment cards ── */
 const instaComments = [
   { user: "arq.camila", text: "Material top demais! Vale muito a pena 🔥", time: "1 min" },
   { user: "tamia.bringel", text: "Material bom, facilita bastante o trabalho e a um preço acessível!", time: "4 d" },
@@ -47,11 +49,20 @@ const instaComments = [
   { user: "mateus.marques", text: "Blocos excelentes, ajuda demais na rotina", time: "12 min" },
 ];
 
+/* ── Real screenshot images ── */
 const screenshots = [depo1, depo2, depo3, depo4, depo5];
 
-/* No individual card animations — single container fade */
-const WhatsAppCard = ({ chat }: { chat: typeof whatsappChats[0] }) => (
-  <div className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#111b21] shadow-card">
+/* ── Sub-components ── */
+
+const WhatsAppCard = ({ chat, index }: { chat: typeof whatsappChats[0]; index: number }) => (
+  <motion.div
+    className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#111b21] shadow-card"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.06 }}
+  >
+    {/* Header */}
     <div className="flex items-center gap-3 px-4 py-3 bg-[#1f2c34] border-b border-white/5">
       <div className="w-9 h-9 rounded-full bg-[#2a3942] flex items-center justify-center text-sm text-white/70">
         {chat.name.charAt(0)}
@@ -61,6 +72,7 @@ const WhatsAppCard = ({ chat }: { chat: typeof whatsappChats[0] }) => (
         <p className="text-white/40 text-[10px]">online</p>
       </div>
     </div>
+    {/* Messages */}
     <div className="px-3 py-3 space-y-1.5">
       {chat.messages.map((msg, j) => (
         <div key={j} className={`flex ${msg.from === "me" ? "justify-end" : "justify-start"}`}>
@@ -79,17 +91,25 @@ const WhatsAppCard = ({ chat }: { chat: typeof whatsappChats[0] }) => (
         </div>
       ))}
     </div>
-  </div>
+  </motion.div>
 );
 
-const InstaCommentsCard = () => (
-  <div className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#000] shadow-card">
+const InstaCommentsCard = ({ index }: { index: number }) => (
+  <motion.div
+    className="break-inside-avoid rounded-2xl overflow-hidden border border-border bg-[#000] shadow-card"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.06 }}
+  >
+    {/* Header */}
     <div className="px-4 py-3 border-b border-white/10">
       <p className="text-white text-sm font-semibold">Comentários</p>
       <div className="flex gap-2 mt-2">
         <span className="text-lg">❤️❤️🥰</span>
       </div>
     </div>
+    {/* Comments */}
     <div className="px-4 py-2 space-y-3">
       {instaComments.map((c, j) => (
         <div key={j} className="flex gap-2.5">
@@ -113,14 +133,22 @@ const InstaCommentsCard = () => (
         <span key={e} className="text-lg cursor-pointer">{e}</span>
       ))}
     </div>
-  </div>
+  </motion.div>
 );
 
-const ScreenshotCard = ({ src }: { src: string }) => (
-  <div className="break-inside-avoid rounded-2xl overflow-hidden border border-border shadow-card">
-    <img src={src} alt="Depoimento de cliente" loading="lazy" className="w-full h-auto" />
-  </div>
+const ScreenshotCard = ({ src, index }: { src: string; index: number }) => (
+  <motion.div
+    className="break-inside-avoid rounded-2xl overflow-hidden border border-border shadow-card"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: index * 0.06 }}
+  >
+    <img src={src} alt={`Depoimento de cliente`} loading="lazy" className="w-full h-auto" />
+  </motion.div>
 );
+
+/* ── Main Component ── */
 
 const SocialProofWall = () => {
   return (
@@ -128,10 +156,9 @@ const SocialProofWall = () => {
       <div className="container max-w-5xl mx-auto px-4">
         <motion.div
           className="text-center mb-10"
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">
             Prova social
@@ -141,31 +168,25 @@ const SocialProofWall = () => {
           </h2>
         </motion.div>
 
-        {/* Single container fade for all cards */}
-        <motion.div
-          className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <ScreenshotCard src={screenshots[0]} />
-          <WhatsAppCard chat={whatsappChats[0]} />
-          <ScreenshotCard src={screenshots[1]} />
-          <InstaCommentsCard />
-          <ScreenshotCard src={screenshots[2]} />
-          <WhatsAppCard chat={whatsappChats[1]} />
-          <ScreenshotCard src={screenshots[3]} />
-          <WhatsAppCard chat={whatsappChats[2]} />
-          <ScreenshotCard src={screenshots[4]} />
-        </motion.div>
+        {/* Masonry grid mixing real screenshots + styled cards */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+          {/* Row pattern: screenshot, whatsapp, screenshot, insta, screenshot, whatsapp... */}
+          <ScreenshotCard src={screenshots[0]} index={0} />
+          <WhatsAppCard chat={whatsappChats[0]} index={1} />
+          <ScreenshotCard src={screenshots[1]} index={2} />
+          <InstaCommentsCard index={3} />
+          <ScreenshotCard src={screenshots[2]} index={4} />
+          <WhatsAppCard chat={whatsappChats[1]} index={5} />
+          <ScreenshotCard src={screenshots[3]} index={6} />
+          <WhatsAppCard chat={whatsappChats[2]} index={7} />
+          <ScreenshotCard src={screenshots[4]} index={8} />
+        </div>
 
         <motion.div
           className="text-center mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
         >
           <a
             href="#pricing"

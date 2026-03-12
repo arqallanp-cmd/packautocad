@@ -22,10 +22,7 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-2 mb-1">
-              <p className="font-display font-semibold text-muted-foreground text-sm">Básico</p>
-              <span className="text-[10px] text-muted-foreground/60 bg-muted px-2 py-0.5 rounded">Apenas os blocos</span>
-            </div>
+            <p className="font-display font-semibold text-muted-foreground text-sm mb-1">Básico</p>
             <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD</h3>
             <div className="mb-1">
               <span className="text-muted-foreground line-through text-sm">De R$ 49,90</span>
@@ -38,11 +35,8 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-8 flex-1 text-sm">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
-              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> +15.000 blocos extras</li>
-              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Pack de Hachuras Profissionais</li>
-              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Template de Plotagem (.ctb)</li>
-              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Anotações e Legendas Pro</li>
-              <li className="flex gap-2 text-muted-foreground/50"><span>✗</span> Prompts de IA para Arquitetos</li>
+              <li className="flex gap-2 text-muted-foreground"><span>✗</span> Bônus não incluídos</li>
+              <li className="flex gap-2 text-muted-foreground"><span>✗</span> Prompts de IA</li>
             </ul>
 
             <a
@@ -51,22 +45,22 @@ const PricingSection = () => {
             >
               Comprar básico
             </a>
-
+            
             <p className="text-center mt-3 text-xs text-muted-foreground">
-              Temos um pacote mais completo disponível 👇
+              🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você! 👇
             </p>
           </motion.div>
 
           {/* Pro */}
           <motion.div
-            className="relative bg-card border-2 border-primary rounded-xl p-8 flex flex-col shadow-gold scale-[1.05] origin-top"
+            className="relative bg-card border-2 border-primary rounded-xl p-8 flex flex-col shadow-gold"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
-              ⭐ MAIS ESCOLHIDO
+              🔥 Mais vendido
             </div>
 
             <p className="font-display font-semibold text-primary text-sm mb-1">Completo</p>
@@ -78,15 +72,13 @@ const PricingSection = () => {
               <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
               <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-85% OFF</span>
             </div>
-            <p className="text-muted-foreground text-[11px] mb-0.5">Inclui todos os bônus (valor R$168)</p>
-            <p className="text-primary/70 text-[11px] font-medium mb-1">Menos de R$0,01 por bloco</p>
             <p className="text-muted-foreground text-xs mb-8">Pagamento único · Acesso imediato</p>
 
             <ul className="space-y-3 mb-8 flex-1 text-sm">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos extras</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Pack de Hachuras Profissionais</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem (.ctb)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem .ctb</li>
               <li className="flex gap-2"><span className="text-success">✓</span> Anotações e Legendas Pro</li>
               <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
@@ -101,39 +93,21 @@ const PricingSection = () => {
             >
               → QUERO O PACK PRO
             </motion.a>
-
-            <p className="text-center mt-3 text-xs text-muted-foreground">
-              A escolha de quem quer a biblioteca completa.
-            </p>
           </motion.div>
         </div>
 
         {/* Value stack */}
         <motion.div
-          className="mt-8 bg-card border border-border rounded-lg p-6 max-w-md mx-auto"
+          className="text-center mt-8 bg-card border border-border rounded-lg p-4 max-w-md mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-center text-foreground font-display font-bold text-sm mb-4">Valor total de tudo que você recebe:</p>
-          <ul className="space-y-1 text-sm text-muted-foreground mb-4">
-            <li className="flex justify-between"><span>Blocos</span><span className="line-through">R$ 97</span></li>
-            <li className="flex justify-between"><span>Hachuras</span><span className="line-through">R$ 47</span></li>
-            <li className="flex justify-between"><span>Templates</span><span className="line-through">R$ 57</span></li>
-            <li className="flex justify-between"><span>Legendas</span><span className="line-through">R$ 67</span></li>
-            <li className="flex justify-between"><span>Blocos Dinâmicos</span><span className="line-through">R$ 87</span></li>
-            <li className="flex justify-between"><span>Kit Pranchas</span><span className="line-through">R$ 97</span></li>
-            <li className="flex justify-between"><span>Atalhos</span><span className="line-through">R$ 37</span></li>
-            <li className="flex justify-between"><span>Guia AutoCAD 2026</span><span className="line-through">R$ 27</span></li>
-            <li className="flex justify-between"><span>Prompts IA</span><span className="line-through">R$ 47</span></li>
-            <li className="flex justify-between"><span>Certificado</span><span className="line-through">R$ 27</span></li>
-            <li className="flex justify-between"><span>Grupo Network</span><span className="text-primary font-semibold">EXCLUSIVO</span></li>
-          </ul>
-          <div className="border-t border-border pt-4 text-center">
-            <p className="text-muted-foreground text-sm">Valor total: <span className="line-through">R$ 590,00</span></p>
-            <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
-            <p className="text-success text-xs font-bold mt-1">Economia de 95%</p>
-          </div>
+          <p className="text-muted-foreground text-sm">
+            Valor real dos bônus: <span className="line-through">R$ 168,00</span>
+          </p>
+          <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
+          <p className="text-success text-xs font-bold mt-1">Economia de 85%</p>
         </motion.div>
       </div>
     </section>
