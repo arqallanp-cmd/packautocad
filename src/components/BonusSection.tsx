@@ -65,9 +65,14 @@ const BonusSection = () => {
                 key={b.num}
                 className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-colors duration-300 hover:border-primary/50 flex flex-col h-full"
               >
-                {/* Mockup image */}
-                <div className="w-full aspect-[4/5] overflow-hidden rounded-lg">
-                  <img src={b.img} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
+                {/* Mockup image — fixed height */}
+                <div className="w-full h-[180px] sm:h-[200px] overflow-hidden rounded-t-lg">
+                  <img
+                    src={b.img}
+                    alt={b.title}
+                    className="w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div className="p-5 flex gap-4 items-start flex-1">
