@@ -102,7 +102,7 @@ const Upsell = () => {
 
           {/* CTA button */}
           <a
-            href="#"
+            href="https://pay.wiapy.com/Anzl2Aiwf7"
             className="flex items-center justify-center w-full bg-gradient-gold text-primary-foreground font-display font-bold text-sm uppercase rounded-full py-3.5 px-6 shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold"
           >
             SIM, QUERO O PACK PRO 🚀
@@ -116,7 +116,7 @@ const Upsell = () => {
 
         {/* Decline button */}
         <a
-          href="#"
+          href="https://pay.wiapy.com/kxQXZSPzi7"
           className="text-center block font-body text-sm text-foreground/80 font-medium border border-border rounded-lg py-3.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all"
         >
           Continuar com o Básico — R$9,90
