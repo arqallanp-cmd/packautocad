@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AutodeskBadge from "./AutodeskBadge";
 
 const categories = [
   { icon: "🚪", title: "Portas e Janelas", desc: "O bloco mais inserido em qualquer planta, com todos os modelos e ângulos de abertura" },
