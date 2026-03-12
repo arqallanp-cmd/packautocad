@@ -82,7 +82,7 @@ const PricingSection = () => {
               <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span>✅</span> +15.000 Blocos DWG extras</li>
               <li className="flex gap-2"><span>✅</span> +300 Hachuras Profissionais</li>
-              <li className="flex gap-2"><span>✅</span> Curso de Plotagem Automático</li>
+              <li className="flex gap-2"><span>✅</span> Pack de Plotagem Automática</li>
               <li className="flex gap-2"><span>✅</span> Kit de Pranchas ABNT</li>
               <li className="flex gap-2"><span>✅</span> +200 Blocos Dinâmicos</li>
               <li className="flex gap-2"><span>✅</span> Instalador AutoCAD 2026</li>
