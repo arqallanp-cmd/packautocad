@@ -82,13 +82,13 @@ const PricingSection = () => {
               <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span>✅</span> +15.000 Blocos DWG extras</li>
               <li className="flex gap-2"><span>✅</span> +300 Hachuras Profissionais</li>
-              <li className="flex gap-2"><span>✅</span> Sistema de Plotagem Automático</li>
+              <li className="flex gap-2"><span>✅</span> Curso de Plotagem Automático</li>
               <li className="flex gap-2"><span>✅</span> Kit de Pranchas ABNT</li>
               <li className="flex gap-2"><span>✅</span> +200 Blocos Dinâmicos</li>
-              <li className="flex gap-2"><span>✅</span> Guia AutoCAD 2026</li>
-              <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
-              <li className="flex gap-2"><span>✅</span> Grupo Network Exclusivo (vitalício)</li>
-              <li className="flex gap-2"><span>✅</span> Certificado de Capacitação (20h)</li>
+              <li className="flex gap-2"><span>✅</span> Instalador AutoCAD 2026</li>
+              <li className="flex gap-2"><span className="text-primary">★</span> 5 Agentes de IA</li>
+              <li className="flex gap-2"><span>✅</span> Grupo Network VIP</li>
+              <li className="flex gap-2"><span>✅</span> Certificado Autodesk 20h</li>
               <li className="flex gap-2"><span>✅</span> 14 dias de garantia</li>
             </ul>
 
