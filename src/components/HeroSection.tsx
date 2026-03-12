@@ -42,13 +42,10 @@ const HeroSection = () => {
 
           {/* Price anchor */}
           <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
-            De <span className="line-through">R$ 59,90</span> por apenas
+            DE <span className="line-through">R$49,90</span> POR APENAS
           </p>
-          <div className="flex items-center justify-center gap-1 mb-1">
-            <span className="font-display text-lg sm:text-xl font-bold text-muted-foreground uppercase">por apenas</span>
-          </div>
           <div className="flex items-center justify-center mb-2">
-            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$5,99</span>
+            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$9,90</span>
           </div>
           <p className="text-muted-foreground text-xs sm:text-sm mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
 
