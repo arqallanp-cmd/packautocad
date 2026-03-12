@@ -116,7 +116,7 @@ const Upsell = () => {
 
         {/* Decline button */}
         <a
-          href="#"
+          href="https://pay.wiapy.com/kxQXZSPzi7"
           className="text-center block font-body text-sm text-foreground/80 font-medium border border-border rounded-lg py-3.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all"
         >
           Continuar com o Básico — R$9,90
