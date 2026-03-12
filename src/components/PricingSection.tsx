@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Infinity, ShieldCheck, Award } from "lucide-react";
 
 const PricingSection = () => {
   return (
