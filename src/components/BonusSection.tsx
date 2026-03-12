@@ -56,36 +56,43 @@ const BonusSection = () => {
             return (
               <motion.div
                 key={b.num}
-                className="group relative bg-gradient-card border border-border rounded-xl p-5 flex gap-4 items-start transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(45_100%_55%/0.15)]"
+                className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_24px_-6px_hsl(45_100%_55%/0.15)]"
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
                 whileHover={{ y: -3 }}
               >
-                {/* Icon */}
-                <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-primary" />
+                {/* Mockup image */}
+                <div className="w-full h-36 sm:h-40 bg-secondary/50 flex items-center justify-center">
+                  <Icon className="w-10 h-10 text-primary/30" />
                 </div>
 
-                <div className="flex-1 min-w-0">
-                  {/* Top row */}
-                  <div className="flex items-start justify-between gap-2 mb-1.5">
-                    <div>
-                      <span className="text-primary/40 font-display text-xs font-bold mr-2">BONUS {b.num}</span>
-                      <h3 className="font-display font-bold text-sm sm:text-base leading-snug">{b.title}</h3>
-                    </div>
-                    <span className="shrink-0 text-[10px] bg-success/20 text-success font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-                      Grátis
-                    </span>
+                <div className="p-5 flex gap-4 items-start">
+                  {/* Icon */}
+                  <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-primary" />
                   </div>
 
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-2 line-clamp-2">{b.desc}</p>
+                  <div className="flex-1 min-w-0">
+                    {/* Top row */}
+                    <div className="flex items-start justify-between gap-2 mb-1.5">
+                      <div>
+                        <span className="text-primary/40 font-display text-xs font-bold mr-2">BONUS {b.num}</span>
+                        <h3 className="font-display font-bold text-sm sm:text-base leading-snug">{b.title}</h3>
+                      </div>
+                      <span className="shrink-0 text-[10px] bg-success/20 text-success font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                        Grátis
+                      </span>
+                    </div>
 
-                  <p className="text-muted-foreground text-xs">
-                    De <span className="line-through">{b.oldPrice}</span>{" "}
-                    <span className="text-success font-semibold">→ GRÁTIS</span>
-                  </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-2 line-clamp-2">{b.desc}</p>
+
+                    <p className="text-muted-foreground text-xs">
+                      De <span className="line-through">{b.oldPrice}</span>{" "}
+                      <span className="text-success font-semibold">→ GRÁTIS</span>
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             );
