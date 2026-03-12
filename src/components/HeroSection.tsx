@@ -1,11 +1,4 @@
 import { motion } from "framer-motion";
-import PrimaryCta from "@/components/PrimaryCta";
-
-const benefits = [
-  "Blocos organizados por categorias",
-  "Compatível com qualquer AutoCAD",
-  "Biblioteca pronta para usar",
-];
 
 const HeroSection = () => {
   return (
@@ -17,43 +10,88 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="flex flex-col"
+          className="flex flex-col items-center"
         >
           {/* Headline */}
-          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.95] mb-3 sm:mb-4">
-            <span className="text-gradient-gold text-[28px] sm:text-4xl md:text-5xl">
-              +4.500 BLOCOS PRONTOS PARA AUTOCAD
+          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.95] mb-2 sm:mb-3">
+            <span className="text-gradient-gold text-[36px] sm:text-5xl md:text-6xl block">
+              +4500 BLOCOS
+            </span>
+            <span className="text-foreground text-[28px] sm:text-4xl md:text-5xl flex items-center justify-center gap-2 sm:gap-3 mt-1">
+              PRONTOS
+              <span className="bg-destructive text-destructive-foreground text-[20px] sm:text-2xl md:text-3xl font-extrabold px-2.5 py-0.5 rounded-md">
+                AUTOCAD
+              </span>
             </span>
           </h1>
 
-          {/* Benefits */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-5 mb-4 sm:mb-8">
-            {benefits.map((b) => (
-              <span key={b} className="text-sm text-foreground/80 font-medium flex items-center gap-1.5">
-                <span className="text-success text-xs">✔</span> {b}
-              </span>
-            ))}
-          </div>
+          {/* Subtitle */}
+          <p className="text-muted-foreground text-sm sm:text-base max-w-md mx-auto mb-4 sm:mb-6">
+            O maior pack profissional de blocos DWG do mercado.
+          </p>
 
           {/* Mockup */}
           <img
             src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_04_jgsp83.png"
-            alt="Mockup do produto +4.500 Blocos AutoCAD"
+            alt="Mockup do produto +4500 Blocos AutoCAD"
             loading="eager"
             width="900"
             height="600"
-            className="mx-auto mb-4 sm:mb-10 w-auto max-w-full max-h-[220px] sm:max-h-none sm:w-full sm:max-w-[900px] object-contain"
+            className="mx-auto mb-4 sm:mb-8 w-auto max-w-full max-h-[220px] sm:max-h-none sm:w-full sm:max-w-[900px] object-contain"
           />
 
           {/* Price */}
-          <div className="flex items-center justify-center mb-4 sm:mb-6">
+          <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
+            DE <span className="line-through">R$49,90</span> POR APENAS
+          </p>
+          <div className="flex items-center justify-center mb-1 sm:mb-2">
             <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold drop-shadow-[0_0_20px_hsl(45_100%_55%/0.35)]">
               R$9,90
             </span>
           </div>
+          <p className="text-muted-foreground text-xs sm:text-sm mb-6 sm:mb-8">
+            Pagamento único · Acesso imediato · Sem mensalidade
+          </p>
 
-          {/* CTA */}
-          <PrimaryCta />
+          {/* CTA Button */}
+          <motion.a
+            href="#pricing"
+            className="flex items-center justify-center gap-2 bg-success text-white font-display rounded-2xl shadow-[0_4px_24px_-4px_hsl(145_60%_45%/0.4)] w-full max-w-sm mx-auto px-6 py-4 sm:py-5 transition-all hover:shadow-[0_4px_32px_-2px_hsl(145_60%_50%/0.5)] animate-pulse-btn"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          >
+            <span className="text-lg">🚀</span>
+            <span className="font-extrabold text-base sm:text-lg uppercase tracking-wide">
+              QUERO ACESSO IMEDIATO
+            </span>
+          </motion.a>
+
+          {/* Trust */}
+          <p className="text-muted-foreground/60 text-[10px] sm:text-xs mt-3 flex items-center gap-1">
+            <span>🔒</span> Compra 100% segura · Acesso imediato após pagamento
+          </p>
+
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-3 mt-6 sm:mt-8 w-full max-w-sm">
+            {[
+              { value: "4.500+", label: "Blocos DWG" },
+              { value: "100%", label: "Organizados" },
+              { value: "R$9,90", label: "Acesso total" },
+            ].map((stat) => (
+              <div
+                key={stat.label}
+                className="border border-border rounded-xl py-3 px-2 flex flex-col items-center bg-card"
+              >
+                <span className="font-display font-extrabold text-lg sm:text-xl text-gradient-gold">
+                  {stat.value}
+                </span>
+                <span className="text-muted-foreground text-[10px] sm:text-xs mt-0.5">
+                  {stat.label}
+                </span>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
