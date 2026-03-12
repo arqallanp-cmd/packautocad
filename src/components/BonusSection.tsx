@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
 import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles } from "lucide-react";
 
+import bonus01 from "@/assets/bonus-01-blocos-dwg.png";
+import bonus02 from "@/assets/bonus-02-hachuras.png";
+import bonus03 from "@/assets/bonus-03-plotagem.png";
+import bonus04 from "@/assets/bonus-04-escritorio.png";
+import bonus05 from "@/assets/bonus-05-blocos-dinamicos.png";
+import bonus06 from "@/assets/bonus-06-atalhos.png";
+import bonus07 from "@/assets/bonus-07-guia-instalacao.png";
+import bonus08 from "@/assets/bonus-08-prompts-ia.png";
+
 const bonuses = [
   { num: "01", title: "+15.000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$197", icon: Layers },
   { num: "02", title: "+300 Hachuras Profissionais", desc: "Materiais realistas para pranchas arquitetônicas.", oldPrice: "R$97", icon: PenTool },
