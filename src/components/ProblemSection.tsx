@@ -29,7 +29,7 @@ const ProblemSection = () => {
                 className="flex gap-4 items-start bg-gradient-card rounded-lg p-5 border border-danger/20"
               >
                 <span className="text-danger font-bold text-lg mt-0.5 shrink-0">✗</span>
-                <p className="text-secondary-foreground leading-relaxed">{p.text}</p>
+                <p className="text-secondary-foreground leading-relaxed lg:text-lg">{p.text}</p>
               </div>
             ))}
           </div>

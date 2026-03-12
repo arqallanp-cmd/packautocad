@@ -12,8 +12,8 @@ const PricingSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">Escolha seu pacote</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold">Acesso imediato ao material</h2>
+          <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Escolha seu pacote</p>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">Acesso imediato ao material</h2>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row items-stretch gap-6 max-w-lg lg:max-w-none mx-auto">

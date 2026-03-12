@@ -143,10 +143,10 @@ const SocialProofWall = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">
             Prova social
           </p>
-          <h2 className="font-display text-2xl sm:text-3xl font-bold">
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold">
             Veja o que quem já comprou está dizendo
           </h2>
         </motion.div>
