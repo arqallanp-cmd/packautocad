@@ -47,9 +47,13 @@ const HeroSection = () => {
               <motion.div
                 key={i}
                 className={`absolute z-20 ${mob} ${desk} flex items-center justify-center w-7 h-7 sm:w-10 sm:h-10 rounded-md sm:rounded-lg bg-card/80 border border-border backdrop-blur-sm shadow-card`}
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay }}
+                initial={{ opacity: 0, scale: 0.5, y: 0 }}
+                animate={{ opacity: 1, scale: 1, y: [0, -6, 0] }}
+                transition={{
+                  opacity: { duration: 0.5, delay },
+                  scale: { duration: 0.5, delay },
+                  y: { duration: 3 + i * 0.4, repeat: Infinity, ease: "easeInOut", delay: delay + 0.5 },
+                }}
               >
                 <Icon className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-primary" />
               </motion.div>
