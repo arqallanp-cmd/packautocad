@@ -10,10 +10,10 @@ const bonuses = [
   { num: "04", title: "Kit Escritório Profissional", desc: "Carimbos, símbolos e legendas padrão escritório.", oldPrice: "R$27", icon: Stamp, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_04_ohkidi.jpg" },
   { num: "05", title: "+200 Blocos Dinâmicos", desc: "Portas, janelas e mobiliário com parâmetros editáveis.", oldPrice: "R$27", icon: DoorOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_05_nlc4lj.png" },
   { num: "06", title: "Grupo Network", desc: "Comunidade exclusiva de profissionais AutoCAD.", oldPrice: "R$17", icon: Keyboard, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_06_ayc045.jpg" },
-  { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$17", icon: BookOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_07_esoqzr.jpg" },
+  { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$17", icon: BookOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348454/BONUS_07_wzadr0.jpg" },
   { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$27", icon: Sparkles, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_08_k4nrqs.jpg" },
-  { num: "09", title: "Grupo VIP", subtitle: "Acesso vitalício · Comunidade fechada", desc: "", oldPrice: "R$17", icon: Users, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_09_d4xgo7.jpg", pills: ["💬 Suporte da comunidade", "🤝 Indicações de projetos", "🔔 Atualizações em primeira mão"] },
-  { num: "10", title: "Certificado de Capacitação", subtitle: "20 horas · Válido para faculdade e estágio", desc: "", oldPrice: "R$17", icon: GraduationCap, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773343468/BONUS_10_bt9fps.jpg" },
+  { num: "09", title: "Grupo VIP", subtitle: "Acesso vitalício · Comunidade fechada", desc: "", oldPrice: "R$17", icon: Users, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348455/BONUS_09_asvigq.jpg", pills: ["💬 Suporte da comunidade", "🤝 Indicações de projetos", "🔔 Atualizações em primeira mão"] },
+  { num: "10", title: "Certificado de Capacitação", subtitle: "20 horas · Válido para faculdade e estágio", desc: "", oldPrice: "R$17", icon: GraduationCap, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348454/BONUS_10_mix1oe.jpg" },
 ] as const;
 
 const stats = [
