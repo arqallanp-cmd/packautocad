@@ -133,10 +133,10 @@ const PricingSection = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground text-sm">
-            Valor real dos bônus: <span className="line-through">R$ 762,00</span>
+            Valor real dos bônus: <span className="line-through">R$ 297,00</span>
           </p>
           <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
-          <p className="text-success text-xs font-bold mt-1">Economia de 97%</p>
+          <p className="text-success text-xs font-bold mt-1">Economia de 92%</p>
           <AutodeskBadge variant="inline" className="mt-2 justify-center" />
         </motion.div>
       </div>
