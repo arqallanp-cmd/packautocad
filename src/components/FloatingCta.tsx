@@ -40,8 +40,8 @@ const FloatingCta = () => {
             Quero Acesso Imediato
           </span>
           <span
+            className="bg-gradient-gold"
             style={{
-              background: "#c8a96e",
               color: "#0a0a0a",
               borderRadius: 100,
               padding: "4px 14px",
