@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles } from "lucide-react";
+import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles, GraduationCap, Users } from "lucide-react";
 
 const bonuses = [
   { num: "01", title: "+15000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$197", icon: Layers, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_01_hmuolw.jpg" },
@@ -10,7 +10,9 @@ const bonuses = [
   { num: "06", title: "Grupo Network", desc: "Comunidade exclusiva de profissionais AutoCAD.", oldPrice: "R$37", icon: Keyboard, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_06_ayc045.jpg" },
   { num: "07", title: "Guia de Instalação AutoCAD", desc: "Passo a passo completo de instalação.", oldPrice: "R$27", icon: BookOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_07_esoqzr.jpg" },
   { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$47", icon: Sparkles, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_08_k4nrqs.jpg" },
-];
+  { num: "09", title: "Certificado de Capacitação", subtitle: "20 horas · Válido para faculdade e estágio", desc: "Certificado digital de Capacitação Profissional em Produtividade com AutoCAD. Reconhecido para faculdade, portfolio e apresentação em processos seletivos e estágios.", oldPrice: "R$27", icon: GraduationCap },
+  { num: "10", title: "Grupo VIP", subtitle: "Acesso vitalício · Comunidade fechada", desc: "Acesse hoje o grupo fechado de arquitetos, estudantes e profissionais do mercado. Tire dúvidas, troque projetos, receba indicações de clientes e fique por dentro das novidades do Pack em primeira mão.", oldPrice: "R$19", icon: Users, pills: ["💬 Suporte da comunidade", "🤝 Indicações de projetos", "🔔 Atualizações em primeira mão"] },
+] as const;
 
 const stats = [
   "19500+ blocos AutoCAD",
