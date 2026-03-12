@@ -40,9 +40,12 @@ const BonusSection = () => {
                   <h3 className="font-display font-bold text-base">{b.title}</h3>
                   <span className="text-xs bg-success/20 text-success font-bold px-2 py-0.5 rounded">GRÁTIS</span>
                 </div>
-                <div className="border border-dashed border-primary/20 rounded-lg h-20 flex items-center justify-center bg-card/50 my-3">
-                  <span className="text-primary/40 font-display text-xs">[ Preview do bônus ]</span>
-                </div>
+                <img
+                  src={b.img}
+                  alt={b.title}
+                  loading="lazy"
+                  className="w-full h-[160px] sm:h-[200px] object-cover rounded-lg my-3"
+                />
                 <p className="text-muted-foreground text-sm leading-relaxed mb-1">{b.desc}</p>
                 <span className="text-muted-foreground text-xs line-through">{b.price}</span>
               </div>
