@@ -96,8 +96,8 @@ const PricingSection = () => {
             <div className="border-t border-border my-4" />
 
             <div className="flex items-center justify-center gap-2 mb-1">
-              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded">-97% OFF</span>
-              <span className="text-muted-foreground line-through text-sm">R$197,00</span>
+              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded">-92% OFF</span>
+              <span className="text-muted-foreground line-through text-sm">R$297,00</span>
             </div>
             <div className="flex items-baseline justify-center mb-4" style={{ textShadow: '0 0 30px hsl(var(--primary) / 0.5), 0 0 60px hsl(var(--primary) / 0.3)' }}>
               <span className="font-display text-4xl sm:text-5xl font-bold text-gradient-gold">R$</span>
