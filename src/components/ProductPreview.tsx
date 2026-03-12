@@ -47,7 +47,7 @@ const ProductPreview = () => {
 
   return (
     <section className="py-16 bg-background overflow-hidden">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-5xl lg:max-w-6xl mx-auto px-4">
         {/* Section label */}
         <motion.p
           className="text-center text-primary/80 font-display text-sm font-semibold tracking-widest uppercase mb-10"
