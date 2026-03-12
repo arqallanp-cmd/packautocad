@@ -93,6 +93,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-gold": "pulse-gold 3s ease-in-out infinite",
         "pulse-btn": "pulse-btn 2s infinite",
+        "float": "float 3s ease-in-out infinite",
       },
     },
   },
