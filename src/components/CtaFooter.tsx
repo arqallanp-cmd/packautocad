@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PrimaryCta from "@/components/PrimaryCta";
 
 const CtaFooter = () => {
   return (
@@ -10,24 +11,16 @@ const CtaFooter = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="flex flex-col items-center"
           >
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
               Última chance.<br />
               <span className="text-gradient-gold">Não deixa pra depois.</span>
             </h2>
             <p className="text-muted-foreground mb-8">
-              +18.000 blocos, hachuras, templates e prompts de IA. Tudo por <strong className="text-primary">R$ 24,90</strong>.
+              +4.500 blocos, hachuras, templates e prompts de IA. Tudo por <strong className="text-primary">R$9,90</strong>.
             </p>
-            <motion.a
-              href="#pricing"
-              className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-lg px-10 py-4 rounded-lg shadow-gold animate-pulse-gold"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              → QUERO O PACK AUTOCAD PRO
-            </motion.a>
-            <p className="text-muted-foreground/60 text-xs mt-4">🔒 Pagamento seguro · Acesso imediato · Garantia de 14 dias</p>
+            <PrimaryCta href="https://pay.wiapy.com/5xnUmUDYB" />
           </motion.div>
         </div>
       </section>

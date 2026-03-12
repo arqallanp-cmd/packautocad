@@ -9,6 +9,7 @@ import {
   Monitor,
   Sparkles,
 } from "lucide-react";
+import PrimaryCta from "@/components/PrimaryCta";
 
 const bonuses = [
   { num: "01", title: "+15.000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", price: "R$197", icon: Blocks },
@@ -71,7 +72,7 @@ const BonusSection = () => {
 
         {/* Bonus grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -109,6 +110,9 @@ const BonusSection = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* CTA after bonuses */}
+        <PrimaryCta />
       </div>
     </section>
   );

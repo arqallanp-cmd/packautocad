@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PrimaryCta from "@/components/PrimaryCta";
 
 const benefits = [
   "Blocos organizados por categorias",
@@ -61,23 +62,12 @@ const HeroSection = () => {
               R$9,90
             </span>
           </div>
-          <p className="text-muted-foreground text-xs sm:text-sm mb-4 sm:mb-8">
+          <p className="text-muted-foreground text-xs sm:text-sm mb-6 sm:mb-8">
             Pagamento único · Acesso imediato · Sem mensalidade
           </p>
 
           {/* CTA */}
-          <motion.a
-            href="#pricing"
-            className="inline-flex items-center justify-center gap-2 bg-success text-white font-display font-bold text-sm sm:text-lg px-6 sm:px-12 py-[18px] sm:py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto max-w-sm mx-auto animate-pulse-btn"
-            whileTap={{ scale: 0.96 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          >
-            🚀 BAIXAR PACK AGORA
-          </motion.a>
-
-          <p className="text-muted-foreground/60 text-xs mt-3 sm:mt-4">
-            🔒 Compra 100% segura · Acesso imediato após pagamento
-          </p>
+          <PrimaryCta showUrgency />
         </motion.div>
       </div>
     </section>
