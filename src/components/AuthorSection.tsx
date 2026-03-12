@@ -11,7 +11,7 @@ const AuthorSection = () => {
           viewport={{ once: true }}
         >
           <img
-            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_300/FOUNDER_wzplel.jpg"
+            src="https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348575/FOUNDER_02_ygftjc.jpg"
             alt="Lara Rembrandt, criadora do Pack AutoCAD Pro"
             loading="lazy"
             className="mb-4"
