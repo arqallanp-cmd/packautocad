@@ -87,6 +87,8 @@ const ProductPreview = () => {
             src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/freepik__atualize-para-4500-blocos__66968_gg9nbh.jpg"
             alt="+4.500 blocos organizados por pastas"
             loading="lazy"
+            width="900"
+            height="500"
             className="w-full rounded-lg mb-5"
           />
 
