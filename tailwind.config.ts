@@ -83,6 +83,10 @@ export default {
           "70%": { boxShadow: "0 0 0 14px rgba(200,169,110,0)" },
           "100%": { boxShadow: "0 0 0 0 rgba(200,169,110,0)" },
         },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
