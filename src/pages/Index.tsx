@@ -1,4 +1,5 @@
 import MarqueeTicker from "@/components/MarqueeTicker";
+import CountdownTimer from "@/components/CountdownTimer";
 import HeroSection from "@/components/HeroSection";
 import ProductPreview from "@/components/ProductPreview";
 import SocialProofWall from "@/components/SocialProofWall";
@@ -19,6 +20,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <MarqueeTicker />
+      <CountdownTimer />
       <HeroSection />
       <ProblemSection />
       <ProductPreview />
