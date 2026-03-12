@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Armchair, TreePine, Car, PersonStanding, Lightbulb, ShieldCheck, Download, Award } from "lucide-react";
+import { Armchair, TreePine, Car, PersonStanding, Lightbulb } from "lucide-react";
 
 const floatingIcons = [
   { Icon: Armchair, mob: "top-[5%] left-[-4px]", desk: "sm:top-[10%] sm:left-[5%]", delay: 0.4 },
@@ -83,9 +83,13 @@ const HeroSection = () => {
           <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
             DE <span className="line-through">R$49,90</span> POR APENAS
           </p>
-          <div className="flex items-center justify-center mb-4 sm:mb-6">
-            <span className="font-display text-6xl sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$9,90</span>
+          <div className="flex items-center justify-center mb-1 sm:mb-2">
+            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$9,90</span>
           </div>
+          <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
+
+          {/* Micro curiosity line */}
+          <p className="text-muted-foreground/60 text-xs sm:text-sm mb-2 text-center">Descubra como acessar a biblioteca completa ↓</p>
 
           {/* 5. CTA button */}
           <motion.a
@@ -98,11 +102,7 @@ const HeroSection = () => {
           </motion.a>
 
           {/* 6. Security text */}
-          <div className="flex items-center justify-center gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
-            <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
-            <span className="flex items-center gap-1"><Download className="w-3.5 h-3.5 text-primary" /> Download imediato</span>
-            <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-primary" /> Certificado AutoDESK</span>
-          </div>
+          <p className="text-muted-foreground/60 text-xs mt-3 sm:mt-4">🔒 Compra 100% segura · Acesso imediato após pagamento</p>
         </motion.div>
 
         {/* 7. Stats */}

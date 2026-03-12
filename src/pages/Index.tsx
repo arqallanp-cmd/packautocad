@@ -20,16 +20,18 @@ const Index = () => {
     <main className="min-h-screen">
       <MarqueeTicker />
       <HeroSection />
-      <ProblemSection />
       <ProductPreview />
-      <BlocksSection />
       <SocialProofWall />
+      <ProblemSection />
+      <BlocksSection />
       <BonusSection />
+      
       <PricingSection />
       <GuaranteeSection />
       <AuthorSection />
       <FaqSection />
       <CtaFooter />
+      
     </main>
   );
 };

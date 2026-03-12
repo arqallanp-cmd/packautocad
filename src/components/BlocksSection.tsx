@@ -1,21 +1,20 @@
 import { motion } from "framer-motion";
-import AutodeskBadge from "./AutodeskBadge";
 
 const categories = [
-  { icon: "🚪", title: "Portas e Janelas", desc: "O bloco mais inserido em qualquer planta, com todos os modelos e ângulos de abertura" },
+  { icon: "🚪", title: "Portas e Janelas", desc: "O bloco mais inserido em qualquer planta — todos os modelos e ângulos de abertura" },
   { icon: "🛋️", title: "Mobiliário Completo", desc: "Sofás, poltronas, estantes, mesas e cadeiras para todos os ambientes" },
   { icon: "🛏️", title: "Camas / Dormitórios", desc: "Camas de solteiro, casal, beliche, criados-mudos e guarda-roupas" },
   { icon: "🍳", title: "Cozinhas + Gourmet", desc: "Bancadas, ilhas, eletrodomésticos, mesas integradas e áreas gourmet" },
   { icon: "🛁", title: "Banheiros / Sanitários", desc: "Louças, metais, box, banheiras e acessórios sanitários completos" },
-  { icon: "🏊", title: "Área de Lazer / Churrasqueira", desc: "Piscinas, churrasqueiras, pergolados e espaços de lazer" },
+  { icon: "🏊", title: "Área de Lazer / Churrasqueira", desc: "Piscinas, churrasqueiras, pergolados e espaços de lazer em condomínios" },
   { icon: "💻", title: "Home Office", desc: "Mesas, cadeiras ergonômicas, estantes e layouts de escritório residencial" },
   { icon: "🏢", title: "Escritório / Corporativo", desc: "Baias, salas de reunião, recepção e ambientes corporativos completos" },
-  { icon: "🏋️", title: "Academia / Fitness", desc: "Equipamentos de musculação, cardio e áreas de lazer" },
+  { icon: "🏋️", title: "Academia / Fitness", desc: "Equipamentos de musculação, cardio e áreas de lazer em condomínios" },
   { icon: "👤", title: "Pessoas / Humanização", desc: "Figuras humanas em planta e elevação para humanizar pranchetas" },
   { icon: "🌿", title: "Vegetação / Paisagismo", desc: "Árvores, arbustos, jardins e elementos de paisagismo em planta" },
   { icon: "🚗", title: "Automóveis / Veículos", desc: "Carros, motos, caminhões e ônibus para estacionamentos e implantações" },
   { icon: "🪜", title: "Escadas / Rampas", desc: "Retas, em L, caracol, com detalhamento técnico e corrimão" },
-  { icon: "♿", title: "Acessibilidade / PNE", desc: "Blocos NBR 9050 atualizados: banheiros, rampas, vagas e sinalização" },
+  { icon: "♿", title: "Acessibilidade / PNE", desc: "Blocos NBR 9050 atualizados — banheiros, rampas, vagas e sinalização" },
   { icon: "⚡", title: "Elétrica / Símbolos", desc: "Diagramas, quadros, tomadas, interruptores e instalações elétricas" },
   { icon: "💧", title: "Hidráulica", desc: "Tubulações, conexões, reservatórios e instalações hidrossanitárias" },
   { icon: "💡", title: "Iluminação / Luminárias", desc: "Spots, pendentes, arandelas e luminárias para projetos de interiores" },
@@ -37,7 +36,7 @@ const BlocksSection = () => {
         >
           <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">O que vem no pack</p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            +4500 blocos organizados,<br />
+            +4.500 blocos organizados,<br />
             <span className="text-gradient-gold">prontos para usar agora</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
@@ -77,7 +76,6 @@ const BlocksSection = () => {
           >
             🔥 GARANTIR TODOS OS BLOCOS
           </a>
-          <AutodeskBadge variant="default" className="mt-4" />
         </motion.div>
       </div>
     </section>
