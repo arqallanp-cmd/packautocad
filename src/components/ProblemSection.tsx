@@ -10,15 +10,15 @@ const problems = [
 const ProblemSection = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container max-w-3xl mx-auto px-4">
+      <div className="container max-w-3xl lg:max-w-5xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-danger font-display text-sm font-semibold tracking-widest uppercase mb-3">Isso te parece familiar?</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-10 leading-tight">
+          <p className="text-danger font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Isso te parece familiar?</p>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 leading-tight">
             Você está <span className="text-danger">perdendo tempo</span> (e dinheiro) com isso:
           </h2>
 
@@ -29,7 +29,7 @@ const ProblemSection = () => {
                 className="flex gap-4 items-start bg-gradient-card rounded-lg p-5 border border-danger/20"
               >
                 <span className="text-danger font-bold text-lg mt-0.5 shrink-0">✗</span>
-                <p className="text-secondary-foreground leading-relaxed">{p.text}</p>
+                <p className="text-secondary-foreground leading-relaxed lg:text-lg">{p.text}</p>
               </div>
             ))}
           </div>

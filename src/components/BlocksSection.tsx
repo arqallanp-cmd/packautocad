@@ -27,7 +27,7 @@ const categories = [
 const BlocksSection = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-5xl lg:max-w-7xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -35,18 +35,18 @@ const BlocksSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">O que vem no pack</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+          <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">O que vem no pack</p>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             +4500 blocos organizados,<br />
             <span className="text-gradient-gold">prontos para usar agora</span>
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-xl mx-auto lg:text-lg">
             Arquivos .DWG leves, categorizados e testados do AutoCAD 2018 ao 2025. É só arrastar.
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

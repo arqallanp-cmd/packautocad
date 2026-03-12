@@ -36,11 +36,11 @@ const BonusSection = () => {
           transition={{ duration: 0.5 }}
         >
           <p className="text-primary font-display text-xs font-bold tracking-[0.2em] uppercase mb-3">🎁 BÔNUS INCLUSOS HOJE</p>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-tight mb-3">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-3">
             Tudo que você recebe ao entrar no{" "}
             <span className="text-gradient-gold">Pack AutoCAD Pro</span>
           </h2>
-          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-muted-foreground text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6">
             Arquivos profissionais prontos para acelerar seus projetos no AutoCAD.
           </p>
 

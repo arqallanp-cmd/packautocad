@@ -135,7 +135,7 @@ const ScreenshotCard = ({ src }: { src: string }) => (
 const SocialProofWall = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-5xl lg:max-w-6xl mx-auto px-4">
         <motion.div
           className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
@@ -143,10 +143,10 @@ const SocialProofWall = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">
+          <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">
             Prova social
           </p>
-          <h2 className="font-display text-2xl sm:text-3xl font-bold">
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold">
             Veja o que quem já comprou está dizendo
           </h2>
         </motion.div>

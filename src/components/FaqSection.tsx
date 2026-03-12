@@ -13,24 +13,24 @@ const faqs = [
 const FaqSection = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container max-w-2xl mx-auto px-4">
+      <div className="container max-w-2xl lg:max-w-3xl mx-auto px-4">
         <motion.div
           className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">Ainda tem dúvida?</p>
-          <h2 className="font-display text-3xl font-bold">Perguntas frequentes</h2>
+          <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Ainda tem dúvida?</p>
+          <h2 className="font-display text-3xl lg:text-4xl font-bold">Perguntas frequentes</h2>
         </motion.div>
 
         <Accordion type="single" collapsible className="space-y-2">
           {faqs.map((f, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-5 bg-background">
-              <AccordionTrigger className="font-display font-semibold text-sm hover:no-underline">
+              <AccordionTrigger className="font-display font-semibold text-sm lg:text-base hover:no-underline">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground text-sm leading-relaxed">
+              <AccordionContent className="text-muted-foreground text-sm lg:text-base leading-relaxed">
                 {f.a}
               </AccordionContent>
             </AccordionItem>
