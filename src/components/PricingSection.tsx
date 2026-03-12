@@ -76,7 +76,7 @@ const PricingSection = () => {
             <p className="font-display text-lg font-semibold text-center mb-2">Vitalício</p>
 
             <div className="text-center mb-4">
-              <span className="text-muted-foreground line-through text-sm">Valor total: R$762,00</span>
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$297,00</span>
             </div>
 
             <ul className="space-y-3 mb-6 text-base">
