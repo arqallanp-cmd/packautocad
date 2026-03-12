@@ -70,7 +70,7 @@ const HeroSection = () => {
           {[
             { value: "4.500+", label: "Blocos DWG" },
             { value: "100%", label: "Organizados" },
-            { value: "R$5,99", label: "Acesso total" },
+            { value: "R$9,90", label: "Acesso total" },
           ].map((s) => (
             <div key={s.label} className="text-center bg-card/50 border border-border rounded-lg py-3 px-2">
               <p className="font-display text-xl sm:text-2xl font-bold text-primary">{s.value}</p>

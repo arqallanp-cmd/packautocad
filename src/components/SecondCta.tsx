@@ -16,7 +16,7 @@ const SecondCta = () => {
           </h2>
           <p className="text-muted-foreground mb-6">Sério. Enquanto você pensa, alguém já baixou e está usando.</p>
           <div className="my-6">
-            <span className="font-display text-7xl sm:text-8xl font-extrabold text-gradient-gold">R$7,90</span>
+            <span className="font-display text-7xl sm:text-8xl font-extrabold text-gradient-gold">R$9,90</span>
           </div>
           <a
             href="#pricing"

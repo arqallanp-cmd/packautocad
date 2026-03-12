@@ -25,10 +25,10 @@ const PricingSection = () => {
             <p className="font-display font-semibold text-muted-foreground text-sm mb-1">Básico</p>
             <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD</h3>
             <div className="mb-1">
-              <span className="text-muted-foreground line-through text-sm">De R$ 59,90</span>
+              <span className="text-muted-foreground line-through text-sm">De R$ 49,90</span>
             </div>
             <div className="flex items-baseline gap-1 mb-1">
-              <span className="font-display text-4xl font-bold">R$7,90</span>
+              <span className="font-display text-4xl font-bold">R$9,90</span>
             </div>
             <p className="text-muted-foreground text-xs mb-8">Pagamento único</p>
 
