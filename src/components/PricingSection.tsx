@@ -107,7 +107,7 @@ const PricingSection = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground text-sm">
-            Valor real dos bônus: <span className="line-through">R$ 168,00</span>
+            Valor real dos bônus: <span className="line-through">R$ 432,00</span>
           </p>
           <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
           <p className="text-success text-xs font-bold mt-1">Economia de 85%</p>

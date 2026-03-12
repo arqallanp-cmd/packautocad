@@ -62,15 +62,20 @@ const BonusSection = () => {
         >
           {bonuses.map((b) => {
             const Icon = b.icon;
+            const hasImg = "img" in b && b.img;
+            const hasPills = "pills" in b && b.pills;
+            const hasSubtitle = "subtitle" in b && b.subtitle;
             return (
               <div
                 key={b.num}
                 className="group relative bg-gradient-card border border-border rounded-xl overflow-hidden transition-colors duration-300 hover:border-primary/50 flex flex-col h-full"
               >
                 {/* Mockup image */}
-                <div className="w-full aspect-[4/5] overflow-hidden rounded-lg">
-                  <img src={b.img} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
-                </div>
+                {hasImg && (
+                  <div className="w-full aspect-[4/5] overflow-hidden rounded-lg">
+                    <img src={b.img as string} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
+                  </div>
+                )}
 
                 <div className="p-5 flex gap-4 items-start flex-1">
                   {/* Icon */}
@@ -84,13 +89,34 @@ const BonusSection = () => {
                       <div>
                         <span className="text-primary/40 font-display text-xs font-bold mr-2">BONUS {b.num}</span>
                         <h3 className="font-display font-bold text-sm sm:text-base leading-snug">{b.title}</h3>
+                        {hasSubtitle && (
+                          <p className="text-primary/60 text-xs font-medium mt-0.5">{b.subtitle as string}</p>
+                        )}
                       </div>
                       <span className="shrink-0 text-[10px] bg-success/20 text-success font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                         Grátis
                       </span>
                     </div>
 
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-2 line-clamp-2">{b.desc}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-2">{b.desc}</p>
+
+                    {hasPills && (
+                      <div className="flex flex-wrap gap-1.5 mt-3 mb-2">
+                        {(b.pills as readonly string[]).map((pill) => (
+                          <span
+                            key={pill}
+                            className="text-[11px] rounded-full py-1 px-3"
+                            style={{
+                              background: "rgba(200,169,110,0.08)",
+                              border: "1px solid rgba(200,169,110,0.25)",
+                              color: "#c8a96e",
+                            }}
+                          >
+                            {pill}
+                          </span>
+                        ))}
+                      </div>
+                    )}
 
                     <p className="text-muted-foreground text-xs">
                       De <span className="line-through">{b.oldPrice}</span>{" "}
