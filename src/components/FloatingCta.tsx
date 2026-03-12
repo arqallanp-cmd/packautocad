@@ -19,6 +19,10 @@ const FloatingCta = () => {
       {show && (
         <motion.a
           href="#pricing"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+          }}
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
@@ -46,7 +50,7 @@ const FloatingCta = () => {
               whiteSpace: "nowrap",
             }}
           >
-            R$24,90
+            +4500
           </span>
         </motion.a>
       )}
