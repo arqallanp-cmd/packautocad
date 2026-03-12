@@ -35,7 +35,7 @@ const HeroSection = () => {
 
           {/* 3. Mockup image — ABOVE price on all sizes */}
           <img
-            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_03_rh5nww.png"
+            src="https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_900/HERO_04_jgsp83.png"
             alt="Mockup do produto +4.500 Blocos AutoCAD"
             loading="eager"
             width="900"
