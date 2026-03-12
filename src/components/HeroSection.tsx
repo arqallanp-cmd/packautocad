@@ -83,13 +83,9 @@ const HeroSection = () => {
           <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
             DE <span className="line-through">R$49,90</span> POR APENAS
           </p>
-          <div className="flex items-center justify-center mb-1 sm:mb-2">
-            <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold">R$9,90</span>
+          <div className="flex items-center justify-center mb-4 sm:mb-6">
+            <span className="font-display text-6xl sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$9,90</span>
           </div>
-          <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-8">Pagamento único · Acesso imediato · Sem mensalidade</p>
-
-          {/* Micro curiosity line */}
-          <p className="text-muted-foreground/60 text-xs sm:text-sm mb-2 text-center">Descubra como acessar a biblioteca completa ↓</p>
 
           {/* 5. CTA button */}
           <motion.a
