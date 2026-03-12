@@ -118,15 +118,6 @@ const PricingSection = () => {
               <Award size={14} className="shrink-0" /><span className="whitespace-nowrap">Certificado Incluso</span>
             </div>
 
-            <div className="flex items-center justify-center gap-3 mt-3 text-xs text-muted-foreground font-medium">
-              <span>VISA</span>
-              <span>·</span>
-              <span>Mastercard</span>
-              <span>·</span>
-              <span>PIX</span>
-              <span>·</span>
-              <span>Boleto</span>
-            </div>
           </motion.div>
         </div>
 
