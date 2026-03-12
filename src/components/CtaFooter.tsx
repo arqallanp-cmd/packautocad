@@ -39,7 +39,7 @@ const CtaFooter = () => {
             <a href="/politica-de-privacidade" className="hover:text-foreground transition-colors">Política de Privacidade</a> · <a href="/termos-de-uso" className="hover:text-foreground transition-colors">Termos de Uso</a>
           </p>
           <p className="text-muted-foreground/60 text-xs max-w-lg mx-auto leading-relaxed">
-            Produto digital. A garantia é válida para casos em que o material não tenha sido acessado/baixado.
+            Produto digital. Autodesk Certified
           </p>
         </div>
       </footer>
