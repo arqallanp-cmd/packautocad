@@ -53,7 +53,8 @@ const HeroSection = () => {
           <motion.a
             href="#pricing"
             className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-base sm:text-lg px-10 sm:px-12 py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto animate-pulse-btn"
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             Quero ter acesso!
           </motion.a>
