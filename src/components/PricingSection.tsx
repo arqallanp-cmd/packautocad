@@ -67,23 +67,26 @@ const PricingSection = () => {
             <p className="font-display font-semibold text-primary text-sm mb-1">Completo</p>
             <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD Pro</h3>
             <div className="mb-1">
-              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 432,00</span>
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 762,00</span>
             </div>
             <div className="flex items-baseline gap-1 mb-1">
               <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
-              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-85% OFF</span>
+              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-97% OFF</span>
             </div>
             <p className="text-muted-foreground text-xs mb-8">Pagamento único · Acesso imediato</p>
 
             <ul className="space-y-3 mb-8 flex-1 text-sm">
               <li className="flex gap-2"><span className="text-success">✓</span> +4500 Blocos DWG organizados</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> +15000 Blocos extras</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Pack de Hachuras Profissionais</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Template de Plotagem .ctb</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Anotações e Legendas Pro</li>
-              <li className="flex gap-2"><span className="text-primary">★</span> 5 Prompts de IA para Arquitetos</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação Profissional (20h)</li>
-              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network Exclusivo (acesso vitalício)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +15000 Blocos DWG extras</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +300 Hachuras Profissionais</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Sistema de Plotagem Automática</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Kit Escritório Profissional</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +200 Blocos Dinâmicos</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Guia de Instalação AutoCAD</li>
+              <li className="flex gap-2"><span className="text-primary">★</span> Prompts de IA para Arquitetos</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Grupo VIP (acesso vitalício)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação (20h)</li>
               <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
             </ul>
 
@@ -107,10 +110,10 @@ const PricingSection = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground text-sm">
-            Valor real dos bônus: <span className="line-through">R$ 432,00</span>
+            Valor real dos bônus: <span className="line-through">R$ 762,00</span>
           </p>
           <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
-          <p className="text-success text-xs font-bold mt-1">Economia de 85%</p>
+          <p className="text-success text-xs font-bold mt-1">Economia de 97%</p>
           <AutodeskBadge variant="inline" className="mt-2 justify-center" />
         </motion.div>
       </div>
