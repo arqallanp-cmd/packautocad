@@ -109,9 +109,13 @@ const PricingSection = () => {
               → QUERO O PACK PRO
             </motion.a>
 
-            <p className="text-center mt-3 text-xs text-muted-foreground">
-              ✓ Acesso imediato &nbsp;·&nbsp; ✓ 14 dias garantia &nbsp;·&nbsp; ✓ Pag. único
-            </p>
+            <div className="flex items-center justify-center gap-1 sm:gap-3 mt-3 text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap">
+              <span className="inline-flex items-center gap-1"><Infinity className="w-3 h-3" /> Acesso vitalício</span>
+              <span>·</span>
+              <span className="inline-flex items-center gap-1"><ShieldCheck className="w-3 h-3" /> 14 dias de garantia</span>
+              <span>·</span>
+              <span className="inline-flex items-center gap-1"><Award className="w-3 h-3" /> Certificado Incluso</span>
+            </div>
 
             <div className="flex items-center justify-center gap-3 mt-4 text-muted-foreground text-[10px] font-display font-semibold tracking-wider uppercase">
               <span>VISA</span>
