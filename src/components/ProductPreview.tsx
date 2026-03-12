@@ -119,6 +119,8 @@ const ProductPreview = () => {
                   src={card.src}
                   alt={`Blocos AutoCAD - ${card.label}`}
                   loading="lazy"
+                  width="800"
+                  height="200"
                   className="w-full h-[200px] object-cover group-hover:scale-[1.03] transition-transform duration-300"
                 />
                 <span className="absolute bottom-3 left-3 bg-primary text-primary-foreground font-display font-bold text-xs sm:text-sm px-3 py-1.5 rounded-lg group-hover:scale-[1.03] transition-transform">

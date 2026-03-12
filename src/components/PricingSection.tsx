@@ -66,7 +66,7 @@ const PricingSection = () => {
             </div>
             <div className="flex items-baseline gap-1 mb-1">
               <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
-              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-92% OFF</span>
+              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-85% OFF</span>
             </div>
             <p className="text-muted-foreground text-xs mb-8">Pagamento único · Acesso imediato</p>
 

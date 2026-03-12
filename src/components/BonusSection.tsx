@@ -21,7 +21,7 @@ const BonusSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-3">
             Você ainda leva <span className="text-gradient-gold">4 bônus grátis</span>
           </h2>
-          <p className="text-muted-foreground">Incluídos apenas no Pacote Pro. Valor total: <span className="text-foreground font-bold line-through">R$ 268,00</span></p>
+          <p className="text-muted-foreground">Incluídos apenas no Pacote Pro. Valor total: <span className="text-foreground font-bold line-through">R$ 168,00</span></p>
         </motion.div>
 
         <div className="space-y-4 mb-10">
