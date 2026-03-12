@@ -21,18 +21,10 @@ const HeroSection = () => {
         >
           {/* Headline */}
           <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.95] mb-3 sm:mb-4">
-            <span className="text-foreground text-[28px] sm:text-4xl md:text-5xl block mb-1">
-              Pare de perder horas
-            </span>
             <span className="text-gradient-gold text-[28px] sm:text-4xl md:text-5xl">
-              procurando blocos no AutoCAD
+              +4.500 BLOCOS PRONTOS PARA AUTOCAD
             </span>
           </h1>
-
-          {/* Subheadline */}
-          <p className="text-muted-foreground text-sm sm:text-lg max-w-lg mx-auto mb-4 sm:mb-6 leading-relaxed">
-            Baixe +4.500 blocos profissionais organizados e comece a usar em minutos.
-          </p>
 
           {/* Benefits */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-5 mb-4 sm:mb-8">
@@ -54,20 +46,14 @@ const HeroSection = () => {
           />
 
           {/* Price */}
-          <p className="text-muted-foreground text-sm sm:text-base mb-1 uppercase tracking-wide font-display">
-            DE <span className="line-through">R$49,90</span> POR APENAS
-          </p>
-          <div className="flex items-center justify-center mb-1 sm:mb-2">
+          <div className="flex items-center justify-center mb-4 sm:mb-6">
             <span className="font-display text-5xl sm:text-6xl font-extrabold text-gradient-gold drop-shadow-[0_0_20px_hsl(45_100%_55%/0.35)]">
               R$9,90
             </span>
           </div>
-          <p className="text-muted-foreground text-xs sm:text-sm mb-6 sm:mb-8">
-            Pagamento único · Acesso imediato · Sem mensalidade
-          </p>
 
           {/* CTA */}
-          <PrimaryCta showUrgency />
+          <PrimaryCta />
         </motion.div>
       </div>
     </section>
