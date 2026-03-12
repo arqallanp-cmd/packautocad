@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AutodeskBadge from "./AutodeskBadge";
 
 const PricingSection = () => {
   return (
