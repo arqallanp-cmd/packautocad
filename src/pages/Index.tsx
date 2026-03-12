@@ -5,6 +5,7 @@ import SocialProofWall from "@/components/SocialProofWall";
 import ProblemSection from "@/components/ProblemSection";
 import BlocksSection from "@/components/BlocksSection";
 import BonusSection from "@/components/BonusSection";
+import ValueBreakdownSection from "@/components/ValueBreakdownSection";
 
 import PricingSection from "@/components/PricingSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
@@ -21,17 +22,16 @@ const Index = () => {
       <MarqueeTicker />
       <HeroSection />
       <ProductPreview />
-      <SocialProofWall />
       <ProblemSection />
       <BlocksSection />
+      <SocialProofWall />
       <BonusSection />
-      
+      <ValueBreakdownSection />
       <PricingSection />
       <GuaranteeSection />
       <AuthorSection />
       <FaqSection />
       <CtaFooter />
-      
     </main>
   );
 };
