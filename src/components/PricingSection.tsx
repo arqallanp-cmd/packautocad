@@ -1,127 +1,121 @@
 import { motion } from "framer-motion";
-import { Shield, Zap, Lock, CreditCard } from "lucide-react";
 import AutodeskBadge from "./AutodeskBadge";
-
-const checklist = [
-  { icon: "✔", text: "+4.500 Blocos DWG organizados" },
-  { icon: "✔", text: "+15.000 Blocos DWG extras" },
-  { icon: "✔", text: "+300 Hachuras Profissionais" },
-  { icon: "✔", text: "Sistema de Plotagem Automática" },
-  { icon: "✔", text: "Kit Escritório Profissional" },
-  { icon: "✔", text: "+200 Blocos Dinâmicos" },
-  { icon: "✔", text: "Grupo Network" },
-  { icon: "✔", text: "Guia de Instalação AutoCAD" },
-  { icon: "⭐", text: "Prompts de IA para Arquitetos", highlight: true },
-  { icon: "✔", text: "Grupo VIP (acesso vitalício)" },
-  { icon: "✔", text: "Certificado de Capacitação (20h)" },
-  { icon: "✔", text: "14 dias de garantia" },
-];
 
 const PricingSection = () => {
   return (
     <section id="pricing" className="py-20 bg-background">
-      <div className="container max-w-xl mx-auto px-4">
+      <div className="container max-w-4xl mx-auto px-4">
         <motion.div
-          className="relative bg-card border-2 border-primary rounded-2xl overflow-hidden shadow-gold"
-          initial={{ opacity: 0, y: 30 }}
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
         >
-          {/* Top badge */}
-          <div className="bg-gradient-gold text-center py-2.5">
-            <span className="text-primary-foreground font-display font-bold text-sm tracking-wide">
-              🔥 OFERTA ESPECIAL DE LANÇAMENTO
-            </span>
-          </div>
+          <p className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-3">Escolha seu pacote</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-bold">Acesso imediato ao material</h2>
+        </motion.div>
 
-          <div className="p-8 sm:p-10">
-            {/* 1 — Value Stack */}
-            <h3 className="font-display text-lg font-bold text-center mb-6">
-              Tudo que você recebe hoje
-            </h3>
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {/* Basic */}
+          <motion.div
+            className="bg-card border border-border rounded-xl p-8 flex flex-col"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="font-display font-semibold text-muted-foreground text-sm mb-1">Básico</p>
+            <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD</h3>
+            <div className="mb-1">
+              <span className="text-muted-foreground line-through text-sm">De R$ 49,90</span>
+            </div>
+            <div className="flex items-baseline gap-1 mb-1">
+              <span className="font-display text-4xl font-bold">R$9,90</span>
+            </div>
+            <p className="text-muted-foreground text-xs mb-8">Pagamento único</p>
 
-            <ul className="space-y-3 mb-8">
-              {checklist.map((item) => (
-                <li key={item.text} className="flex items-center gap-3 text-sm">
-                  <span className={item.highlight ? "text-primary" : "text-success"}>
-                    {item.icon}
-                  </span>
-                  <span className={item.highlight ? "text-primary font-semibold" : "text-foreground"}>
-                    {item.text}
-                  </span>
-                </li>
-              ))}
+            <ul className="space-y-3 mb-8 flex-1 text-sm">
+              <li className="flex gap-2"><span className="text-success">✓</span> +4500 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> 7 dias de garantia</li>
+              <li className="flex gap-2 text-muted-foreground"><span>✗</span> Bônus não incluídos</li>
+              <li className="flex gap-2 text-muted-foreground"><span>✗</span> Prompts de IA</li>
             </ul>
 
-            {/* Divider */}
-            <div className="h-px bg-border mb-8" />
+            <a
+              href="/upgrade"
+              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors"
+            >
+              Comprar básico
+            </a>
+            
+            <p className="text-center mt-3 text-xs text-muted-foreground">
+              🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você! 👇
+            </p>
+          </motion.div>
 
-            {/* 2 — Price Anchor */}
-            <p className="text-center text-muted-foreground text-sm mb-2">
-              Valor total: <span className="line-through">R$ 762,00</span>
-            </p>
+          {/* Pro */}
+          <motion.div
+            className="relative bg-card border-2 border-primary rounded-xl p-8 flex flex-col shadow-gold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
+              🔥 Mais vendido
+            </div>
 
-            {/* 3 — Big Price */}
-            <p className="text-center font-display text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-1">
-              Hoje você paga apenas
-            </p>
-            <p className="text-center font-display text-6xl sm:text-7xl font-bold text-gradient-gold leading-none mb-2">
-              R$24,90
-            </p>
-            <p className="text-center text-muted-foreground text-xs mb-8">
-              Pagamento único · Acesso imediato
-            </p>
+            <p className="font-display font-semibold text-primary text-sm mb-1">Completo</p>
+            <h3 className="font-display text-xl font-bold mb-4">Pack AutoCAD Pro</h3>
+            <div className="mb-1">
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$ 762,00</span>
+            </div>
+            <div className="flex items-baseline gap-1 mb-1">
+              <span className="font-display text-4xl font-bold text-gradient-gold">R$24,90</span>
+              <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded ml-2">-97% OFF</span>
+            </div>
+            <p className="text-muted-foreground text-xs mb-8">Pagamento único · Acesso imediato</p>
 
-            {/* 4 — CTA */}
+            <ul className="space-y-3 mb-8 flex-1 text-sm">
+              <li className="flex gap-2"><span className="text-success">✓</span> +4500 Blocos DWG organizados</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +15000 Blocos DWG extras</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +300 Hachuras Profissionais</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Sistema de Plotagem Automática</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Kit Escritório Profissional</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> +200 Blocos Dinâmicos</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Grupo Network</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Guia de Instalação AutoCAD</li>
+              <li className="flex gap-2"><span className="text-primary">★</span> Prompts de IA para Arquitetos</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Grupo VIP (acesso vitalício)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> Certificado de Capacitação (20h)</li>
+              <li className="flex gap-2"><span className="text-success">✓</span> 14 dias de garantia</li>
+            </ul>
+
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block w-full text-center bg-gradient-gold text-primary-foreground font-display font-bold text-lg py-4 rounded-xl shadow-gold"
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold animate-pulse-gold"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               → QUERO O PACK PRO
             </motion.a>
+          </motion.div>
+        </div>
 
-            {/* 5 — Trust */}
-            <div className="mt-8 space-y-3">
-              <div className="flex items-center gap-2 text-muted-foreground text-xs">
-                <Lock className="w-4 h-4 text-success shrink-0" />
-                <span>Compra 100% segura. Dados protegidos por criptografia SSL.</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-xs">
-                <Zap className="w-4 h-4 text-primary shrink-0" />
-                <span>Acesso imediato após a compra.</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-xs">
-                <Shield className="w-4 h-4 text-success shrink-0" />
-                <span>Garantia incondicional de 14 dias.</span>
-              </div>
-            </div>
-
-            {/* Payment icons */}
-            <div className="flex items-center justify-center gap-4 mt-6 text-muted-foreground/60">
-              <CreditCard className="w-6 h-6" />
-              <span className="text-[10px] font-bold tracking-wider uppercase">Visa</span>
-              <span className="text-[10px] font-bold tracking-wider uppercase">Master</span>
-              <span className="text-[10px] font-bold tracking-wider uppercase">Pix</span>
-              <span className="text-[10px] font-bold tracking-wider uppercase">PayPal</span>
-            </div>
-
-            <AutodeskBadge variant="inline" className="mt-4 justify-center" />
-          </div>
-        </motion.div>
-
-        {/* 6 — Micro Social Proof */}
-        <motion.p
-          className="text-center text-muted-foreground text-xs mt-6"
+        {/* Value stack */}
+        <motion.div
+          className="text-center mt-8 bg-card border border-border rounded-lg p-4 max-w-md mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          Mais de 4.000 arquitetos já utilizam essa biblioteca.
-        </motion.p>
+          <p className="text-muted-foreground text-sm">
+            Valor real dos bônus: <span className="line-through">R$ 762,00</span>
+          </p>
+          <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 24,90</p>
+          <p className="text-success text-xs font-bold mt-1">Economia de 97%</p>
+          <AutodeskBadge variant="inline" className="mt-2 justify-center" />
+        </motion.div>
       </div>
     </section>
   );
