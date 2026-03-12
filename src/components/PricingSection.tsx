@@ -94,13 +94,13 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">R$197,00</span>
             </div>
             <div className="text-center mt-2 mb-1">
-              <span className="font-display text-5xl sm:text-6xl font-bold text-gradient-gold">R$24,90</span>
+              <span className="font-display text-7xl sm:text-6xl font-bold text-gradient-gold">R$24,90</span>
             </div>
             <p className="text-muted-foreground text-xs text-center mb-6">Pagamento único · Acesso imediato</p>
 
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 rounded-lg shadow-gold animate-pulse-gold w-full"
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-5 sm:py-3 text-lg sm:text-base rounded-lg shadow-gold animate-pulse-gold w-full"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
