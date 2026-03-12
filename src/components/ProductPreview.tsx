@@ -91,10 +91,11 @@ const ProductPreview = () => {
             className="w-full rounded-lg mb-5"
           />
 
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <span className="inline-block bg-primary text-primary-foreground font-display font-extrabold text-xs sm:text-sm uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-center">
               +4.500 BLOCOS ORGANIZADOS POR PASTAS
             </span>
+            <AutodeskBadge variant="compact" />
           </div>
         </motion.div>
 
