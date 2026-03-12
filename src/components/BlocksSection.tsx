@@ -77,6 +77,7 @@ const BlocksSection = () => {
           >
             🔥 GARANTIR TODOS OS BLOCOS
           </a>
+          <AutodeskBadge variant="default" className="mt-4" />
         </motion.div>
       </div>
     </section>
