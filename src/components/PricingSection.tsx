@@ -78,7 +78,7 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">Valor total: R$762,00</span>
             </div>
 
-            <ul className="space-y-3 mb-6 text-sm">
+            <ul className="space-y-3 mb-6 text-base">
               <li className="flex gap-2"><span className="text-success">✓</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +15.000 Blocos DWG extras</li>
               <li className="flex gap-2"><span className="text-success">✓</span> +300 Hachuras Profissionais</li>
