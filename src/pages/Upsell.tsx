@@ -29,7 +29,7 @@ const Upsell = () => {
             ⚠️ ESPERA! VOCÊ ESTÁ PRESTES A PEGAR A VERSÃO BÁSICA
           </p>
           <p className="font-display text-base font-bold text-foreground">
-            Upgrade pro Pack Pro por apenas <span className="text-primary">R$10 a mais</span>
+            Upgrade pro Pack Pro por apenas <span className="text-primary">R$15 a mais</span>
           </p>
         </motion.div>
 
@@ -89,12 +89,12 @@ const Upsell = () => {
           {/* Value stack */}
           <div className="text-center mb-3">
             <p className="font-body text-xs text-muted-foreground">
-              Valor total: <span className="line-through">R$268,00</span>
+              Valor total: <span className="line-through">R$327,00</span>
             </p>
             <div className="flex items-baseline justify-center gap-2">
-              <span className="font-body text-sm text-muted-foreground line-through">R$49</span>
+              <span className="font-body text-sm text-muted-foreground line-through">R$49,90</span>
               <span className="font-display text-primary font-extrabold text-[42px] leading-none">
-                R$17,90
+                R$24,90
               </span>
               <span className="font-body text-xs text-muted-foreground">hoje</span>
             </div>
@@ -114,12 +114,12 @@ const Upsell = () => {
           </p>
         </motion.div>
 
-        {/* Decline button */}
+        {/* Decline button - styled like reference */}
         <a
           href="#"
-          className="text-center block font-body text-xs text-muted-foreground border border-border rounded-full py-3 hover:border-muted-foreground/40 transition-colors"
+          className="text-center block font-body text-sm text-muted-foreground/70 border border-border/60 rounded-lg py-3.5 bg-card/50 hover:border-muted-foreground/30 transition-colors"
         >
-          Continuar com o Básico — R$7,90
+          Continuar com o Básico — R$9,90
         </a>
       </div>
     </div>
