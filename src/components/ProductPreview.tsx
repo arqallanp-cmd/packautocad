@@ -1,16 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-import blocksEletrica from "@/assets/blocks-eletrica.png";
-import blocksArCondicionado from "@/assets/blocks-ar-condicionado.png";
-import blocksMoveis from "@/assets/blocks-moveis.png";
-import blocksCubas from "@/assets/blocks-cubas.png";
-import blocksHumanizacao from "@/assets/blocks-humanizacao.png";
-import blocksBanheiros from "@/assets/blocks-banheiros.png";
-import blocksSaloes from "@/assets/blocks-saloes.png";
-import blocksAutomoveis from "@/assets/blocks-automoveis.png";
-import blocksPastas from "@/assets/blocks-pastas.png";
-
 const folderNames = [
   "2D", "Academia", "Acessibilidade", "Animais",
   "Anotações", "Aquífero", "Ar Condicionado", "Área de Serviço",
