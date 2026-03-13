@@ -2,17 +2,18 @@ import { motion } from "framer-motion";
 
 const checkItems = [
   "Tudo do Pacote Básico",
-  "+15.000 Blocos Extras",
-  "Pack de Hachuras Profissionais",
-  "Template de Plotagem .ctb",
-  "Anotações e Legendas Pro",
+  "+15.000 Blocos DWG Extras",
+  "+300 Hachuras Profissionais",
+  "Pack de Plotagem Automática",
+  "Kit de Pranchas ABNT",
+  "+200 Blocos Dinâmicos",
 ];
 
 const bonusItems = [
-  { emoji: "🎁", text: "5 Prompts de IA para Arquitetos", value: "R$47" },
-  { emoji: "⚡", text: "Acesso Vitalício a Atualizações", value: "R$37" },
-  { emoji: "🛡️", text: "Garantia Ampliada de 14 dias", value: "R$27" },
-  { emoji: "🎓", text: "Acesso prioritário a novos packs", value: "R$57" },
+  { emoji: "💻", text: "Instalador AutoCAD 2026", value: "R$47" },
+  { emoji: "⭐", text: "5 Agentes de IA", value: "R$57" },
+  { emoji: "👥", text: "Grupo Network VIP", value: "R$37" },
+  { emoji: "🎓", text: "Certificado Autodesk 20h", value: "R$27" },
 ];
 
 const Upsell = () => {
