@@ -27,7 +27,10 @@ const Upsell = () => {
           className="text-center rounded-lg py-2 px-3 border border-primary/30 bg-primary/10">
           
           <p className="font-display text-base font-bold text-foreground">
-            ⚡ Espere! Liberei o Pack Pro com <span className="text-primary">30% de desconto</span>
+            ⚠ Espere! Antes de finalizar seu pedido…
+          </p>
+          <p className="font-body text-xs text-muted-foreground mt-0.5">
+            Liberei o Pack Pro com <span className="text-primary font-semibold">30% de desconto</span> somente nesta página.
           </p>
         </motion.div>
 
