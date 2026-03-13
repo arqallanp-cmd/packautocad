@@ -99,7 +99,7 @@ const HeroSection = () => {
 
           {/* Mockup — after CTA on mobile, right column on desktop */}
           <motion.div
-            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-[600px] lg:ml-auto order-5 lg:order-none"
+            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-[600px] lg:ml-auto order-2 lg:order-none"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}>
