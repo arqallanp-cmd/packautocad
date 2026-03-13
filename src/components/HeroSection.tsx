@@ -22,8 +22,8 @@ const HeroSection = () => {
           className="flex flex-col">
           
           {/* 1. Headline */}
-          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1 text-center">
-            <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl whitespace-nowrap text-center">
+          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1 text-center w-full">
+            <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block text-center">
               +4500 BLOCOS
             </span>
           </h1>
@@ -83,7 +83,7 @@ const HeroSection = () => {
           <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
             DE <span className="line-through">R$49,90</span> POR APENAS
           </p>
-          <div className="flex items-center justify-center mb-4 sm:mb-6">
+          <div className="flex items-center justify-center mb-2 sm:mb-4">
             <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$9,90</span>
           </div>
 
