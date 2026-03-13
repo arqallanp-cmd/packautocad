@@ -51,7 +51,7 @@ const PricingSection = () => {
             </a>
 
             <p className="text-center mt-3 text-xs text-muted-foreground">
-              🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos um pacote ainda melhor para você!👇
+              🚨 <span className="font-semibold text-foreground">Atenção:</span> Temos uma oferta especial para você!👇
             </p>
           </motion.div>
 
