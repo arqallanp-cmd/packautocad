@@ -123,7 +123,7 @@ const Upsell = () => {
         {/* Decline button */}
         <a
           href="https://pay.wiapy.com/kxQXZSPzi7"
-          className="text-center block font-body border border-border rounded-lg py-2.5 hover:border-primary/20 transition-all bg-[#a1a1a1]/35 text-sm font-normal text-primary-foreground">
+          className="text-center block font-body border border-muted-foreground/20 rounded-lg py-2.5 hover:border-muted-foreground/40 hover:bg-secondary/40 transition-all bg-secondary/30 text-sm font-normal text-muted-foreground">
           Não, quero apenas os 4.500 blocos 🥹 
         </a>
       </div>
