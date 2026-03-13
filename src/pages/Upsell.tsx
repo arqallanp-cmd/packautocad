@@ -51,6 +51,13 @@ const Upsell = () => {
             </span>
           </div>
 
+          {/* Value reminder */}
+          <div className="flex flex-col gap-0.5 mb-2">
+            <span className="font-body text-xs text-foreground">✔ +15.000 blocos extras</span>
+            <span className="font-body text-xs text-foreground">✔ +300 hachuras profissionais</span>
+            <span className="font-body text-xs text-foreground">✔ +200 blocos dinâmicos</span>
+          </div>
+
           {/* Checklist */}
           <div className="flex flex-col gap-1 mb-3">
             {checkItems.map((item) =>
