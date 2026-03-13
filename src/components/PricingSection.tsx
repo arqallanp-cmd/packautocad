@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Infinity, ShieldCheck, Award } from "lucide-react";
 import AutodeskBadge from "./AutodeskBadge";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const PricingSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section id="pricing" className="bg-background py-[30px] lg:py-[60px]">
       <div className="container max-w-5xl lg:max-w-[1200px] mx-auto px-4">
@@ -58,8 +61,8 @@ const PricingSection = () => {
           {/* Pro */}
           <motion.div
             className="relative bg-card border-2 border-primary rounded-xl p-10 flex flex-col w-full lg:flex-1 shadow-gold"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={isMobile ? false : { opacity: 0, y: 20 }}
+            whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}>
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
