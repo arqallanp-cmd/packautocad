@@ -29,7 +29,7 @@ const PricingSection = () => {
 
             <ul className="space-y-3 mb-6 text-base">
               <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
-              <li className="flex gap-2"><span>✅</span> 7 dias de garantia</li>
+              
               <li className="flex gap-2"><span>✅</span> 1 ano de acesso</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Acesso vitalício</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Agentes de IA</li>
