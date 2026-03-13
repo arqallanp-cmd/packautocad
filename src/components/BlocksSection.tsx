@@ -41,7 +41,7 @@ const BlocksSection = () => {
             <span className="text-gradient-gold">prontos para usar agora</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto lg:text-lg">
-            Arquivos .DWG leves, categorizados e testados do AutoCAD 2018 ao 2025. É só arrastar.
+            Arquivos .DWG leves, categorizados e testados do AutoCAD 2014 ao 2026. É só arrastar.
           </p>
         </motion.div>
 

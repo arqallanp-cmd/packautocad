@@ -97,13 +97,10 @@ const Upsell = () => {
             <p className="font-body text-xs text-muted-foreground">
               Valor total: <span className="line-through">R$297</span>
             </p>
-            <div className="flex items-baseline justify-center gap-2">
-              <span className="font-body text-sm text-muted-foreground line-through">
-</span>
+            <div className="flex items-baseline justify-center">
               <span className="font-display text-primary font-extrabold leading-none text-7xl">
                 R$17,90
               </span>
-              <span className="font-body text-xs text-muted-foreground">{"\n"}</span>
             </div>
           </div>
 
