@@ -54,7 +54,7 @@ const BonusSection = () => {
 
         {/* Bonus Wall */}
         <motion.div
-          className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-12 items-stretch"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 items-stretch"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
