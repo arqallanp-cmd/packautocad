@@ -26,8 +26,8 @@ const categories = [
 
 const BlocksSection = () => {
   return (
-    <section className="py-20 bg-card">
-      <div className="container max-w-5xl lg:max-w-7xl mx-auto px-4">
+    <section className="py-12 lg:py-[60px] bg-card">
+      <div className="container max-w-5xl lg:max-w-[1200px] mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -55,9 +55,9 @@ const BlocksSection = () => {
           {categories.map((c) => (
             <div
               key={c.title}
-              className="bg-background border-l-[3px] border-l-primary border border-border rounded-xl p-5 hover:border-primary/40 transition-colors group"
+              className="bg-background border-l-[3px] border-l-primary border border-border rounded-xl p-4 lg:p-4 hover:border-primary/40 transition-colors group"
             >
-              <span className="text-3xl block mb-3 group-hover:scale-110 transition-transform">{c.icon}</span>
+              <span className="text-2xl lg:text-2xl block mb-2 group-hover:scale-110 transition-transform">{c.icon}</span>
               <p className="font-display font-bold text-sm text-foreground mb-1">{c.title}</p>
               <p className="text-muted-foreground text-xs leading-relaxed">{c.desc}</p>
             </div>
@@ -73,7 +73,7 @@ const BlocksSection = () => {
         >
           <a
             href="#pricing"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold max-w-[320px] mx-auto"
           >
             🔥 GARANTIR TODOS OS BLOCOS
           </a>

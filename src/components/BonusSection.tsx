@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles, GraduationCap, Users } from "lucide-react";
-import bonus09Img from "@/assets/bonus-09-certificado.jpg";
-import bonus10Img from "@/assets/bonus-10-grupo-vip.jpg";
 
 const bonuses = [
   { num: "01", title: "+15000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$97", icon: Layers, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_01_hmuolw.jpg" },
@@ -25,8 +23,8 @@ const stats = [
 
 const BonusSection = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container max-w-7xl mx-auto px-4">
+    <section className="py-12 lg:py-[60px] bg-background">
+      <div className="container max-w-7xl lg:max-w-[1200px] mx-auto px-4">
         {/* Header */}
         <motion.div
           className="text-center mb-10"
@@ -56,7 +54,7 @@ const BonusSection = () => {
 
         {/* Bonus Wall */}
         <motion.div
-          className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 items-stretch"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-12 items-stretch"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -74,40 +72,40 @@ const BonusSection = () => {
               >
                 {/* Mockup image */}
                 {hasImg && (
-                  <div className="w-full aspect-[4/5] overflow-hidden rounded-lg">
+                  <div className="w-full aspect-[4/5] lg:aspect-[4/4] overflow-hidden rounded-lg">
                     <img src={b.img as string} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
                   </div>
                 )}
 
-                <div className="p-5 flex gap-4 items-start flex-1">
+                <div className="p-4 lg:p-3 flex gap-3 items-start flex-1">
                   {/* Icon */}
-                  <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-primary" />
+                  <div className="shrink-0 w-8 h-8 lg:w-8 lg:h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Icon className="w-4 h-4 text-primary" />
                   </div>
 
                   <div className="flex-1 min-w-0">
                     {/* Top row */}
-                    <div className="flex items-start justify-between gap-2 mb-1.5">
+                    <div className="flex items-start justify-between gap-2 mb-1">
                       <div>
-                        <span className="text-primary/40 font-display text-xs font-bold mr-2">BONUS {b.num}</span>
-                        <h3 className="font-display font-bold text-sm sm:text-base leading-snug">{b.title}</h3>
+                        <span className="text-primary/40 font-display text-[10px] font-bold mr-1">BONUS {b.num}</span>
+                        <h3 className="font-display font-bold text-xs sm:text-sm leading-snug">{b.title}</h3>
                         {hasSubtitle && (
-                          <p className="text-primary/60 text-xs font-medium mt-0.5">{b.subtitle as string}</p>
+                          <p className="text-primary/60 text-[10px] font-medium mt-0.5">{b.subtitle as string}</p>
                         )}
                       </div>
-                      <span className="shrink-0 text-[10px] bg-success/20 text-success font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                      <span className="shrink-0 text-[9px] bg-success/20 text-success font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider">
                         Grátis
                       </span>
                     </div>
 
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-2">{b.desc}</p>
+                    <p className="text-muted-foreground text-xs leading-relaxed mb-1">{b.desc}</p>
 
                     {hasPills && (
-                      <div className="flex flex-wrap gap-1.5 mt-3 mb-2">
+                      <div className="flex flex-wrap gap-1 mt-2 mb-1">
                         {(b.pills as readonly string[]).map((pill) => (
                           <span
                             key={pill}
-                            className="text-[11px] rounded-full py-1 px-3"
+                            className="text-[10px] rounded-full py-0.5 px-2"
                             style={{
                               background: "rgba(200,169,110,0.08)",
                               border: "1px solid rgba(200,169,110,0.25)",
@@ -120,7 +118,7 @@ const BonusSection = () => {
                       </div>
                     )}
 
-                    <p className="text-muted-foreground text-xs">
+                    <p className="text-muted-foreground text-[10px]">
                       De <span className="line-through">{b.oldPrice}</span>{" "}
                       <span className="text-success font-semibold">→ GRÁTIS</span>
                     </p>
@@ -130,7 +128,6 @@ const BonusSection = () => {
             );
           })}
         </motion.div>
-
       </div>
     </section>
   );
