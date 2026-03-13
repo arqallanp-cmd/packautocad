@@ -98,7 +98,7 @@ const Upsell = () => {
               <span className="font-display text-primary font-extrabold leading-none text-6xl">
                 R$17,90
               </span>
-              <span className="font-body text-xs text-muted-foreground">hoje</span>
+              <span className="font-body text-xs text-muted-foreground">{"\n"}</span>
             </div>
           </div>
 
