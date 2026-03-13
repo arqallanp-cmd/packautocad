@@ -27,10 +27,10 @@ const Upsell = () => {
           className="text-center rounded-lg py-2 px-3 border border-primary/30 bg-primary/10">
           
           <p className="font-body text-[10px] uppercase text-primary/70 tracking-wider mb-0.5">
-            ⚠️ ESPERA! acabei de liberar uma oferta pra você!        
+            ⚡ UPGRADE LIBERADO: PACK PRO COM 30% DE DESCONTO
           </p>
           <p className="font-display text-base font-bold text-foreground">
-            Upgrade pro Pack Pro por apenas <span className="text-primary">R$8 a mais</span>
+            Adicione todos os bônus do Pack Pro por apenas <span className="text-primary">R$8 a mais</span>.
           </p>
         </motion.div>
 
@@ -49,6 +49,13 @@ const Upsell = () => {
             <span className="bg-primary text-primary-foreground font-body text-[10px] font-bold rounded-full px-2.5 py-0.5 uppercase">
               MELHOR ESCOLHA 🔥
             </span>
+          </div>
+
+          {/* Value reminder */}
+          <div className="flex flex-col gap-0.5 mb-2">
+            <span className="font-body text-xs text-foreground">✔ +15.000 blocos extras</span>
+            <span className="font-body text-xs text-foreground">✔ +300 hachuras profissionais</span>
+            <span className="font-body text-xs text-foreground">✔ +200 blocos dinâmicos</span>
           </div>
 
           {/* Checklist */}
@@ -106,7 +113,7 @@ const Upsell = () => {
           <a href="https://pay.wiapy.com/Anzl2Aiwf7"
           className="flex items-center justify-center w-full bg-gradient-gold text-primary-foreground font-display font-bold text-sm uppercase rounded-full py-3.5 px-6 shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold">
             
-            SIM, QUERO O PACK PRO 🚀
+            SIM, QUERO LIBERAR TODOS OS BÔNUS 🚀
           </a>
 
           {/* Below button text */}
@@ -120,7 +127,7 @@ const Upsell = () => {
           href="https://pay.wiapy.com/kxQXZSPzi7"
           className="text-center block font-body text-sm text-foreground/80 font-medium border border-border rounded-lg py-3.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all">
           
-          Continuar com o Básico — R$9,90 🥹 
+          Continuar apenas com o pacote básico 
         </a>
       </div>
     </div>);
