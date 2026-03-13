@@ -20,7 +20,7 @@ const AutodeskBadge = ({ variant = "default", className = "" }: AutodeskBadgePro
       <div className={`inline-flex items-center gap-2 bg-card border border-primary/20 rounded-lg px-3 py-1.5 ${className}`}>
         <BadgeCheck className="w-4 h-4 text-primary" />
         <span className="text-[10px] sm:text-xs font-display font-semibold text-muted-foreground tracking-wide">
-          Autodesk® AutoCAD® <span className="text-primary">Certificado</span>
+          Autodesk AutoCAD® <span className="text-primary">100% Compatível</span>
         </span>
       </div>);
 
