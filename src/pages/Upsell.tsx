@@ -48,22 +48,20 @@ const Upsell = () => {
             </span>
           </div>
 
-          {/* Value reminder */}
+          {/* Value block */}
+          <p className="font-body text-xs text-muted-foreground mb-1.5">Com o Pack Pro você desbloqueia:</p>
           <div className="flex flex-col gap-0.5 mb-2">
             <span className="font-body text-xs text-foreground">✔ +15.000 blocos extras</span>
             <span className="font-body text-xs text-foreground">✔ +300 hachuras profissionais</span>
             <span className="font-body text-xs text-foreground">✔ +200 blocos dinâmicos</span>
+            <span className="font-body text-xs text-foreground">✔ prompts de IA para arquitetos</span>
+            <span className="font-body text-xs text-foreground">✔ acesso ao grupo VIP</span>
           </div>
 
-          {/* Checklist */}
-          <div className="flex flex-col gap-1 mb-3">
-            {checkItems.map((item) =>
-            <div key={item} className="flex items-center gap-2">
-                <span className="text-primary text-xs font-bold">✓</span>
-                <span className="font-body text-xs text-foreground">{item}</span>
-              </div>
-            )}
-          </div>
+          {/* Price line */}
+          <p className="font-display text-sm font-bold text-foreground mb-3">
+            Tudo isso por apenas <span className="text-primary">R$8 a mais</span>.
+          </p>
 
           {/* Divider with label */}
           <div className="flex items-center gap-2 mb-2">
