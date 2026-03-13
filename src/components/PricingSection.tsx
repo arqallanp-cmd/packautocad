@@ -25,7 +25,7 @@ const PricingSection = () => {
             viewport={{ once: true }}>
             
             <p className="font-display font-semibold text-muted-foreground text-sm mb-1 text-center">Básico</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-bold mb-6 text-center">Pack AutoCAD</h3>
+            <h3 className="font-display sm:text-3xl font-bold mb-6 text-center text-3xl">Pack AutoCAD</h3>
 
             <ul className="space-y-3 mb-6 text-base">
               <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
@@ -72,7 +72,7 @@ const PricingSection = () => {
             </div>
 
             <p className="font-display font-semibold text-primary text-sm mb-1 text-center">🎁 BÔNUS INCLUSOS</p>
-            <h3 className="font-display text-2xl sm:text-3xl font-bold mb-0 text-center">Pack AutoCAD Pro</h3>
+            <h3 className="font-display sm:text-3xl font-bold mb-0 text-center text-3xl mx-0 my-0 px-0 py-0">Pack AutoCAD Pro</h3>
             <p className="font-display text-lg font-semibold text-center mb-2">Vitalício</p>
 
             <div className="text-center mb-4">
