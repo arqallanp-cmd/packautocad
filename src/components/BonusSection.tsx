@@ -54,7 +54,7 @@ const BonusSection = () => {
 
         {/* Bonus Wall */}
         <motion.div
-          className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-12 items-stretch"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 items-stretch"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -72,8 +72,8 @@ const BonusSection = () => {
               >
                 {/* Mockup image */}
                 {hasImg && (
-                  <div className="w-full aspect-[4/5] lg:aspect-[4/4] overflow-hidden rounded-lg">
-                    <img src={b.img as string} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
+                  <div className="w-full lg:aspect-[4/5] overflow-hidden">
+                    <img src={b.img as string} alt={b.title} className="w-full h-auto lg:h-full lg:object-contain object-cover" loading="lazy" />
                   </div>
                 )}
 
