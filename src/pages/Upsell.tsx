@@ -117,12 +117,11 @@ const Upsell = () => {
           </p>
         </motion.div>
 
-        {/* Decline button */}
+        {/* Decline link */}
         <a
           href="https://pay.wiapy.com/kxQXZSPzi7"
-          className="text-center block font-body text-sm text-foreground/80 font-medium border border-border rounded-lg py-3.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all">
-          
-          Não, quero continuar apenas com os 4.500 blocos 
+          className="text-center block font-body text-xs text-muted-foreground/50 hover:text-muted-foreground/70 transition-colors underline">
+          continuar apenas com os 4.500 blocos
         </a>
       </div>
     </div>);
