@@ -67,10 +67,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Mobile: Subheadline before mockup */}
-          <p className="text-muted-foreground text-[13px] max-w-md mx-auto mb-2 leading-relaxed text-center lg:hidden order-4">
-            O maior pack profissional de blocos DWG do mercado.
-          </p>
 
           {/* Mobile: Price above mockup */}
           <div className="text-center lg:hidden order-3">
