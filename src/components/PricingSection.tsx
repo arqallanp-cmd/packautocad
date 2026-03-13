@@ -4,14 +4,13 @@ import AutodeskBadge from "./AutodeskBadge";
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="bg-background py-[30px]">
-      <div className="container max-w-5xl mx-auto px-4">
+    <section id="pricing" className="bg-background py-[30px] lg:py-[60px]">
+      <div className="container max-w-5xl lg:max-w-[1200px] mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}>
-          
           <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Escolha seu pacote</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">Acesso imediato </h2>
         </motion.div>
@@ -23,13 +22,11 @@ const PricingSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}>
-            
             <p className="font-display font-semibold text-muted-foreground text-sm mb-1 text-center">Básico</p>
             <h3 className="font-display sm:text-3xl font-bold mb-6 text-center text-3xl">Pack AutoCAD</h3>
 
             <ul className="space-y-3 mb-6 text-base">
               <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
-              
               <li className="flex gap-2"><span>✅</span> 1 ano de acesso</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Acesso vitalício</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Agentes de IA</li>
@@ -50,7 +47,6 @@ const PricingSection = () => {
             <a
               href="/upgrade"
               className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg transition-colors w-full bg-secondary">
-              
               Comprar Básico
             </a>
 
@@ -66,7 +62,6 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}>
-            
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
               🔥 Mais vendido
             </div>
@@ -106,11 +101,10 @@ const PricingSection = () => {
 
             <motion.a
               href="https://pay.wiapy.com/5xnUmUDYB"
-              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 text-lg sm:text-xl rounded-lg shadow-gold animate-pulse-gold w-full"
+              className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 text-lg sm:text-xl rounded-lg shadow-gold animate-pulse-gold w-full max-w-[320px] mx-auto"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}>
-              
               → QUERO O PACK PRO
             </motion.a>
 
@@ -121,7 +115,6 @@ const PricingSection = () => {
               <span>·</span>
               <Award size={12} className="shrink-0" /><span>Certificado Incluso</span>
             </div>
-
           </motion.div>
         </div>
 
@@ -131,7 +124,6 @@ const PricingSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}>
-          
           <p className="text-muted-foreground text-sm">
             Valor real dos bônus: <span className="line-through">R$ 297,00</span>
           </p>
@@ -141,7 +133,6 @@ const PricingSection = () => {
         </motion.div>
       </div>
     </section>);
-
 };
 
 export default PricingSection;

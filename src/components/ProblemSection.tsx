@@ -9,8 +9,8 @@ const problems = [
 
 const ProblemSection = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container max-w-3xl lg:max-w-5xl mx-auto px-4">
+    <section className="py-12 lg:py-[60px] bg-background">
+      <div className="container max-w-3xl lg:max-w-[1200px] mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const ProblemSection = () => {
             Você está <span className="text-danger">perdendo tempo</span> (e dinheiro) com isso:
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
             {problems.map((p, i) => (
               <div
                 key={i}

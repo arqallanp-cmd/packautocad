@@ -12,8 +12,8 @@ const faqs = [
 
 const FaqSection = () => {
   return (
-    <section className="py-20 bg-card">
-      <div className="container max-w-2xl lg:max-w-3xl mx-auto px-4">
+    <section className="py-12 lg:py-[60px] bg-card">
+      <div className="container max-w-2xl lg:max-w-[800px] mx-auto px-4">
         <motion.div
           className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const FaqSection = () => {
         >
           <a
             href="#pricing"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold max-w-[320px] mx-auto"
           >
             ✅ QUERO MEU PACK AGORA
           </a>

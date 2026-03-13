@@ -8,43 +8,74 @@ const floatingIcons = [
 { Icon: PersonStanding, mob: "bottom-[20%] right-[6%]", desk: "sm:bottom-[15%] sm:right-[10%]", delay: 1.0 },
 { Icon: Lightbulb, mob: "top-[45%] left-[3%]", desk: "sm:top-[45%] sm:left-[8%]", delay: 1.2 }];
 
-
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center bg-gradient-hero overflow-hidden pt-3 sm:pt-8 pb-6 sm:pb-10 lg:min-h-screen">
+    <section className="relative flex items-center justify-center bg-gradient-hero overflow-hidden pt-3 sm:pt-8 pb-6 sm:pb-10 lg:py-16">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="container relative z-10 text-center max-w-3xl mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="flex flex-col">
-          
-          {/* 1. Headline */}
-          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1 text-center w-full">
-            <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block text-center">
-              +4500 BLOCOS
-            </span>
-          </h1>
-          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 sm:mb-4">
-            <span className="font-display font-extrabold uppercase tracking-tight text-foreground text-[26px] sm:text-4xl md:text-5xl">
-              PRONTOS
-            </span>
-            <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[22px] sm:text-3xl md:text-4xl -rotate-1 inline-block">
-              AUTOCAD
-            </span>
-          </div>
+      <div className="container relative z-10 max-w-5xl lg:max-w-[1200px] mx-auto px-4">
+        {/* Mobile: stacked | Desktop: 2 columns */}
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+          {/* Left column — text content */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-col text-center lg:text-left">
 
-          {/* 2. Subheadline */}
-          <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto mb-2 sm:mb-4 leading-relaxed">
-            <span className="hidden sm:inline">Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.</span>
-            <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
-          </p>
+            {/* 1. Headline */}
+            <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1">
+              <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block">
+                +4500 BLOCOS
+              </span>
+            </h1>
+            <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-2 sm:mb-4">
+              <span className="font-display font-extrabold uppercase tracking-tight text-foreground text-[26px] sm:text-4xl md:text-5xl">
+                PRONTOS
+              </span>
+              <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[22px] sm:text-3xl md:text-4xl -rotate-1 inline-block">
+                AUTOCAD
+              </span>
+            </div>
 
-          {/* 3. Mockup image with floating icons */}
-          <div className="relative mx-auto mb-3 sm:mb-4 w-full max-w-[900px] lg:max-w-[700px]">
-            {/* Floating icons — simple fade in, gentle CSS float */}
+            {/* 2. Subheadline */}
+            <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed">
+              <span className="hidden sm:inline">Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.</span>
+              <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
+            </p>
+
+            {/* 3. Price anchor */}
+            <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
+              DE <span className="line-through">R$49,90</span> POR APENAS
+            </p>
+            <div className="flex items-center justify-center lg:justify-start mb-2 sm:mb-4">
+              <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$9,90</span>
+            </div>
+
+            {/* 4. CTA button */}
+            <motion.a
+              href="#pricing"
+              className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-sm sm:text-lg px-6 sm:px-12 py-[18px] sm:py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto lg:mx-0 animate-pulse-btn"
+              whileTap={{ scale: 0.96 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+              🚀 Quero Acesso Imediato
+            </motion.a>
+
+            {/* 5. Security text */}
+            <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
+              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
+              <span className="flex items-center gap-1"><Download className="w-3.5 h-3.5 text-primary" /> Download imediato</span>
+              <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-primary" /> Certificado AutoDESK</span>
+            </div>
+          </motion.div>
+
+          {/* Right column — mockup (desktop) / inline (mobile) */}
+          <motion.div
+            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-none"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.2 }}>
+            {/* Floating icons */}
             {floatingIcons.map(({ Icon, mob, desk, delay }, i) =>
             <motion.div
               key={i}
@@ -53,7 +84,6 @@ const HeroSection = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay }}
               style={{ animationDelay: `${delay}s` }}>
-              
                 <Icon className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-primary" />
               </motion.div>
             )}
@@ -64,7 +94,6 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}>
-              
               <p className="font-display font-bold text-[10px] sm:text-xs text-primary leading-tight">+4.500 BLOCOS DWG</p>
               <p className="font-display font-semibold text-[8px] sm:text-[10px] text-muted-foreground leading-tight">PRONTOS PARA AUTOCAD</p>
             </motion.div>
@@ -75,43 +104,16 @@ const HeroSection = () => {
               loading="eager"
               width="900"
               height="600"
-              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-[300px] sm:w-full object-contain relative z-10" />
-            
-          </div>
+              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-none lg:w-full sm:w-full object-contain relative z-10" />
+          </motion.div>
+        </div>
 
-          {/* 4. Price anchor */}
-          <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
-            DE <span className="line-through">R$49,90</span> POR APENAS
-          </p>
-          <div className="flex items-center justify-center mb-2 sm:mb-4">
-            <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$9,90</span>
-          </div>
-
-          {/* 5. CTA button */}
-          <motion.a
-            href="#pricing"
-            className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-sm sm:text-lg px-6 sm:px-12 py-[18px] sm:py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto animate-pulse-btn"
-            whileTap={{ scale: 0.96 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}>
-            
-            🚀 Quero Acesso Imediato
-          </motion.a>
-
-          {/* 6. Security text */}
-          <div className="flex items-center justify-center gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
-            <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
-            <span className="flex items-center gap-1"><Download className="w-3.5 h-3.5 text-primary" /> Download imediato</span>
-            <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-primary" /> Certificado AutoDESK</span>
-          </div>
-        </motion.div>
-
-        {/* 7. Stats */}
+        {/* 6. Stats */}
         <motion.div
-          className="grid grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-6 max-w-sm sm:max-w-md mx-auto"
+          className="grid grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-8 max-w-sm sm:max-w-md lg:max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}>
-          
           {[
           { value: "4.500+", label: "Blocos DWG" },
           { value: "100%", label: "Organizados" },
@@ -125,7 +127,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
     </section>);
-
 };
 
 export default HeroSection;
