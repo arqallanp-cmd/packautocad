@@ -179,7 +179,7 @@ const SocialProofWall = () => {
         >
           <a
             href="#pricing"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold max-w-[320px] mx-auto"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-gold text-primary-foreground font-display font-bold text-base sm:text-lg px-10 py-5 sm:py-3 rounded-xl shadow-gold hover:scale-105 transition-transform animate-pulse-gold max-w-[320px] lg:max-w-none whitespace-nowrap mx-auto"
           >
             ⚡ EU TAMBÉM QUERO
           </a>
