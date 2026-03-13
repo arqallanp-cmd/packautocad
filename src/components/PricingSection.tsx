@@ -61,10 +61,9 @@ const PricingSection = () => {
           {/* Pro */}
           <motion.div
             className="relative bg-card border-2 border-primary rounded-xl p-10 flex flex-col w-full lg:flex-1 shadow-gold"
-            initial={isMobile ? false : { opacity: 0, y: 20 }}
-            whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}>
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}>
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
               🔥 Mais vendido
             </div>
