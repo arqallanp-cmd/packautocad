@@ -83,7 +83,7 @@ const HeroSection = () => {
           <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
             DE <span className="line-through">R$49,90</span> POR APENAS
           </p>
-          <div className="flex items-center justify-center mb-4 sm:mb-6">
+          <div className="flex items-center justify-center mb-2 sm:mb-4">
             <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$9,90</span>
           </div>
 
