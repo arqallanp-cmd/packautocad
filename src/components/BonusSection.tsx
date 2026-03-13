@@ -17,10 +17,10 @@ const bonuses = [
 ] as const;
 
 const stats = [
-  "19500+ blocos AutoCAD",
+  "AutoCAD 2026 Incluso",
   "300 hachuras profissionais",
   "200 blocos dinâmicos",
-  "100 atalhos AutoCAD",
+  "Certificado de horas 20h",
 ];
 
 const BonusSection = () => {

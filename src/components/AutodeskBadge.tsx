@@ -10,7 +10,7 @@ const AutodeskBadge = ({ variant = "default", className = "" }: AutodeskBadgePro
     return (
       <span className={`inline-flex items-center gap-1.5 text-primary text-[10px] sm:text-xs font-display font-semibold tracking-wide ${className}`}>
         <BadgeCheck className="w-3.5 h-3.5" />
-        Compatível com Autodesk® AutoCAD®
+        Compatível com Autodesk AutoCAD®
       </span>);
 
   }
