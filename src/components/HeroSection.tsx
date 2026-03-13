@@ -15,13 +15,13 @@ const HeroSection = () => {
 
       <div className="container relative z-10 max-w-5xl lg:max-w-[1200px] mx-auto px-4">
         {/* Mobile: stacked | Desktop: 2 columns */}
-        <div className="lg:grid lg:grid-cols-[1fr_1.2fr] lg:gap-10 lg:items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-[1fr_1.2fr] lg:gap-10 lg:items-center">
           {/* Left column — text content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col text-center lg:text-left">
+            className="flex flex-col text-center lg:text-left order-1 lg:order-none">
 
             {/* 1. Headline */}
             <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1">
@@ -38,40 +38,68 @@ const HeroSection = () => {
               </span>
             </div>
 
-            {/* 2. Subheadline */}
-            <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed">
-              <span className="hidden sm:inline">Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.</span>
-              <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
+            {/* 2. Subheadline — hidden on mobile, shown on desktop */}
+            <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed hidden lg:block">
+              Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.
             </p>
 
-            {/* 3. Price anchor */}
-            <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
+            {/* Desktop: Price + CTA + Security inline */}
+            <div className="hidden lg:block">
+              <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
+                DE <span className="line-through">R$49,90</span> POR APENAS
+              </p>
+              <div className="flex items-center lg:justify-start mb-2 sm:mb-4">
+                <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$9,90</span>
+              </div>
+              <motion.a
+                href="#pricing"
+                className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-sm sm:text-lg px-6 sm:px-12 py-[18px] sm:py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm lg:mx-0 animate-pulse-btn"
+                whileTap={{ scale: 0.96 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+                🚀 Quero Acesso Imediato
+              </motion.a>
+              <div className="flex items-center lg:justify-start gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
+                <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
+                <span className="flex items-center gap-1"><Download className="w-3.5 h-3.5 text-primary" /> Download imediato</span>
+                <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-primary" /> Certificado AutoDESK</span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Mobile: Subheadline before mockup */}
+          <p className="text-muted-foreground text-[13px] max-w-md mx-auto mb-2 leading-relaxed text-center lg:hidden order-4">
+            O maior pack profissional de blocos DWG do mercado.
+          </p>
+
+          {/* Mobile: Price above mockup */}
+          <div className="text-center lg:hidden order-3">
+            <p className="text-muted-foreground mb-1 uppercase tracking-wide font-display text-xs">
               DE <span className="line-through">R$49,90</span> POR APENAS
             </p>
-            <div className="flex items-center justify-center lg:justify-start mb-2 sm:mb-4">
-              <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$9,90</span>
+            <div className="flex items-center justify-center mb-2">
+              <span className="font-display text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$9,90</span>
             </div>
+          </div>
 
-            {/* 4. CTA button */}
+          {/* Mobile: CTA above mockup */}
+          <div className="text-center lg:hidden order-5">
             <motion.a
               href="#pricing"
-              className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-sm sm:text-lg px-6 sm:px-12 py-[18px] sm:py-4 rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full sm:w-auto justify-center max-w-sm mx-auto lg:mx-0 animate-pulse-btn"
+              className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-sm px-6 py-[18px] rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full justify-center max-w-sm mx-auto animate-pulse-btn"
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}>
               🚀 Quero Acesso Imediato
             </motion.a>
-
-            {/* 5. Security text */}
-            <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
+            <div className="flex items-center justify-center gap-3 mt-3 text-muted-foreground/60 text-[10px]">
               <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
               <span className="flex items-center gap-1"><Download className="w-3.5 h-3.5 text-primary" /> Download imediato</span>
               <span className="flex items-center gap-1"><Award className="w-3.5 h-3.5 text-primary" /> Certificado AutoDESK</span>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right column — mockup (desktop) / inline (mobile) */}
+          {/* Mockup — after CTA on mobile, right column on desktop */}
           <motion.div
-            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-[600px] lg:ml-auto"
+            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-[600px] lg:ml-auto order-2 lg:order-none"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}>
