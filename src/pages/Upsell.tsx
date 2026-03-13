@@ -109,8 +109,15 @@ const Upsell = () => {
 
           {/* CTA button */}
           <a href="https://pay.wiapy.com/Anzl2Aiwf7"
-          className="flex items-center justify-center w-full bg-gradient-gold font-display uppercase rounded-full py-3.5 px-4 shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold whitespace-nowrap text-sm text-primary-foreground font-semibold">
-            
+            className="flex items-center justify-center w-full font-display uppercase rounded-full py-4 px-5 hover:scale-[1.02] transition-all animate-pulse-gold whitespace-nowrap text-base font-bold"
+            style={{
+              backgroundColor: 'hsl(45 100% 55%)',
+              color: 'hsl(220 20% 4%)',
+              boxShadow: '0 8px 24px rgba(246,184,26,0.35)',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'hsl(45 100% 65%)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'hsl(45 100% 55%)'}
+          >
             SIM, QUERO LIBERAR TODOS OS BÔNUS 🚀
           </a>
 
@@ -123,8 +130,16 @@ const Upsell = () => {
         {/* Decline button */}
         <a
           href="https://pay.wiapy.com/kxQXZSPzi7"
-          className="text-center block font-body border border-muted-foreground/20 rounded-lg py-2.5 hover:border-muted-foreground/40 hover:bg-secondary/40 transition-all bg-secondary/30 text-sm font-normal text-muted-foreground">
-          Não, quero apenas os 4.500 blocos 🥹 
+          className="text-center block font-body rounded-lg py-2 px-3 transition-all text-[13px] font-normal"
+          style={{
+            backgroundColor: 'hsl(220 18% 14%)',
+            color: 'hsl(215 10% 68%)',
+            border: '1px solid hsl(215 15% 22%)',
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'hsl(220 18% 18%)'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'hsl(220 18% 14%)'}
+        >
+          Não, quero apenas os 4.500 blocos 😢
         </a>
       </div>
     </div>);
