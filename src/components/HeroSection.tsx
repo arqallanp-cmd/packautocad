@@ -22,8 +22,8 @@ const HeroSection = () => {
           className="flex flex-col">
           
           {/* 1. Headline */}
-          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1 text-center">
-            <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl whitespace-nowrap text-center">
+          <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1 text-center w-full">
+            <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block text-center">
               +4500 BLOCOS
             </span>
           </h1>
