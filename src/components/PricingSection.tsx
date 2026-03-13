@@ -10,10 +10,10 @@ const PricingSection = () => {
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
+          viewport={{ once: true }}>
+          
           <p className="text-primary font-display text-sm lg:text-base font-semibold tracking-widest uppercase mb-3">Escolha seu pacote</p>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">Acesso imediato ao material</h2>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">Acesso imediato </h2>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row items-stretch gap-6 max-w-lg lg:max-w-none mx-auto">
@@ -22,8 +22,8 @@ const PricingSection = () => {
             className="bg-card border border-border rounded-xl p-8 flex flex-col w-full lg:flex-1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+            viewport={{ once: true }}>
+            
             <p className="font-display font-semibold text-muted-foreground text-sm mb-1 text-center">Básico</p>
             <h3 className="font-display text-2xl sm:text-3xl font-bold mb-6 text-center">Pack AutoCAD</h3>
 
@@ -49,8 +49,8 @@ const PricingSection = () => {
 
             <a
               href="/upgrade"
-              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg hover:bg-secondary transition-colors w-full"
-            >
+              className="block text-center border border-border text-foreground font-display font-semibold py-3 rounded-lg transition-colors w-full bg-[#242424]">
+              
               Comprar Básico
             </a>
 
@@ -65,8 +65,8 @@ const PricingSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-          >
+            transition={{ delay: 0.1 }}>
+            
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-gold text-primary-foreground font-display font-bold text-xs px-4 py-1 rounded-full animate-pulse-gold">
               🔥 Mais vendido
             </div>
@@ -100,8 +100,8 @@ const PricingSection = () => {
               <span className="text-muted-foreground line-through text-sm">R$297,00</span>
             </div>
             <div className="flex items-baseline justify-center mb-4" style={{ textShadow: '0 0 30px hsl(var(--primary) / 0.5), 0 0 60px hsl(var(--primary) / 0.3)' }}>
-              <span className="font-display text-4xl sm:text-5xl font-bold text-gradient-gold">R$</span>
-              <span className="font-display text-7xl sm:text-8xl md:text-9xl font-bold text-gradient-gold">24,90</span>
+              <span className="font-display sm:text-5xl text-gradient-gold font-normal text-2xl">R$</span>
+              <span className="font-display sm:text-8xl md:text-9xl font-bold text-gradient-gold text-8xl">24,90</span>
             </div>
 
             <motion.a
@@ -109,8 +109,8 @@ const PricingSection = () => {
               className="block text-center bg-gradient-gold text-primary-foreground font-display font-bold py-3 text-lg sm:text-xl rounded-lg shadow-gold animate-pulse-gold w-full"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.96 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+              
               → QUERO O PACK PRO
             </motion.a>
 
@@ -130,8 +130,8 @@ const PricingSection = () => {
           className="text-center mt-8 bg-card border border-border rounded-lg p-4 max-w-md mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
+          viewport={{ once: true }}>
+          
           <p className="text-muted-foreground text-sm">
             Valor real dos bônus: <span className="line-through">R$ 297,00</span>
           </p>
@@ -140,8 +140,8 @@ const PricingSection = () => {
           <AutodeskBadge variant="inline" className="mt-2 justify-center" />
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PricingSection;

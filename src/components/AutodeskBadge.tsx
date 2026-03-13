@@ -11,8 +11,8 @@ const AutodeskBadge = ({ variant = "default", className = "" }: AutodeskBadgePro
       <span className={`inline-flex items-center gap-1.5 text-primary text-[10px] sm:text-xs font-display font-semibold tracking-wide ${className}`}>
         <BadgeCheck className="w-3.5 h-3.5" />
         Compatível com Autodesk® AutoCAD®
-      </span>
-    );
+      </span>);
+
   }
 
   if (variant === "compact") {
@@ -22,8 +22,8 @@ const AutodeskBadge = ({ variant = "default", className = "" }: AutodeskBadgePro
         <span className="text-[10px] sm:text-xs font-display font-semibold text-muted-foreground tracking-wide">
           Autodesk® AutoCAD® <span className="text-primary">Certificado</span>
         </span>
-      </div>
-    );
+      </div>);
+
   }
 
   return (
@@ -33,12 +33,12 @@ const AutodeskBadge = ({ variant = "default", className = "" }: AutodeskBadgePro
           <BadgeCheck className="w-5 h-5 text-primary" />
         </div>
         <div>
-          <p className="font-display font-bold text-xs text-foreground leading-tight">Produto Autodesk® AutoCAD®</p>
+          <p className="font-display font-bold text-xs text-foreground leading-tight">Produto Autodesk AutoCAD®</p>
           <p className="text-[10px] text-muted-foreground leading-tight">Blocos 100% compatíveis com todas as versões</p>
         </div>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default AutodeskBadge;
