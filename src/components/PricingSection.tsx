@@ -4,6 +4,8 @@ import AutodeskBadge from "./AutodeskBadge";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const PricingSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section id="pricing" className="bg-background py-[30px] lg:py-[60px]">
       <div className="container max-w-5xl lg:max-w-[1200px] mx-auto px-4">
