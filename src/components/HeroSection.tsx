@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       <div className="container relative z-10 max-w-5xl lg:max-w-[1200px] mx-auto px-4">
         {/* Mobile: stacked | Desktop: 2 columns */}
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+        <div className="lg:grid lg:grid-cols-[1fr_1.2fr] lg:gap-10 lg:items-center">
           {/* Left column — text content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -71,7 +71,7 @@ const HeroSection = () => {
 
           {/* Right column — mockup (desktop) / inline (mobile) */}
           <motion.div
-            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-none"
+            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-[600px] lg:ml-auto"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}>
@@ -104,7 +104,7 @@ const HeroSection = () => {
               loading="eager"
               width="900"
               height="600"
-              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-none lg:w-full sm:w-full object-contain relative z-10" />
+              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-[480px] lg:w-full sm:w-full object-contain relative z-10" />
           </motion.div>
         </div>
 
