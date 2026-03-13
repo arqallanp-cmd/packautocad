@@ -127,7 +127,7 @@ const Upsell = () => {
         {/* Decline button */}
         <a
           href="https://pay.wiapy.com/kxQXZSPzi7"
-          className="text-center block font-body rounded-lg py-2 px-3 transition-all text-[13px] font-normal"
+          className="btn-compra text-center block font-body rounded-lg py-2 px-3 transition-all text-[13px] font-normal"
           style={{
             backgroundColor: 'hsl(220 18% 14%)',
             color: 'hsl(215 10% 68%)',
