@@ -26,11 +26,8 @@ const Upsell = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center rounded-lg py-2 px-3 border border-primary/30 bg-primary/10">
           
-          <p className="font-body text-[10px] uppercase text-primary/70 tracking-wider mb-0.5">
-            ⚡ UPGRADE LIBERADO: PACK PRO COM 30% DE DESCONTO
-          </p>
           <p className="font-display text-base font-bold text-foreground">
-            Adicione todos os bônus do Pack Pro por apenas <span className="text-primary">R$8 a mais</span>.
+            ⚡ Espere! Liberei o Pack Pro com <span className="text-primary">30% de desconto</span>
           </p>
         </motion.div>
 
@@ -51,22 +48,20 @@ const Upsell = () => {
             </span>
           </div>
 
-          {/* Value reminder */}
+          {/* Value block */}
+          <p className="font-body text-xs text-muted-foreground mb-1.5">Com o Pack Pro você desbloqueia:</p>
           <div className="flex flex-col gap-0.5 mb-2">
             <span className="font-body text-xs text-foreground">✔ +15.000 blocos extras</span>
             <span className="font-body text-xs text-foreground">✔ +300 hachuras profissionais</span>
             <span className="font-body text-xs text-foreground">✔ +200 blocos dinâmicos</span>
+            <span className="font-body text-xs text-foreground">✔ prompts de IA para arquitetos</span>
+            <span className="font-body text-xs text-foreground">✔ acesso ao grupo VIP</span>
           </div>
 
-          {/* Checklist */}
-          <div className="flex flex-col gap-1 mb-3">
-            {checkItems.map((item) =>
-            <div key={item} className="flex items-center gap-2">
-                <span className="text-primary text-xs font-bold">✓</span>
-                <span className="font-body text-xs text-foreground">{item}</span>
-              </div>
-            )}
-          </div>
+          {/* Price line */}
+          <p className="font-display text-sm font-bold text-foreground mb-3">
+            Tudo isso por apenas <span className="text-primary">R$8 a mais</span>.
+          </p>
 
           {/* Divider with label */}
           <div className="flex items-center gap-2 mb-2">
@@ -127,7 +122,7 @@ const Upsell = () => {
           href="https://pay.wiapy.com/kxQXZSPzi7"
           className="text-center block font-body text-sm text-foreground/80 font-medium border border-border rounded-lg py-3.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all">
           
-          Continuar apenas com o pacote básico 
+          Não, quero continuar apenas com os 4.500 blocos 
         </a>
       </div>
     </div>);
