@@ -106,7 +106,7 @@ const Upsell = () => {
 
           {/* CTA button */}
           <a href="https://pay.wiapy.com/Anzl2Aiwf7"
-            className="flex items-center justify-center w-full font-display uppercase rounded-full py-4 px-4 hover:scale-[1.02] transition-all animate-pulse-gold text-center leading-tight whitespace-normal break-words text-[15px] sm:text-base font-bold"
+            className="btn-compra flex items-center justify-center w-full font-display uppercase rounded-full py-4 px-4 hover:scale-[1.02] transition-all animate-pulse-gold text-center leading-tight whitespace-normal break-words text-[15px] sm:text-base font-bold"
             style={{
               backgroundColor: 'hsl(45 100% 55%)',
               color: 'hsl(220 20% 4%)',
@@ -127,7 +127,7 @@ const Upsell = () => {
         {/* Decline button */}
         <a
           href="https://pay.wiapy.com/kxQXZSPzi7"
-          className="text-center block font-body rounded-lg py-2 px-3 transition-all text-[13px] font-normal"
+          className="btn-compra text-center block font-body rounded-lg py-2 px-3 transition-all text-[13px] font-normal"
           style={{
             backgroundColor: 'hsl(220 18% 14%)',
             color: 'hsl(215 10% 68%)',
