@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       <div className="container relative z-10 max-w-5xl lg:max-w-[1200px] mx-auto px-4">
         {/* Mobile: stacked | Desktop: 2 columns */}
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+        <div className="lg:grid lg:grid-cols-[1fr_1.2fr] lg:gap-10 lg:items-center">
           {/* Left column — text content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
