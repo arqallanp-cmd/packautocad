@@ -109,7 +109,7 @@ const Upsell = () => {
 
           {/* CTA button */}
           <a href="https://pay.wiapy.com/Anzl2Aiwf7"
-          className="flex items-center justify-center w-full bg-gradient-gold text-primary-foreground font-display font-bold text-xs uppercase rounded-full py-3.5 px-4 shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold whitespace-nowrap">
+          className="flex items-center justify-center w-full bg-gradient-gold font-display uppercase rounded-full py-3.5 px-4 shadow-gold hover:scale-[1.02] transition-transform animate-pulse-gold whitespace-nowrap text-sm text-primary-foreground font-semibold">
             
             SIM, QUERO LIBERAR TODOS OS BÔNUS 🚀
           </a>
@@ -123,8 +123,8 @@ const Upsell = () => {
         {/* Decline button */}
         <a
           href="https://pay.wiapy.com/kxQXZSPzi7"
-          className="text-center block font-body text-xs text-muted-foreground font-medium border border-border rounded-lg py-2.5 bg-secondary/60 hover:bg-secondary hover:border-primary/20 transition-all">
-          Continuar apenas com os 4.500 blocos
+          className="text-center block font-body border border-border rounded-lg py-2.5 hover:border-primary/20 transition-all bg-[#a1a1a1]/35 text-sm font-normal text-primary-foreground">
+          Não, quero apenas os 4.500 blocos 🥹 
         </a>
       </div>
     </div>);
