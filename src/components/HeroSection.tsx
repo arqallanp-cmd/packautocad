@@ -82,7 +82,7 @@ const HeroSection = () => {
           </div>
 
           {/* Mobile: CTA above mockup */}
-          <div className="text-center lg:hidden order-4">
+          <div className="text-center lg:hidden order-5">
             <motion.a
               href="#pricing"
               className="inline-flex items-center gap-2 bg-success text-white font-display font-bold text-sm px-6 py-[18px] rounded-xl shadow-lg transition-transform hover:scale-105 uppercase w-full justify-center max-w-sm mx-auto animate-pulse-btn"
