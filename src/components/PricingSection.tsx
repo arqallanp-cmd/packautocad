@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Infinity, ShieldCheck, Award } from "lucide-react";
 import AutodeskBadge from "./AutodeskBadge";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const PricingSection = () => {
   return (
