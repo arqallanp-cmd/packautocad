@@ -72,8 +72,8 @@ const BonusSection = () => {
               >
                 {/* Mockup image */}
                 {hasImg && (
-                  <div className="w-full aspect-[4/5] lg:aspect-[4/4] overflow-hidden rounded-lg">
-                    <img src={b.img as string} alt={b.title} className="w-full h-full object-cover rounded-lg" loading="lazy" />
+                  <div className="w-full lg:aspect-[4/5] overflow-hidden">
+                    <img src={b.img as string} alt={b.title} className="w-full h-auto lg:h-full lg:object-contain object-cover" loading="lazy" />
                   </div>
                 )}
 
