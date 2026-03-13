@@ -30,7 +30,7 @@ const Upsell = () => {
             ⚠ Espere! Antes de finalizar seu pedido…
           </p>
           <p className="font-body text-xs text-muted-foreground mt-0.5">
-            Liberei o Pack Pro com <span className="text-primary font-semibold">30% de desconto</span> somente nesta página.
+            Pack Pro com <span className="text-primary font-semibold">30% de desconto</span> somente nesta página.
           </p>
         </motion.div>
 
