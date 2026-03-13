@@ -18,7 +18,7 @@ const bonusItems = [
 
 const Upsell = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-3 py-4 bg-background bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.06)_0%,transparent_60%)]">
+    <div className="min-h-screen flex-col px-3 bg-background bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.06)_0%,transparent_60%)] flex items-center justify-start py-[52px]">
       <div className="w-full max-w-[420px] flex flex-col gap-3">
         {/* Warning bar */}
         <motion.div
