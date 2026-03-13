@@ -106,16 +106,16 @@ const Upsell = () => {
 
           {/* CTA button */}
           <a href="https://pay.wiapy.com/Anzl2Aiwf7"
-            className="btn-compra flex items-center justify-center w-full font-display uppercase rounded-full py-4 px-4 hover:scale-[1.02] transition-all animate-pulse-gold text-center leading-tight whitespace-normal break-words text-[15px] sm:text-base font-bold"
-            style={{
-              backgroundColor: 'hsl(45 100% 55%)',
-              color: 'hsl(220 20% 4%)',
-              boxShadow: '0 8px 24px rgba(246,184,26,0.35)',
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'hsl(45 100% 65%)'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'hsl(45 100% 55%)'}
-          >
-            SIM, QUERO LIBERAR TODOS OS BÔNUS 🚀
+          className="btn-compra flex items-center justify-center w-full font-display uppercase rounded-full py-4 px-4 hover:scale-[1.02] transition-all animate-pulse-gold text-center leading-tight whitespace-normal break-words text-[15px] sm:text-base font-bold"
+          style={{
+            backgroundColor: 'hsl(45 100% 55%)',
+            color: 'hsl(220 20% 4%)',
+            boxShadow: '0 8px 24px rgba(246,184,26,0.35)'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'hsl(45 100% 65%)'}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'hsl(45 100% 55%)'}>
+            
+            SIM, QUERO LIBERAR TODOS OS BÔNUS 
           </a>
 
           {/* Below button text */}
@@ -131,11 +131,11 @@ const Upsell = () => {
           style={{
             backgroundColor: 'hsl(220 18% 14%)',
             color: 'hsl(215 10% 68%)',
-            border: '1px solid hsl(215 15% 22%)',
+            border: '1px solid hsl(215 15% 22%)'
           }}
           onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'hsl(220 18% 18%)'}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'hsl(220 18% 14%)'}
-        >
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'hsl(220 18% 14%)'}>
+          
           Não, quero apenas os 4.500 blocos 😢
         </a>
       </div>
