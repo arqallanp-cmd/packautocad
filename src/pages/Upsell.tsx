@@ -27,7 +27,7 @@ const Upsell = () => {
           className="text-center rounded-lg py-2 px-3 border border-primary/30 bg-primary/10">
           
           <p className="font-body text-[10px] uppercase text-primary/70 tracking-wider mb-0.5">
-            ⚠️ ESPERA! VOCÊ ESTÁ PRESTES A PEGAR A VERSÃO BÁSICA
+            ⚠️ ESPERA! acabei de liberar uma oferta pra você!        
           </p>
           <p className="font-display text-base font-bold text-foreground">
             Upgrade pro Pack Pro por apenas <span className="text-primary">R$8 a mais</span>
@@ -95,7 +95,7 @@ const Upsell = () => {
             <div className="flex items-baseline justify-center gap-2">
               <span className="font-body text-sm text-muted-foreground line-through">
 </span>
-              <span className="font-display text-primary font-extrabold leading-none text-6xl">
+              <span className="font-display text-primary font-extrabold leading-none text-7xl">
                 R$17,90
               </span>
               <span className="font-body text-xs text-muted-foreground">{"\n"}</span>
@@ -111,7 +111,7 @@ const Upsell = () => {
 
           {/* Below button text */}
           <p className="text-center mt-1.5 font-body text-[10px] text-muted-foreground/60">
-            Acesso imediato · 14 dias de garantia
+            Acesso vitalício · 14 dias de garantia · Somente hoje   
           </p>
         </motion.div>
 
