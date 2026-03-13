@@ -35,9 +35,7 @@ const CtaFooter = () => {
       <footer className="py-8 bg-card border-t border-border">
         <div className="container max-w-3xl mx-auto px-4 text-center">
           <p className="text-muted-foreground text-sm mb-2">© 2026 Lara Rembrandt. Todos os direitos reservados.</p>
-          <p className="text-muted-foreground text-xs mb-4">
-            <a href="/politica-de-privacidade" className="hover:text-foreground transition-colors">Política de Privacidade</a> · <a href="/termos-de-uso" className="hover:text-foreground transition-colors">Termos de Uso</a>
-          </p>
+          <p className="text-muted-foreground text-xs mb-4">Política de Privacidade · Termos de Uso</p>
           <p className="text-muted-foreground/60 text-xs max-w-lg mx-auto leading-relaxed">
             Produto digital. Autodesk Certified
           </p>
