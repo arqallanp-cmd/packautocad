@@ -26,11 +26,8 @@ const Upsell = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center rounded-lg py-2 px-3 border border-primary/30 bg-primary/10">
           
-          <p className="font-body text-[10px] uppercase text-primary/70 tracking-wider mb-0.5">
-            ⚡ UPGRADE LIBERADO: PACK PRO COM 30% DE DESCONTO
-          </p>
           <p className="font-display text-base font-bold text-foreground">
-            Adicione todos os bônus do Pack Pro por apenas <span className="text-primary">R$8 a mais</span>.
+            ⚡ Espere! Liberei o Pack Pro com <span className="text-primary">30% de desconto</span>
           </p>
         </motion.div>
 
