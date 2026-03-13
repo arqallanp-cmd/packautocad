@@ -11,7 +11,7 @@ const floatingIcons = [
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center bg-gradient-hero overflow-hidden pt-3 sm:pt-8 pb-6 sm:pb-6 lg:min-h-screen lg:max-h-screen">
+    <section className="relative flex items-center justify-center bg-gradient-hero overflow-hidden pt-3 sm:pt-8 pb-6 sm:pb-10 lg:min-h-screen">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container relative z-10 text-center max-w-3xl mx-auto px-4">
