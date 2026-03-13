@@ -38,9 +38,10 @@ const HeroSection = () => {
               </span>
             </div>
 
-            {/* 2. Subheadline — hidden on mobile, shown on desktop */}
-            <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed hidden lg:block">
-              Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.
+            {/* 2. Subheadline */}
+            <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed">
+              <span className="hidden sm:inline">Chega de perder horas desenhando do zero.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.</span>
+              <span className="sm:hidden">O maior pack profissional de blocos DWG do mercado.</span>
             </p>
 
             {/* Desktop: Price + CTA + Security inline */}
@@ -66,10 +67,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Mobile: Subheadline before mockup */}
-          <p className="text-muted-foreground text-[13px] max-w-md mx-auto mb-2 leading-relaxed text-center lg:hidden order-4">
-            O maior pack profissional de blocos DWG do mercado.
-          </p>
 
           {/* Mobile: Price above mockup */}
           <div className="text-center lg:hidden order-3">
