@@ -104,7 +104,7 @@ const HeroSection = () => {
               loading="eager"
               width="900"
               height="600"
-              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-none lg:w-full sm:w-full object-contain relative z-10" />
+              className="mx-auto w-auto max-w-full max-h-[240px] sm:max-h-[360px] lg:max-h-[480px] lg:w-full sm:w-full object-contain relative z-10" />
           </motion.div>
         </div>
 
