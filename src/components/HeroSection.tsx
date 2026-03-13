@@ -71,7 +71,7 @@ const HeroSection = () => {
 
           {/* Right column — mockup (desktop) / inline (mobile) */}
           <motion.div
-            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-none"
+            className="relative mx-auto mt-6 lg:mt-0 w-full max-w-[900px] lg:max-w-[600px] lg:ml-auto"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}>
