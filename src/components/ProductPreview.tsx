@@ -91,10 +91,7 @@ const ProductPreview = () => {
             className="w-full rounded-lg mb-5" />
           
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <span className="inline-block bg-primary text-primary-foreground font-display text-xs sm:text-sm uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-center font-extralight">
-              +4500
-            </span>
+          <div className="flex items-center justify-center">
             <AutodeskBadge variant="compact" />
           </div>
         </motion.div>
