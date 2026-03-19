@@ -56,7 +56,7 @@ const Upsell = () => {
             <span className="font-body text-xs text-foreground">✔ +15.000 blocos extras</span>
             <span className="font-body text-xs text-foreground">✔ +300 hachuras profissionais</span>
             <span className="font-body text-xs text-foreground">✔ +200 blocos dinâmicos</span>
-            <span className="font-body text-xs text-foreground">✔ prompts de IA para arquitetos</span>
+            
             <span className="font-body text-xs text-foreground">✔ acesso ao grupo VIP</span>
           </div>
 
