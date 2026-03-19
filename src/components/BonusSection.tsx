@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles, GraduationCap, Users } from "lucide-react";
+import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, GraduationCap, Users } from "lucide-react";
 
 const bonuses = [
   { num: "01", title: "+15000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$97", icon: Layers, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_01_hmuolw.jpg" },
