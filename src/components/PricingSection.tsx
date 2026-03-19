@@ -32,7 +32,7 @@ const PricingSection = () => {
               <li className="flex gap-2"><span>✅</span> +4.500 Blocos DWG organizados</li>
               <li className="flex gap-2"><span>✅</span> 1 ano de acesso</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Acesso vitalício</li>
-              <li className="flex gap-2 text-muted-foreground"><span>❌</span> Agentes de IA</li>
+              
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Certificado AutoDESK 20H</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Instalador AutoCAD</li>
               <li className="flex gap-2 text-muted-foreground"><span>❌</span> Bônus incríveis</li>
