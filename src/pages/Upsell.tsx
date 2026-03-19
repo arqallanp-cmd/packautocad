@@ -11,7 +11,6 @@ const checkItems = [
 
 const bonusItems = [
 { emoji: "💻", text: "Instalador AutoCAD 2026", value: "R$47" },
-{ emoji: "⭐", text: "5 Agentes de IA", value: "R$57" },
 { emoji: "👥", text: "Grupo Network VIP", value: "R$37" },
 { emoji: "🎓", text: "Certificado Autodesk 20h", value: "R$27" }];
 
