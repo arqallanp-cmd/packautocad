@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, Sparkles, GraduationCap, Users } from "lucide-react";
+import { Layers, PenTool, Printer, Stamp, DoorOpen, Keyboard, BookOpen, GraduationCap, Users } from "lucide-react";
 
 const bonuses = [
   { num: "01", title: "+15000 Blocos DWG Extras", desc: "Biblioteca adicional organizada por categorias.", oldPrice: "R$97", icon: Layers, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_01_hmuolw.jpg" },
@@ -9,7 +9,7 @@ const bonuses = [
   { num: "05", title: "+200 Blocos Dinâmicos", desc: "Portas, janelas e mobiliário com parâmetros editáveis.", oldPrice: "R$27", icon: DoorOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_05_nlc4lj.png" },
   { num: "06", title: "+100 Atalhos AutoCAD", desc: "Atalhos usados por profissionais para acelerar seu fluxo de trabalho.", oldPrice: "R$17", icon: Keyboard, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_06_ayc045.jpg" },
   { num: "07", title: "AutoCAD 2026 Incluso", desc: "Tutorial de instalação + AutoCAD 2026 incluso.", oldPrice: "R$17", icon: BookOpen, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348454/BONUS_07_wzadr0.jpg" },
-  { num: "08", title: "Prompts de IA para Arquitetos", desc: "Prompts para transformar plantas em imagens profissionais.", oldPrice: "R$27", icon: Sparkles, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/f_auto,q_auto,w_400/BONUS_08_k4nrqs.jpg" },
+  
   { num: "09", title: "Grupo VIP", subtitle: "Acesso vitalício · Comunidade fechada", desc: "", oldPrice: "R$17", icon: Users, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348455/BONUS_09_asvigq.jpg", pills: ["💬 Suporte da comunidade", "🤝 Indicações de projetos", "🔔 Atualizações em primeira mão"] },
   { num: "10", title: "Certificado de Capacitação", subtitle: "20 horas · Válido para faculdade e estágio", desc: "", oldPrice: "R$17", icon: GraduationCap, img: "https://res.cloudinary.com/dxskz0q2z/image/upload/v1773348454/BONUS_10_mix1oe.jpg" },
 ] as const;
