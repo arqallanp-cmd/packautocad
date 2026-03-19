@@ -99,7 +99,7 @@ const Upsell = () => {
             </p>
             <div className="flex items-baseline justify-center">
               <span className="font-display text-primary font-extrabold leading-none text-7xl">
-                R$17,90
+                R$14,90
               </span>
             </div>
           </div>
