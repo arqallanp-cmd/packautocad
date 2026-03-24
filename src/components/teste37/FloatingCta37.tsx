@@ -35,7 +35,7 @@ const FloatingCta37 = () => {
         >
           <span style={{ fontSize: 16 }}>🚀</span>
           <span style={{ color: "#fff", fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 700, fontSize: 14, whiteSpace: "nowrap" }}>
-            Garantir Minha Licença
+            Garantir por R$37
           </span>
           <span style={{ fontSize: 16 }}>🚀</span>
         </motion.a>
