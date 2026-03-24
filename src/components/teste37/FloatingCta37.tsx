@@ -24,13 +24,11 @@ const FloatingCta37 = () => {
           exit={{ y: 100, opacity: 0 }}
           whileTap={{ scale: 0.96 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3"
+          className="fixed bottom-4 left-4 right-4 z-50 flex items-center justify-center gap-3 glow-border-btn"
           style={{
             background: "#0a0a0a",
-            border: "1px solid rgba(200,169,110,0.3)",
             borderRadius: 100,
             padding: "14px 28px",
-            boxShadow: "0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(200,169,110,0.1)",
           }}
         >
           <span style={{ fontSize: 16 }}>🚀</span>
