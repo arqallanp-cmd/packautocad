@@ -113,8 +113,8 @@
 /* Rotating glow border for floating CTA */
 .glow-border-btn {
   position: relative;
-  overflow: hidden;
   z-index: 1;
+  border: none !important;
 }
 .glow-border-btn::before {
   content: '';
