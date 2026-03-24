@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Upsell from "./pages/Upsell.tsx";
 import Teste02 from "./pages/Teste02.tsx";
+import Teste37 from "./pages/Teste37.tsx";
 
 const queryClient = new QueryClient();
 
