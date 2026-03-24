@@ -26,15 +26,15 @@ const HeroSection37 = () => {
             {/* Headline */}
             <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1">
               <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block">
-                AutoCAD
+                LICENÇA VITALÍCIA
               </span>
             </h1>
             <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-2 sm:mb-4">
               <span className="font-display font-extrabold uppercase tracking-tight text-foreground text-[26px] sm:text-4xl md:text-5xl">
-                VITALÍCIO
+                PROFISSIONAL
               </span>
               <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[22px] sm:text-3xl md:text-4xl -rotate-1 inline-block">
-                +5000 BLOCOS BÔNUS
+                AUTOCAD
               </span>
             </div>
 
