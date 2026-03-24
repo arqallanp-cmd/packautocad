@@ -26,7 +26,10 @@ const HeroSection37 = () => {
             {/* Headline */}
             <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1">
               <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block">
-                LICENÇA VITALÍCIA
+                AUTOCAD
+              </span>
+              <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block">
+                VITALÍCIO
               </span>
             </h1>
             <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-2 sm:mb-4">
