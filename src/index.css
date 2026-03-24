@@ -113,8 +113,7 @@
 /* Rotating glow border for floating CTA */
 .glow-border-btn {
   position: relative;
-  z-index: 1;
-  border: none !important;
+  isolation: isolate;
 }
 .glow-border-btn::before {
   content: '';
@@ -123,9 +122,9 @@
   border-radius: inherit;
   background: conic-gradient(
     from var(--glow-angle, 0deg),
-    transparent 40%,
+    transparent 30%,
     hsl(var(--primary)) 50%,
-    transparent 60%
+    transparent 70%
   );
   animation: glow-spin 2.5s linear infinite;
   z-index: -2;
