@@ -43,7 +43,7 @@ const HeroSection37 = () => {
 
             {/* Subtitle */}
             <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed hidden lg:block">
-              Tenha acesso ao maior pack profissional de blocos DWG do mercado.
+              Tenha acesso ao melhor pack de arquitetura do mercado.
             </p>
 
             {/* Desktop: Price + CTA + Security inline */}
@@ -72,7 +72,7 @@ const HeroSection37 = () => {
 
           {/* Mobile: Subheadline */}
           <p className="text-muted-foreground text-[13px] max-w-md mx-auto mb-2 leading-relaxed text-center lg:hidden order-4">
-            Tenha acesso ao maior pack profissional de blocos DWG do mercado.
+            Tenha acesso ao melhor pack de arquitetura do mercado.
           </p>
 
           {/* Mobile: Price */}
