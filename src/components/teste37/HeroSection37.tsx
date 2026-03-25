@@ -26,10 +26,10 @@ const HeroSection37 = () => {
             {/* Headline */}
             <h1 className="font-display font-extrabold uppercase tracking-tight leading-[0.9] mb-2 sm:mb-1">
               <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block">
-                AUTOCAD
+                MEGAPACK
               </span>
               <span className="text-gradient-gold text-[48px] sm:text-6xl md:text-7xl lg:text-8xl block">
-                VITALÍCIO
+                ARQUITETURA
               </span>
             </h1>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-2 sm:mb-4">
@@ -49,10 +49,10 @@ const HeroSection37 = () => {
             {/* Desktop: Price + CTA + Security inline */}
             <div className="hidden lg:block">
               <p className="text-muted-foreground sm:text-base mb-1 uppercase tracking-wide font-display text-xs">
-                DE <span className="line-through">R$127,00</span> POR APENAS
+                DE <span className="line-through">R$164,00</span> POR APENAS
               </p>
               <div className="flex items-center lg:justify-start mb-2 sm:mb-4">
-                <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$37,00</span>
+                <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$47,00</span>
               </div>
               <motion.a
                 href="#pricing"
@@ -60,7 +60,7 @@ const HeroSection37 = () => {
                 whileTap={{ scale: 0.96 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-🚀 Garantir Minha Licença por R$37
+🚀 Garantir Meu Megapack por R$47
               </motion.a>
               <div className="flex items-center lg:justify-start gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
                 <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
@@ -78,10 +78,10 @@ const HeroSection37 = () => {
           {/* Mobile: Price */}
           <div className="text-center lg:hidden order-3">
             <p className="text-muted-foreground mb-1 uppercase tracking-wide font-display text-xs">
-              DE <span className="line-through">R$127,00</span> POR APENAS
+              DE <span className="line-through">R$164,00</span> POR APENAS
             </p>
             <div className="flex items-center justify-center mb-2">
-              <span className="font-display text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$37,00</span>
+              <span className="font-display text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$47,00</span>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ const HeroSection37 = () => {
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-🚀 Garantir Minha Licença por R$37
+🚀 Garantir Meu Megapack por R$47
             </motion.a>
             <div className="flex items-center justify-center gap-3 mt-3 text-muted-foreground/60 text-[10px]">
               <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
@@ -153,7 +153,7 @@ const HeroSection37 = () => {
           {[
             { value: "4.500+", label: "Blocos DWG" },
             { value: "100%", label: "Organizados" },
-            { value: "R$37,00", label: "Licença Vitalícia" },
+            { value: "R$47,00", label: "Licença Vitalícia" },
           ].map((s) => (
             <div key={s.label} className="text-center bg-card/50 border border-border rounded-lg py-3 px-2">
               <p className="font-display text-xl sm:text-2xl font-bold text-primary">{s.value}</p>
