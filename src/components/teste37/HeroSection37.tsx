@@ -122,6 +122,18 @@ const HeroSection37 = () => {
               </motion.div>
             ))}
 
+            {/* Badge: Licença Vitalícia */}
+            <motion.div
+              className="absolute z-20 top-[6%] left-[5%] sm:top-[8%] sm:left-[8%] bg-card/90 border border-primary/30 backdrop-blur-sm rounded-full px-3 py-1.5 shadow-gold flex items-center gap-1.5"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+            >
+              <span className="text-primary text-sm sm:text-base font-bold">∞</span>
+              <span className="font-display font-bold text-[9px] sm:text-[11px] text-primary leading-tight uppercase">Licença Vitalícia</span>
+            </motion.div>
+
+            {/* Badge: Blocos DWG */}
             <motion.div
               className="absolute z-20 bottom-[8%] right-[5%] sm:bottom-[12%] sm:right-[10%] bg-card/90 border border-primary/30 backdrop-blur-sm rounded-lg px-3 py-2 shadow-gold"
               initial={{ opacity: 0, x: 10 }}
