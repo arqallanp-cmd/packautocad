@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/teste02" element={<Teste02 />} />
           <Route path="/teste37" element={<Teste37 />} />
           <Route path="/arqclub" element={<ArqClub />} />
+          <Route path="/megapack" element={<Megapack />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
