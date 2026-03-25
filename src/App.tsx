@@ -9,6 +9,7 @@ import Upsell from "./pages/Upsell.tsx";
 import Teste02 from "./pages/Teste02.tsx";
 import Teste37 from "./pages/Teste37.tsx";
 import ArqClub from "./pages/ArqClub.tsx";
+import Megapack from "./pages/Megapack.tsx";
 
 const queryClient = new QueryClient();
 
