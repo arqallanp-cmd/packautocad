@@ -32,7 +32,7 @@ const PricingSection37 = () => {
             <h3 className="font-display sm:text-3xl font-bold mb-0 text-center text-3xl mx-0 my-0 px-0 py-0">Licença Vitalícia AutoCAD Pro</h3>
 
             <div className="text-center mb-4 mt-2">
-              <span className="text-muted-foreground line-through text-sm">Valor total: R$127,00</span>
+              <span className="text-muted-foreground line-through text-sm">Valor total: R$164,00</span>
             </div>
 
             <ul className="space-y-3 mb-6 text-base">
@@ -52,14 +52,14 @@ const PricingSection37 = () => {
 
             <div className="flex items-center justify-center gap-2 mb-1">
               <span className="text-xs bg-danger/20 text-danger font-bold px-2 py-0.5 rounded">-71% OFF</span>
-              <span className="text-muted-foreground line-through text-sm">R$127,00</span>
+              <span className="text-muted-foreground line-through text-sm">R$164,00</span>
             </div>
             <div
               className="flex items-baseline justify-center mb-4"
               style={{ textShadow: '0 0 30px hsl(var(--primary) / 0.5), 0 0 60px hsl(var(--primary) / 0.3)' }}
             >
               <span className="font-display sm:text-5xl text-gradient-gold font-normal text-2xl">R$</span>
-              <span className="font-display sm:text-8xl md:text-9xl font-bold text-gradient-gold text-8xl">37,00</span>
+              <span className="font-display sm:text-8xl md:text-9xl font-bold text-gradient-gold text-8xl">47,00</span>
             </div>
 
             <motion.a
@@ -92,7 +92,7 @@ const PricingSection37 = () => {
           <p className="text-muted-foreground text-sm">
             Valor real dos bônus: <span className="line-through">R$ 222,00</span>
           </p>
-          <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 37,00</p>
+          <p className="text-primary font-display font-bold text-lg">Você paga apenas R$ 47,00</p>
           <p className="text-success text-xs font-bold mt-1">Economia de 71%</p>
           <AutodeskBadge variant="inline" className="mt-2 justify-center" />
         </motion.div>
