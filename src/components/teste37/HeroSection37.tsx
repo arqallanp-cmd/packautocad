@@ -122,26 +122,15 @@ const HeroSection37 = () => {
               </motion.div>
             ))}
 
-            {/* Badge: Licença Vitalícia */}
+            {/* Badge: Licença Vitalícia — centralizado na parte inferior */}
             <motion.div
-              className="absolute z-20 top-[6%] left-[5%] sm:top-[8%] sm:left-[8%] bg-card/90 border border-primary/30 backdrop-blur-sm rounded-full px-3 py-1.5 shadow-gold flex items-center gap-1.5"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              className="absolute z-20 bottom-[4%] left-1/2 -translate-x-1/2 bg-card/90 border border-primary/30 backdrop-blur-sm rounded-full px-4 py-1.5 shadow-gold flex items-center gap-1.5"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
               <span className="text-primary text-sm sm:text-base font-bold">∞</span>
-              <span className="font-display font-bold text-[9px] sm:text-[11px] text-primary leading-tight uppercase">Licença Vitalícia</span>
-            </motion.div>
-
-            {/* Badge: Blocos DWG */}
-            <motion.div
-              className="absolute z-20 bottom-[8%] right-[5%] sm:bottom-[12%] sm:right-[10%] bg-card/90 border border-primary/30 backdrop-blur-sm rounded-lg px-3 py-2 shadow-gold"
-              initial={{ opacity: 0, x: 10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-            >
-              <p className="font-display font-bold text-[10px] sm:text-xs text-primary leading-tight">+4.500 BLOCOS DWG</p>
-              <p className="font-display font-semibold text-[8px] sm:text-[10px] text-muted-foreground leading-tight">PRONTOS PARA AUTOCAD</p>
+              <span className="font-display font-bold text-[9px] sm:text-[11px] text-primary leading-tight uppercase whitespace-nowrap">Licença Vitalícia</span>
             </motion.div>
 
             <img
