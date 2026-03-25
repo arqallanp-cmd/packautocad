@@ -119,3 +119,83 @@
   border: 1.5px solid hsl(var(--primary) / 0.6) !important;
   animation: glow-pulse 2s ease-in-out infinite;
 }
+
+/* ── Arq Club theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+.arq-page {
+  --arq-bg: #080812;
+  --arq-card: #0e0e1a;
+  --arq-gold: #c9a84c;
+  --arq-neon: #00e87a;
+  --arq-muted: #8a8a9a;
+  --arq-border: #1a1a2e;
+  font-family: 'Poppins', sans-serif;
+}
+
+.arq-bg { background-color: var(--arq-bg); }
+.arq-bg-card { background-color: var(--arq-card); }
+
+.arq-card {
+  background: var(--arq-card);
+  border: 1px solid var(--arq-border);
+}
+.arq-card-subtle {
+  background: rgba(255 255 255 / 0.04);
+  border: 1px solid rgba(255 255 255 / 0.08);
+}
+
+.arq-text-gold {
+  background: linear-gradient(135deg, #c9a84c, #e8c962);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.arq-urgency-bar {
+  background: linear-gradient(90deg, #dc2626, #b91c1c);
+}
+
+.text-arq-gold { color: var(--arq-gold); }
+.text-arq-neon { color: var(--arq-neon); }
+.text-arq-muted { color: var(--arq-muted); }
+.bg-arq-gold { background-color: var(--arq-gold); }
+.bg-arq-neon { background-color: var(--arq-neon); }
+.border-arq-gold { border-color: var(--arq-gold); }
+.border-arq-neon { border-color: var(--arq-neon); }
+.fill-arq-gold { fill: var(--arq-gold); }
+
+/* fractional opacity utilities */
+.bg-arq-gold\/10 { background-color: rgba(201, 168, 76, 0.1); }
+.bg-arq-gold\/5 { background-color: rgba(201, 168, 76, 0.05); }
+.bg-arq-neon\/8 { background-color: rgba(0, 232, 122, 0.08); }
+.border-arq-gold\/30 { border-color: rgba(201, 168, 76, 0.3); }
+.border-arq-gold\/40 { border-color: rgba(201, 168, 76, 0.4); }
+.border-arq-gold\/50 { border-color: rgba(201, 168, 76, 0.5); }
+.border-arq-neon\/20 { border-color: rgba(0, 232, 122, 0.2); }
+.border-arq-neon\/30 { border-color: rgba(0, 232, 122, 0.3); }
+.border-arq-neon\/40 { border-color: rgba(0, 232, 122, 0.4); }
+.hover\:border-arq-gold\/40:hover { border-color: rgba(201, 168, 76, 0.4); }
+.hover\:border-arq-neon\/30:hover { border-color: rgba(0, 232, 122, 0.3); }
+.hover\:border-arq-neon\/40:hover { border-color: rgba(0, 232, 122, 0.4); }
+.text-arq-muted\/60 { color: rgba(138, 138, 154, 0.6); }
+
+/* Arq Club button with pulse ring */
+@keyframes arq-pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(0, 232, 122, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(0, 232, 122, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 232, 122, 0); }
+}
+
+.arq-btn-primary {
+  background: linear-gradient(135deg, #00e87a, #00c468);
+  color: #080812;
+  font-weight: 700;
+  animation: arq-pulse-ring 2s infinite;
+  transition: transform 0.2s;
+}
+.arq-btn-primary:hover {
+  transform: scale(1.04);
+}
+
+.font-poppins { font-family: 'Poppins', sans-serif; }
