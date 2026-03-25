@@ -43,7 +43,7 @@ const HeroSection37 = () => {
 
             {/* Subtitle */}
             <p className="text-muted-foreground text-[13px] sm:text-lg max-w-md mx-auto lg:mx-0 mb-2 sm:mb-4 leading-relaxed hidden lg:block">
-              +4.500 Blocos DWG Profissionais Prontos para Usar.<br />Tenha acesso ao maior pack profissional de blocos DWG do mercado.
+              Tenha acesso ao maior pack profissional de blocos DWG do mercado.
             </p>
 
             {/* Desktop: Price + CTA + Security inline */}
@@ -72,7 +72,7 @@ const HeroSection37 = () => {
 
           {/* Mobile: Subheadline */}
           <p className="text-muted-foreground text-[13px] max-w-md mx-auto mb-2 leading-relaxed text-center lg:hidden order-4">
-            +4.500 Blocos DWG Profissionais Prontos para Usar.
+            Tenha acesso ao maior pack profissional de blocos DWG do mercado.
           </p>
 
           {/* Mobile: Price */}
@@ -151,9 +151,9 @@ const HeroSection37 = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           {[
-            { value: "4.500+", label: "Blocos DWG" },
-            { value: "100%", label: "Organizados" },
-            { value: "R$47,00", label: "Licença Vitalícia" },
+            { value: "+4.500", label: "Blocos DWG" },
+            { value: "+100GB", label: "Famílias Revit" },
+            { value: "+200GB", label: "Blocos SketchUp" },
           ].map((s) => (
             <div key={s.label} className="text-center bg-card/50 border border-border rounded-lg py-3 px-2">
               <p className="font-display text-xl sm:text-2xl font-bold text-primary">{s.value}</p>
