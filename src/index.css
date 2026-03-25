@@ -120,6 +120,24 @@
   animation: glow-pulse 2s ease-in-out infinite;
 }
 
+/* ── Megapack theme ── */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@800&family=DM+Sans:wght@300;400&display=swap');
+
+.font-bebas { font-family: 'Bebas Neue', cursive; }
+.font-syne { font-family: 'Syne', sans-serif; }
+.mega-page { font-family: 'DM Sans', sans-serif; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.animate-shimmer { animation: shimmer 2.5s linear infinite; }
+
+@keyframes mega-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 /* ── Arq Club theme ── */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
