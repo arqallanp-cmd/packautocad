@@ -102,29 +102,31 @@ const HeroSection = () => (
 /* ── for who ── */
 const ForWhoSection = () => {
   const personas = [
-    { icon: <Home size={28} />, title: "Arquitetos", desc: "Que querem agilizar entregas com projetos prontos de alta qualidade." },
-    { icon: <Building2 size={28} />, title: "Engenheiros", desc: "Que precisam de referências técnicas e detalhamentos completos." },
-    { icon: <Ruler size={28} />, title: "Estudantes", desc: "Que buscam aprender com projetos reais e profissionais." },
-    { icon: <PenTool size={28} />, title: "Designers", desc: "Que desejam inspiração e base para projetos de interiores." },
+    { title: "✅ Você que quer sair do aluguel mas não sabe por onde começar", desc: "Tem o terreno (ou vai ter em breve) e fica travado sem saber qual projeto escolher. Aqui você escolhe, imprime e já começa." },
+    { title: "✅ Você que tem terreno parado e quer finalmente construir", desc: "O terreno está lá, o dinheiro já foi separado, mas falta o projeto. Com +100 opções prontas, você sai do zero hoje." },
+    { title: "✅ Você que quer construir sem depender de arquiteto", desc: "Sem esperar meses, sem pagar R$3.000 por uma planta. Tudo pronto pra entregar direto pro pedreiro e começar a obra." },
+    { title: "✅ Você que quer construir para alugar e gerar renda", desc: "Projetos de diferentes metragens e estilos pra você construir, alugar e criar uma fonte de renda no seu terreno." },
   ];
   return (
     <section className="arq-bg-card py-16 lg:py-24">
       <div className="container max-w-5xl mx-auto px-4">
         <Reveal className="text-center mb-12">
           <p className="text-arq-gold font-poppins text-sm font-semibold tracking-widest uppercase mb-3">Para quem é</p>
-          <h2 className="font-poppins text-3xl sm:text-4xl font-bold text-white">Feito para profissionais como você</h2>
+          <h2 className="font-poppins text-3xl sm:text-4xl font-bold text-white">🏠 ESSE PACK É PRA VOCÊ?</h2>
         </Reveal>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {personas.map((p, i) => (
             <Reveal key={i}>
-              <div className="arq-card rounded-xl p-6 text-center hover:border-arq-gold/40 transition-colors h-full">
-                <div className="text-arq-neon mb-4 flex justify-center">{p.icon}</div>
+              <div className="arq-card rounded-xl p-6 hover:border-arq-gold/40 transition-colors h-full">
                 <h3 className="font-poppins font-bold text-white text-lg mb-2">{p.title}</h3>
                 <p className="text-arq-muted text-sm leading-relaxed">{p.desc}</p>
               </div>
             </Reveal>
           ))}
         </div>
+        <Reveal className="text-center mt-8">
+          <p className="text-arq-gold font-poppins font-semibold text-base sm:text-lg">👉 Se você se viu em qualquer um desses perfis, esse pack foi feito pra você.</p>
+        </Reveal>
       </div>
     </section>
   );
