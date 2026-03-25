@@ -50,7 +50,7 @@ const Reveal = ({ children, className = "" }: { children: React.ReactNode; class
 /* ── urgency bar ── */
 const UrgencyBar = () => (
   <div className="arq-urgency-bar text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide">
-    🔥 OFERTA POR TEMPO LIMITADO — Acesso vitalício com <span className="text-arq-neon font-bold">71% OFF</span> só até hoje!
+    🔥 71% OFF só hoje — Acesso vitalício por R$47. Amanhã pode ser tarde.
   </div>
 );
 
@@ -68,19 +68,19 @@ const HeroSection = () => (
         </span>
 
         <h1 className="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 text-white">
-          Projetos Arquitetônicos<br />
-          <span className="arq-text-gold">Prontos Para Usar</span>
+          +100 Projetos: Térreo, Sobrado, Kitnet, MCMV e Todo Tamanho de Terreno.{" "}
+          <span className="arq-text-gold">É Só Escolher e Construir.</span>
         </h1>
 
         <p className="text-arq-muted text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed font-poppins">
-          +500 projetos completos, detalhados e editáveis. Economize centenas de horas com a maior biblioteca profissional do mercado.
+          Terreno pequeno, médio ou grande — tem projeto pra todos. Plantas completas, modernas e prontas para construir. Sem arquiteto, sem enrolação, sem gastar R$3.000 no que você pega aqui por R$47.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <a href="#pricing" className="arq-btn-primary font-poppins font-bold text-base sm:text-lg px-10 py-4 rounded-xl inline-flex items-center gap-2">
-            <Zap size={20} /> Garantir Meu Acesso Agora
+            ⚡ Quero Meus +100 Projetos Agora
           </a>
-          <p className="text-arq-muted text-xs flex items-center gap-1.5"><Lock size={14} /> Pagamento 100% seguro</p>
+          <p className="text-arq-muted text-xs">🔒 Pagamento seguro · 📦 Acesso imediato · ✅ Garantia de 7 dias</p>
         </div>
 
         <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
