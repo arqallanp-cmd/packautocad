@@ -33,8 +33,8 @@ const HeroSection37 = () => {
               </span>
             </h1>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-2 sm:mb-4">
-              <span className="font-display font-extrabold uppercase tracking-tight text-foreground text-[22px] sm:text-3xl md:text-4xl">
-                +4.500 BLOCOS
+              <span className="font-display font-extrabold uppercase tracking-wide text-foreground text-[18px] sm:text-2xl md:text-3xl">
+                BLOCOS, PROJETOS E TEMPLATES
               </span>
               <span className="bg-danger text-white font-display font-extrabold uppercase px-3 py-1 rounded text-[18px] sm:text-2xl md:text-3xl -rotate-1 inline-block">
                 + BÔNUS EXCLUSIVO
