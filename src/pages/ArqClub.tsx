@@ -68,12 +68,12 @@ const HeroSection = () => (
         </span>
 
         <h1 className="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6 text-white">
-          +100 Projetos de Casas Térreas, Sobrados, Kitnets e MCMV{" "}
-          <span className="arq-text-gold">Para Você Construir No Seu Próprio Terreno</span>
+          <span className="block">PARE DE PAGAR ALUGUEL</span>
+          <span className="arq-text-gold block">+100 Projetos Prontos de Casas Modernas e Acessíveis</span>
         </h1>
 
         <p className="text-arq-muted text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed font-poppins">
-          Mesmo sem arquiteto ou experiência em obras — é só escolher o modelo, imprimir e entregar pro pedreiro. Plantas completas com elétrica, hidráulica, lista de materiais e tudo que sua obra precisa pra sair do papel sem erro e sem desperdício.
+          Mesmo sem arquiteto ou experiência em obras — é só escolher o modelo, imprimir e entregar pro pedreiro. Plantas completas com elétrica, hidráulica e lista de materiais pra sua obra sair do papel sem erro e sem desperdício.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
