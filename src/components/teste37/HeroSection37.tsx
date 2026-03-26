@@ -60,7 +60,7 @@ const HeroSection37 = () => {
                 whileTap={{ scale: 0.96 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-🚀 Garantir Meu Megapack por R$47
+🚀 Garantir Meu Megapack por R$37
               </motion.a>
               <div className="flex items-center lg:justify-start gap-3 sm:gap-5 mt-3 sm:mt-4 text-muted-foreground/60 text-[10px] sm:text-xs">
                 <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
@@ -81,7 +81,7 @@ const HeroSection37 = () => {
               DE <span className="line-through">R$164,00</span> POR APENAS
             </p>
             <div className="flex items-center justify-center mb-2">
-              <span className="font-display text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$47,00</span>
+              <span className="font-display text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)]">R$37,00</span>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ const HeroSection37 = () => {
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-🚀 Garantir Meu Megapack por R$47
+🚀 Garantir Meu Megapack por R$37
             </motion.a>
             <div className="flex items-center justify-center gap-3 mt-3 text-muted-foreground/60 text-[10px]">
               <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-success" /> Compra 100% segura</span>
