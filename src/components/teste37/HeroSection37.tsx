@@ -52,7 +52,7 @@ const HeroSection37 = () => {
                 DE <span className="line-through">R$164,00</span> POR APENAS
               </p>
               <div className="flex items-center lg:justify-start mb-2 sm:mb-4">
-                <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$47,00</span>
+                <span className="font-display sm:text-7xl font-extrabold text-gradient-gold drop-shadow-[0_0_25px_hsl(45_100%_55%/0.4)] text-7xl">R$37,00</span>
               </div>
               <motion.a
                 href="#pricing"
